@@ -17,7 +17,7 @@ export default function Carousel({ content }) {
 
   return (
     <Slider {...settings} className="carousel">
-      {content && content.map((item) => <div>{item}</div>)}
+      {content && content.map((item) => <div key={item}>{item}</div>)}
     </Slider>
   );
 }
