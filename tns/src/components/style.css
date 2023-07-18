@@ -1,5 +1,4 @@
 .headerBackground {
-    /* background-color: #ffffff; */
     background-color: cornflowerblue;
 }
 
@@ -12,7 +11,7 @@
     background-color: khaki;
     border-radius: 15px;
     align-self: center;
-    margin-right: -10%;
+    /* margin-right: -10%; */
 }
 .header {
     display: grid;
@@ -21,4 +20,15 @@
 
 .carousel {
     height: 15rem;
+    width: 100%;
+    align-self: center;
+}
+
+.reveiews {
+    display: grid;
+}
+
+.reveiews > .reveiew {
+    font-family: initial;
+    font-size: small;
 }
