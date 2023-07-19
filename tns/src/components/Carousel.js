@@ -18,7 +18,7 @@ export default function Carousel({ content }) {
   return (
     <Slider
       {...settings}
-      className="carousel"
+      className="carousel paddingBot"
       style={{ display: "inline-flex" }}
     >
       {content &&

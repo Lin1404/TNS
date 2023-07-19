@@ -37,32 +37,34 @@ const reviews = [
 export default function Cover() {
   return (
     <>
-      <div>
+      <div className="paddingBot">
         <img src={tnsCover} alt="illustration" style={{ width: "100%" }} />
       </div>
       <Carousel content={reviews} />
-      <div className="certifications">
-        <div className="certificationsInfo">
+      <div className="certifications paddingBot">
+        <h2>Certifications</h2>
+        <p>
+          TNS Auto Group is your state of the art collision repair facility.
+        </p>
+        <p>
+          We meet our goals by utilizing today's most advanced systems in the
+          collision repair industry and combining them with our highly trained
+          and certified repair technicians. This assures that your vehicle is
+          repaired to factory specs and pre-accident condition.
+        </p>
+        <div className="certificationsInfo paddingTop">
           <div className="certificationsLogo">
+            <img src={icar2} alt="illustration" />
+            <img src={sp2} alt="illustration" style={{ height: "4rem" }} />
             <img
-              src={icarLogo}
+              src={ppg2}
               alt="illustration"
-              style={{ height: "5rem", paddingRight: "2rem" }}
-            />
-            <img
-              src={sp2}
-              alt="illustration"
-              style={{ height: "5rem", paddingRight: "2rem" }}
-            />
-            <img
-              src={ppg1}
-              alt="illustration"
-              style={{ height: "5rem", paddingRight: "2rem" }}
+              style={{ height: "4rem", paddingRight: 0 }}
             />
             <img
               src={ase}
               alt="illustration"
-              style={{ height: "5rem", paddingRight: "2rem" }}
+              style={{ paddingLeft: 0, marginLeft: "-1rem" }}
             />
           </div>
         </div>
