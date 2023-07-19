@@ -11,13 +11,23 @@ export default function Carousel({ content }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     arrows: false,
   };
 
   return (
-    <Slider {...settings} className="carousel">
-      {content && content.map((item) => <div key={item}>{item}</div>)}
+    <Slider
+      {...settings}
+      className="carousel"
+      style={{ display: "inline-flex" }}
+    >
+      {content &&
+        content.map((item) => (
+          <div key={item.customer} className="reviews">
+            {item.review}
+            <p className="customer">{`----${item.customer}`}</p>
+          </div>
+        ))}
     </Slider>
   );
 }

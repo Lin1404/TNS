@@ -19,8 +19,8 @@
 }
 
 .carousel {
-    height: 15rem;
-    width: 100%;
+    /* height: 15rem; */
+    width: 60%;
     align-self: center;
 }
 
@@ -28,7 +28,30 @@
     display: grid;
 }
 
-.reveiews > .reveiew {
+.reveiews > p {
     font-family: initial;
     font-size: small;
+}
+
+.footerContainer {
+    display: grid;
+}
+
+.footerContainer > .title {
+    display: flex;
+    padding: 1rem 5rem 0 5rem
+}
+
+.infoContainer {
+    display: flex;
+    padding: 1rem 5rem;
+}
+
+.map > h3 {
+    max-inline-size: fit-content;
+}
+
+.introduction{
+    /* margin-top: -1rem; */
+    margin-left: 3rem;
 }
