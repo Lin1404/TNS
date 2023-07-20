@@ -9,6 +9,8 @@ import ppg2 from "../assets/ppg2.jpeg";
 import sp2 from "../assets/sp2.jpeg";
 import geico from "../assets/geico.jpeg";
 import statefarm from "../assets/statefarm.jpeg";
+import compare1 from "../assets/compare1.jpeg";
+import compare2 from "../assets/compare2.jpeg";
 
 const reviews = [
   {
@@ -36,10 +38,11 @@ const reviews = [
   },
 ];
 
+const imgsToCompare = [compare1, compare2];
 function Partnership() {
   return (
     <div className="partnership">
-      <h1>Partnership</h1>
+      <h1 className="sectionTitle">Partnership</h1>
       <div className="certificationsLogo">
         <img src={geico} alt="illustration" />
         <img src={statefarm} alt="illustration" />
@@ -50,10 +53,13 @@ function Partnership() {
 export default function Cover() {
   return (
     <>
-      <div className="paddingBot">
+      <div className="paddingTop paddingBot">
         <img src={tnsCover} alt="illustration" style={{ width: "100%" }} />
       </div>
-      <Carousel content={reviews} />
+      <div className="backgroundColor">
+        <div className="sectionTitle">Customer Review:</div>
+        <Carousel content={reviews} />
+      </div>
       <div className="certifications paddingBot">
         <div className="certificationsInfoContainer">
           <div className="certificationsInfo">
@@ -87,7 +93,7 @@ export default function Cover() {
             <img src={ppg1} alt="illustration" style={{ width: "20%" }} />
           </div>
         </div>
-        <h2>Certifications</h2>
+        <h2 className="sectionTitle">Certifications</h2>
         <p>
           TNS Auto Group is your state of the art collision repair facility.
         </p>
@@ -114,6 +120,7 @@ export default function Cover() {
           </div>
         </div>
         <Partnership />
+        <Carousel imgs={imgsToCompare} />
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Carousel({ content }) {
+export default function Carousel({ content, imgs }) {
   const settings = {
     dots: false,
     infinite: true,
@@ -16,18 +16,22 @@ export default function Carousel({ content }) {
   };
 
   return (
-    <Slider
-      {...settings}
-      className="carousel paddingBot"
-      style={{ display: "inline-flex" }}
-    >
-      {content &&
-        content.map((item) => (
-          <div key={item.customer} className="reviews">
-            {item.review}
-            <p className="customer">{`----${item.customer}`}</p>
-          </div>
-        ))}
-    </Slider>
+    <div className="sliderContainer">
+      <Slider {...settings} className="carousel paddingBot">
+        {content &&
+          content.map((item) => (
+            <div key={item.customer} className="reviews">
+              {item.review}
+              <p className="customer">{`----${item.customer}`}</p>
+            </div>
+          ))}
+        {imgs &&
+          imgs.map((item) => (
+            <div key={item} className="compareImgs">
+              <img src={item} alt="illustration" />
+            </div>
+          ))}
+      </Slider>
+    </div>
   );
 }

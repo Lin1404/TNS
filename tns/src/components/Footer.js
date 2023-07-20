@@ -2,8 +2,8 @@ import tnsLogo from "../assets/tns.svg";
 
 export default function Footer() {
   return (
-    <div className="footerContainer">
-      <div className="title">
+    <div className="footerContainer backgroundColor">
+      <div className="tnsTitle">
         <img
           src={tnsLogo}
           alt="illustration"

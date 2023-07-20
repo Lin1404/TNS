@@ -16,22 +16,20 @@ export default function Header() {
     );
   };
   return (
-    <div className="headerBackground">
-      <div className="header">
-        <div className="group">
-          <img
-            src={tnsLogo}
-            alt="illustration"
-            style={{ width: "10%", paddingRight: "0.5rem" }}
-          />
-          <div className="title">
-            <h1>TNS Auto Collision</h1>
-            <h4>Top 1% Auto Body Shop in United State</h4>
-          </div>
+    <div className="header backgroundColor">
+      <div className="group">
+        <img
+          src={tnsLogo}
+          alt="illustration"
+          style={{ width: "10%", paddingRight: "0.5rem" }}
+        />
+        <div className="title">
+          <h1>TNS Auto Collision</h1>
+          <h4>Top 1% Auto Body Shop in United State</h4>
         </div>
-        <div className="buttonContainer">
-          <ContactButton />
-        </div>
+      </div>
+      <div className="buttonContainer">
+        <ContactButton />
       </div>
     </div>
   );
