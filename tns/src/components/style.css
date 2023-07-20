@@ -1,4 +1,6 @@
-.headerBackground {
+
+.header {
+    align-items: center;
     background-color: #fff;
 }
 
@@ -7,13 +9,17 @@
     padding: 0 1rem;
 }
 
-
 .report {
     background-color: khaki;
     border-radius: 15px;
     align-self: center;
-    /* margin-right: -10%; */
     box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2), -18px -18px 30px rgba(255, 255, 255, 1);
+}
+
+.buttonContainer {
+    display: flex;
+    padding-right: 10%;
+    justify-content: flex-end;
 }
 
 .clickButton {
@@ -40,14 +46,17 @@
     width: 30px;
 }
 .img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2), -18px -18px 30px rgba(255, 255, 255,1);
     transition: all 0.3s ease-out;
+    border-style: solid;
+    border-color: #1b73bc;
+    background-color: #e3edfe;
 }
 
 .img:active{
@@ -119,12 +128,19 @@ img:active img{
     padding-top: 5rem;
 }
 
+.certificationsInfo {
+    display: grid;
+    grid-template-rows: 1fr 1.8fr 1fr;
+    align-content: space-between;
+    justify-items: center;
+}
 .certifications > h2 {
     text-align:center;
     font-size: 47px;
     font-family: auto;
     font-style: italic;
     font-weight: 300;
+    color: darkred;
 }
 
 .certifications > p {
@@ -145,6 +161,29 @@ img:active img{
     padding: 1rem;
 }
 
-.clickButton {
+.certificationsInfoContainer {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    column-gap: 5%;
+    padding:  5% 7%;
+}
 
+.certificationsInfo > h2 {
+    font-family: system-ui;
+    font-size: 40px;
+    font-weight: 600;
+    color: #0073ba;
+}
+
+.partnership {
+    background-color: #a2b2e5;
+    padding: 5% 0;
+}
+.partnership > h1 {
+    text-align:center;
+    font-size: 47px;
+    font-family: auto;
+    font-style: italic;
+    font-weight: 300;
+    color: darkred;
 }
