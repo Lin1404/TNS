@@ -1,12 +1,12 @@
 import tnsLogo from "../assets/tns.svg";
-import { Button } from "@mui/material";
+// import { Button } from "@mui/material";
 import "./style.css";
-import { useState } from "react";
+// import { useState } from "react";
 import CallIcon from "@mui/icons-material/Call";
-import Modal from "@mui/material/Modal";
+// import Modal from "@mui/material/Modal";
 
 export default function Header() {
-  const [isShowModal, setIsShowModal] = useState(false);
+  // const [isShowModal, setIsShowModal] = useState(false);
 
   const ContactButton = () => {
     return (
@@ -25,7 +25,7 @@ export default function Header() {
         />
         <div className="title">
           <h1>TNS Auto Collision</h1>
-          <h4>Top 1% Auto Body Shop in United State</h4>
+          <h4>Top 1% Rank Auto Body Shop in United State</h4>
         </div>
       </div>
       <div className="buttonContainer">

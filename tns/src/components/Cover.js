@@ -2,7 +2,7 @@ import tnsCover from "../assets/tnsCover2.jpeg";
 import Carousel from "./Carousel";
 import ase from "../assets/ase.jpeg";
 import icarLogo from "../assets/icarLogo.jpeg";
-import icar1 from "../assets/icar1.jpeg";
+// import icar1 from "../assets/icar1.jpeg";
 import icar2 from "../assets/icar2.jpeg";
 import ppg1 from "../assets/ppg1.jpeg";
 import ppg2 from "../assets/ppg2.jpeg";
