@@ -2,21 +2,21 @@ import tnsLogo from "../assets/tns.svg";
 import { Button } from "@mui/material";
 import "./style.css";
 import { useState } from "react";
+import CallIcon from "@mui/icons-material/Call";
+import Modal from "@mui/material/Modal";
 
 export default function Header() {
-  const [isShowContect, setIsShowContect] = useState(false);
-  const ReportButton = () => {
+  const [isShowModal, setIsShowModal] = useState(false);
+
+  const ContactButton = () => {
     return (
-      <div className="report">
-        <Button onClick={() => setIsShowContect(true)}>
-          <p>Report a Claim</p>
-        </Button>
+      <div className="img">
+        <CallIcon className="buttonLetter" style={{ fontSize: "xxx-large" }} />
       </div>
     );
   };
   return (
     <div className="headerBackground">
-      {isShowContect && alert("show contect")}
       <div className="header">
         <div className="group">
           <img
@@ -29,7 +29,9 @@ export default function Header() {
             <h4>Top 1% Auto Body Shop in United State</h4>
           </div>
         </div>
-        <ReportButton />
+        <div className="buttonContainer">
+          <ContactButton />
+        </div>
       </div>
     </div>
   );
