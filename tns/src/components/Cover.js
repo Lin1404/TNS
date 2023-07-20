@@ -53,10 +53,10 @@ function Partnership() {
 export default function Cover() {
   return (
     <>
-      <div className="paddingTop paddingBot">
+      <div className="paddingTop">
         <img src={tnsCover} alt="illustration" style={{ width: "100%" }} />
       </div>
-      <div className="backgroundColor">
+      <div className="backgroundColor paddingTop">
         <div className="sectionTitle">Customer Review:</div>
         <Carousel content={reviews} />
       </div>
@@ -103,7 +103,7 @@ export default function Cover() {
           and certified repair technicians. This assures that your vehicle is
           repaired to factory specs and pre-accident condition.
         </p>
-        <div className="paddingTop">
+        <div className="paddingTop paddingBot">
           <div className="certificationsLogo">
             <img src={icar2} alt="illustration" />
             <img src={sp2} alt="illustration" style={{ height: "4rem" }} />

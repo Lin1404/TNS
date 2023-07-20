@@ -17,11 +17,11 @@ export default function Header() {
   };
   return (
     <div className="header backgroundColor">
-      <div className="group">
+      <div className="headerGroup">
         <img
           src={tnsLogo}
           alt="illustration"
-          style={{ width: "10%", paddingRight: "0.5rem" }}
+          style={{ width: "5rem", paddingRight: "1rem" }}
         />
         <div className="title">
           <h1>TNS Auto Collision</h1>
