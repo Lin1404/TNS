@@ -9,6 +9,7 @@ import ppg2 from "../assets/ppg2.jpeg";
 import sp2 from "../assets/sp2.jpeg";
 import geico from "../assets/geico.jpeg";
 import statefarm from "../assets/statefarm.jpeg";
+import usaa from "../assets/usaa.jpeg";
 import compare1 from "../assets/compare1.jpeg";
 import compare2 from "../assets/compare2.jpeg";
 
@@ -46,6 +47,7 @@ function Partnership() {
       <div className="certificationsLogo">
         <img src={geico} alt="illustration" />
         <img src={statefarm} alt="illustration" />
+        <img src={usaa} alt="illustration" />
       </div>
     </div>
   );
