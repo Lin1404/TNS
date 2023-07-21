@@ -4,7 +4,6 @@
     background-color: #fff;
     position: fixed;
     width: 100%;
-    height: 7rem;
     z-index: 99;
 }
 
@@ -13,7 +12,7 @@
 }
 .headerGroup {
     display: flex;
-    padding: 0 1rem;
+    padding: 0 5%;
     height: 80%;
     align-items: center;
 }
@@ -88,7 +87,7 @@ img:active img{
 
 .header {
     display: grid;
-    grid-template-columns: 5fr 1fr
+    grid-template-columns: 60% 40%;
 }
 
 .carousel {
@@ -120,10 +119,20 @@ img:active img{
 }
 
 .infoContainer {
-    display: flex;
-    padding: 1rem 5rem;
+    display: grid;
+    padding: 1% 3%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+.infoDetail > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map {
+    margin: 0 5% 5% 5%;
+}
 .map > h3 {
     max-inline-size: fit-content;
 }
@@ -134,7 +143,7 @@ img:active img{
 }
 
 .introduction{
-    margin-left: 3rem;
+    margin: 0 5% 5% 5%;
 }
 
 .paddingBot {
@@ -196,4 +205,42 @@ img:active img{
     font-style: italic;
     font-weight: 300;
     color: darkred;
+}
+.item {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    margin: 2%;
+    transition: .3s;
+    opacity: .3;
+}
+
+.itemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.itemContainer:hover > :hover{
+    opacity: 1;   
+    border-radius: 20px;
+    border-color: #0073ba;
+    background-color: #d7ceff;
+}
+
+.headerIcons {
+    height: 50px;
+    width: 50%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.callUsIcon{
+    margin-right: 10px;
+    color: #0073ba;
 }
