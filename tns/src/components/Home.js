@@ -1,57 +1,14 @@
 import tnsCover from "../assets/tnsCover2.jpeg";
-import Carousel from "./Carousel";
 import ase from "../assets/ase.jpeg";
 import icarLogo from "../assets/icarLogo.jpeg";
-// import icar1 from "../assets/icar1.jpeg";
 import icar2 from "../assets/icar2.jpeg";
 import ppg1 from "../assets/ppg1.jpeg";
 import ppg2 from "../assets/ppg2.jpeg";
 import sp2 from "../assets/sp2.jpeg";
-import geico from "../assets/geico.jpeg";
-import statefarm from "../assets/statefarm.jpeg";
-import usaa from "../assets/usaa.jpeg";
-import compare1 from "../assets/compare1.jpeg";
-import compare2 from "../assets/compare2.jpeg";
+import Partnership from "./modules/Partnership";
 import Modules from "./modules/Modules";
+import Reviews from "./modules/Reviews";
 
-const reviews = [
-  {
-    review: (
-      <p>
-        "Excellent service and quality work with most competitive price around
-        this area. I had my car's bumper and grille replaced here, and they did
-        a quick and fantastic job. My car looks like new again. Highly
-        recommend! Remember to ask Frank for help, he is really nice and
-        professional."
-      </p>
-    ),
-    customer: "Qingwu Zhou",
-  },
-  {
-    review: (
-      <p>
-        TNS Auto Collision did phenomenal work after a truck hit my front right
-        quarter panel, dinged my hood and broke the front right headlight. Look
-        at my before & after pics, like new! Highly recommend this body shop if
-        you want your vehicle looking like the day you drove it off the lot.
-      </p>
-    ),
-    customer: "Matt JC - NYC",
-  },
-];
-
-function Partnership() {
-  return (
-    <div className="partnership">
-      <h1 className="sectionTitle">Partnership</h1>
-      <div className="certificationsLogo">
-        <img src={geico} alt="illustration" />
-        <img src={statefarm} alt="illustration" />
-        <img src={usaa} alt="illustration" />
-      </div>
-    </div>
-  );
-}
 export default function Cover() {
   return (
     <>
@@ -121,10 +78,7 @@ export default function Cover() {
         <Partnership />
       </div>
 
-      <div className="backgroundColor paddingTop">
-        <div className="sectionTitle">Customer Review:</div>
-        <Carousel content={reviews} />
-      </div>
+      <Reviews />
       <Modules />
     </>
   );

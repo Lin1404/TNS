@@ -175,7 +175,6 @@ img:active img{
 }
 
 .certificationsLogo > img {
-    /* height: 130px; */
     width: 20%;
     padding: 1rem;
 }
@@ -197,6 +196,10 @@ img:active img{
 .partnership {
     /* background-color: #a2b2e5; */
     padding: 5% 0;
+}
+
+.partnershipLogo {
+
 }
 
 .sectionTitle {

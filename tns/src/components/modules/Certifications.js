@@ -9,7 +9,7 @@ import ppg2 from "../../assets/ppg2.jpeg";
 import sp2 from "../../assets/sp2.jpeg";
 import geico from "../../assets/geico.jpeg";
 import statefarm from "../../assets/statefarm.jpeg";
-import usaa from "../../assets/usaa.jpeg";
+import Partnership from "./Partnership";
 
 export default function Certifications() {
   useEffect(() => {
@@ -43,6 +43,7 @@ export default function Certifications() {
             style={{ paddingLeft: 0, marginLeft: "-1rem" }}
           />
         </div>
+        <Partnership />
       </div>
     </div>
   );

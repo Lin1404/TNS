@@ -11,7 +11,7 @@ export default function Modules() {
         <Button>Our Workshop</Button>
       </Link>
       <Link to={`/certifications`}>
-        <Button>Certifications Support</Button>
+        <Button>Certifications & Partnership Support</Button>
       </Link>
     </div>
   );
