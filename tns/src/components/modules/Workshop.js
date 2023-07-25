@@ -12,8 +12,10 @@ export default function Workshop() {
     <div>
       <div className="compareSections headerPadding">
         <BackToHomeButton />
-        <div className="sectionTitle">Our Workshop:</div>
-        <Carousel imgs={workshop} />
+        <div className="moduleContainer">
+          <h2 className="sectionTitle">Our Workshop:</h2>
+          <Carousel imgs={workshop} />
+        </div>
       </div>
     </div>
   );

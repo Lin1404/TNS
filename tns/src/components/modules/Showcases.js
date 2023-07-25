@@ -14,8 +14,10 @@ export default function Showcases() {
     <div>
       <div className="compareSections headerPadding">
         <BackToHomeButton />
-        <div className="sectionTitle">Case Show:</div>
-        <Carousel imgs={imgsToCompare} />
+        <div className="moduleContainer">
+          <h2 className="sectionTitle">Case Show:</h2>
+          <Carousel imgs={imgsToCompare} />
+        </div>
       </div>
     </div>
   );
