@@ -241,7 +241,12 @@ img:active img{
     transition: .5s;
 }
 
-.callUsIcon{
+.callUsIcon {
     margin-right: 10px;
     color: #0073ba;
+}
+
+
+.headerPadding {
+    padding-top: 15%;
 }

@@ -122,10 +122,6 @@ export default function Cover() {
           </div>
         </div>
         <Partnership />
-        <div className="compareSections paddingTop">
-          <div className="sectionTitle">Case Show:</div>
-          <Carousel imgs={imgsToCompare} />
-        </div>
       </div>
     </>
   );
