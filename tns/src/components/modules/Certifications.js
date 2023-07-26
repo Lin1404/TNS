@@ -5,6 +5,7 @@ import icar1 from "../../assets/icar1.jpeg";
 import icar2 from "../../assets/icar2.jpeg";
 import sp2 from "../../assets/sp2.jpeg";
 import certifications from "../../assets/certifications.png";
+import { BackToHomeIcon } from "./BackToHomeButton";
 
 export default function Certifications() {
   useEffect(() => {
@@ -15,7 +16,6 @@ export default function Certifications() {
       <BackToHomeButton />
       <div className="moduleContainer">
         <img src={certifications} alt="illustration" style={{ width: "70%" }} />
-
         <h2 className="sectionTitle">Certifications</h2>
         <p>
           TNS Auto Group is your state of the art collision repair facility.
@@ -40,6 +40,7 @@ export default function Certifications() {
             style={{ paddingLeft: 0, marginLeft: "-1rem" }}
           />
         </div>
+        <BackToHomeIcon />
       </div>
     </div>
   );

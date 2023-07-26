@@ -4,6 +4,8 @@ import BackToHomeButton from "./BackToHomeButton";
 import office from "../../assets/Office.jpeg";
 import ecoFriendly from "../../assets/ecoFriendly.png";
 import ppg2 from "../../assets/ppg2.jpeg";
+import { BackToHomeIcon } from "./BackToHomeButton";
+
 const workshop = [office];
 
 export default function Workshop() {
@@ -88,6 +90,7 @@ export default function Workshop() {
             come.
           </p>
         </div>
+        <BackToHomeIcon />
       </div>
     </div>
   );

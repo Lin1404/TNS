@@ -11,6 +11,7 @@ import MetLife from "../../assets/MetLife.png";
 import Nationwide from "../../assets/Nationwide.png";
 import Unica from "../../assets/Unica.jpeg";
 import Cei from "../../assets/Cei.jpeg";
+import BackToHomeButton from "./BackToHomeButton";
 
 export default function Partnership() {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function Partnership() {
   }, []);
   return (
     <div className="headerPadding">
+      <BackToHomeButton />
       <div className="moduleContainer">
         <h2 className="sectionTitle">Partnership</h2>
         <div className="certificationsLogo" style={{ display: "block" }}>
