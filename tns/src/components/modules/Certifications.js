@@ -2,13 +2,11 @@ import { useEffect } from "react";
 import BackToHomeButton from "./BackToHomeButton";
 import ase from "../../assets/ase.jpeg";
 import icarLogo from "../../assets/icarLogo.jpeg";
-// import icar1 from "../../assets/icar1.jpeg";
+import icar1 from "../../assets/icar1.jpeg";
 import icar2 from "../../assets/icar2.jpeg";
 import ppg1 from "../../assets/ppg1.jpeg";
 import ppg2 from "../../assets/ppg2.jpeg";
 import sp2 from "../../assets/sp2.jpeg";
-import geico from "../../assets/geico.jpeg";
-import statefarm from "../../assets/statefarm.jpeg";
 import Partnership from "./Partnership";
 
 export default function Certifications() {
@@ -30,10 +28,10 @@ export default function Certifications() {
           repaired to factory specs and pre-accident condition.
         </p>
         <div className="certificationsLogo">
+          <img src={icar1} alt="illustration" />
           <img src={icar2} alt="illustration" />
-          <img src={sp2} alt="illustration" style={{ height: "4rem" }} />
           <img
-            src={ppg2}
+            src={sp2}
             alt="illustration"
             style={{ height: "4rem", paddingRight: 0 }}
           />

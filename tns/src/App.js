@@ -7,6 +7,7 @@ import ErrorPage from "./components/ErrorPage";
 import Showcases from "./components/modules/Showcases";
 import Workshop from "./components/modules/Workshop";
 import Certifications from "./components/modules/Certifications";
+import Partnership from "./components/modules/Partnership";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
   {
     path: "/certifications",
     element: <Certifications />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/partnership",
+    element: <Partnership />,
     errorElement: <ErrorPage />,
   },
 ]);

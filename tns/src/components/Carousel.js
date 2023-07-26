@@ -27,8 +27,12 @@ export default function Carousel({ content, imgs }) {
           ))}
         {imgs &&
           imgs.map((item) => (
-            <div key={item} className="compareImgs">
-              <img src={item} alt="illustration" />
+            <div key={item} className="carouselImg">
+              <img
+                src={item}
+                alt="illustration"
+                style={{ width: "100%", height: "600px" }}
+              />
             </div>
           ))}
       </Slider>

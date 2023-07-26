@@ -1,6 +1,7 @@
 import tnsCover from "../assets/tnsCover2.jpeg";
 import ase from "../assets/ase.jpeg";
 import icarLogo from "../assets/icarLogo.jpeg";
+import icar1 from "../assets/icar1.jpeg";
 import icar2 from "../assets/icar2.jpeg";
 import ppg1 from "../assets/ppg1.jpeg";
 import ppg2 from "../assets/ppg2.jpeg";
@@ -8,6 +9,7 @@ import sp2 from "../assets/sp2.jpeg";
 import Partnership from "./modules/Partnership";
 import Modules from "./modules/Modules";
 import Reviews from "./modules/Reviews";
+import AccidentProcess from "./AccidentProcess";
 
 export default function Cover() {
   return (
@@ -15,7 +17,8 @@ export default function Cover() {
       <div className="paddingTop">
         <img src={tnsCover} alt="illustration" style={{ width: "100%" }} />
       </div>
-
+      <AccidentProcess />
+      <Partnership disableGoBack={true} />
       <div className="certifications paddingBot">
         <div className="certificationsInfoContainer">
           <div className="certificationsInfo">
@@ -61,10 +64,10 @@ export default function Cover() {
         </p>
         <div className="paddingTop paddingBot">
           <div className="certificationsLogo">
+            <img src={icar1} alt="illustration" />
             <img src={icar2} alt="illustration" />
-            <img src={sp2} alt="illustration" style={{ height: "4rem" }} />
             <img
-              src={ppg2}
+              src={sp2}
               alt="illustration"
               style={{ height: "4rem", paddingRight: 0 }}
             />
@@ -75,7 +78,6 @@ export default function Cover() {
             />
           </div>
         </div>
-        <Partnership />
       </div>
 
       <Reviews />
