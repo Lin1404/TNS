@@ -1,6 +1,5 @@
-import tnsCover from "../assets/tnsCover2.jpeg";
+import tnsCover from "../assets/tnsCover.jpeg";
 import ase from "../assets/ase.jpeg";
-import icarLogo from "../assets/icarLogo.jpeg";
 import icar1 from "../assets/icar1.jpeg";
 import icar2 from "../assets/icar2.jpeg";
 import ecoFriendly from "../assets/ecoFriendly.png";
