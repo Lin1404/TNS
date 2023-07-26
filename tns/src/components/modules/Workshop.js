@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import Carousel from "../Carousel";
 import BackToHomeButton from "./BackToHomeButton";
+import office from "../../assets/Office.jpeg";
 
-const workshop = [];
+const workshop = [office];
 
 export default function Workshop() {
   useEffect(() => {

@@ -11,15 +11,13 @@ import MetLife from "../../assets/MetLife.png";
 import Nationwide from "../../assets/Nationwide.png";
 import Unica from "../../assets/Unica.jpeg";
 import Cei from "../../assets/Cei.jpeg";
-import BackToHomeButton from "./BackToHomeButton";
 
-export default function Partnership({ disableGoBack }) {
+export default function Partnership() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="headerPadding">
-      {!disableGoBack && <BackToHomeButton />}
       <div className="moduleContainer">
         <h2 className="sectionTitle">Partnership</h2>
         <div className="certificationsLogo" style={{ display: "block" }}>
