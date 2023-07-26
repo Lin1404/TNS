@@ -16,7 +16,7 @@ const accidentProcessImgs = [
 export default function AccidentProcess() {
   return (
     <div className="moduleContainer">
-      <h2 className="sectionTitle">Handle Accident:</h2>
+      <h2 className="sectionTitle">5 Step To Handle Accident:</h2>
       <Carousel imgs={accidentProcessImgs} />
     </div>
   );

@@ -3,7 +3,7 @@ import ase from "../assets/ase.jpeg";
 import icarLogo from "../assets/icarLogo.jpeg";
 import icar1 from "../assets/icar1.jpeg";
 import icar2 from "../assets/icar2.jpeg";
-import ppg1 from "../assets/ppg1.jpeg";
+import ecoFriendly from "../assets/ecoFriendly.png";
 import ppg2 from "../assets/ppg2.jpeg";
 import sp2 from "../assets/sp2.jpeg";
 import Partnership from "./modules/Partnership";
@@ -20,22 +20,13 @@ export default function Cover() {
       <AccidentProcess />
       <Partnership />
       <div className="certifications paddingBot">
-        <div className="certificationsInfoContainer">
-          <div className="certificationsInfo">
-            <h2>I-Car</h2>
-            <p>
-              I-CAR® is a global non-profit organization focused on equipping
-              individuals in the auto collision repair industry with the
-              information, knowledge, and skills needed for safe and
-              high-quality repairs. Annually, I-CAR acknowledges outstanding
-              achievements in technical education and professionalism, honoring
-              industry leaders who prioritize training and education for
-              delivering safe and top-notch repairs that benefit consumers.
-            </p>
-            <img src={icarLogo} alt="illustration" style={{ width: "40%" }} />
-          </div>
-          <div className="certificationsInfo">
-            <h2>PPG ENVIROBASE</h2>
+        <div className="ppgAnnouncementContainer">
+          <img src={ecoFriendly} alt="illustration" style={{ width: "40%" }} />
+          <div className="ppgAnnouncement">
+            <h2>
+              Make the eco-friendly choice for your vehicle and the planet.
+              Contact us today and let's GO Green together!
+            </h2>
             <div>
               <p>
                 We proudly use PPG ENVIROBASE® paint with computer-controlled
@@ -48,10 +39,13 @@ export default function Cover() {
                 waterborne paint system in North America.
               </p>
             </div>
-
-            <img src={ppg1} alt="illustration" style={{ width: "20%" }} />
           </div>
         </div>
+        <img
+          src={ppg2}
+          alt="illustration"
+          style={{ width: "20%", paddingBottom: "5%" }}
+        />
         <h2 className="sectionTitle">Certifications</h2>
         <p>
           TNS Auto Group is your state of the art collision repair facility.
