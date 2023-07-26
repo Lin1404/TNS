@@ -13,13 +13,13 @@ import Unica from "../../assets/Unica.jpeg";
 import Cei from "../../assets/Cei.jpeg";
 import BackToHomeButton from "./BackToHomeButton";
 
-export default function Partnership() {
+export default function Partnership({ isHideGoBackButton = false }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="headerPadding">
-      <BackToHomeButton />
+      {!isHideGoBackButton && <BackToHomeButton />}
       <div className="moduleContainer">
         <h2 className="sectionTitle">Partnership</h2>
         <div className="certificationsLogo" style={{ display: "block" }}>

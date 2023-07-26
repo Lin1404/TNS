@@ -17,7 +17,7 @@ export default function Cover() {
         <img src={tnsCover} alt="illustration" style={{ width: "100%" }} />
       </div>
       <AccidentProcess />
-      <Partnership />
+      <Partnership isHideGoBackButton={true} />
       <div className="certifications paddingBot">
         <div className="ppgAnnouncementContainer">
           <img src={ecoFriendly} alt="illustration" style={{ width: "40%" }} />
