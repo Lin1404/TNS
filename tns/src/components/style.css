@@ -165,7 +165,9 @@ img:active img{
 .certifications > p {
     font-weight: 300;
     width: 80%;
-    display: inline-flex;
+    display: grid;
+    padding: 0 10%;
+    font-size: 20px;
 }
 
 .certificationsLogo {
@@ -195,12 +197,37 @@ img:active img{
 }
 
 .partnership {
-    /* background-color: #a2b2e5; */
     padding: 5% 0;
 }
 
-.partnershipLogo {
+.ppgAnnouncement {
+    padding: 0 10% 5% 10%;
+    display: grid;
+    font-weight: 300;
+    font-size: 20px;
+}
 
+.greenAnnouncementContainer {
+    display: grid;
+    grid-gap: 2rem;
+    padding: 0 10% 10% 10%;
+    background-image: url(https://www.fastweb.com/uploads/article_photo/photo/2036160/Simple_Environment.jpeg);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-color: #eff8ff;
+}
+
+.greenAnnouncementContainer > div > h2 {
+    font-family: system-ui;
+    font-size: 40px;
+    font-weight: 600;
+    color: #16a6ff;
+}
+
+.greenAnnouncementContainer > div > p {
+    font-family: system-ui;
+    color: #fff;
 }
 
 .sectionTitle {
@@ -256,6 +283,14 @@ img:active img{
 
 .moduleContainer {
     padding: 0 6% 5% 6%;
+}
+
+.moduleContainer > p {
+    font-weight: 300;
+    width: 80%;
+    display: grid;
+    padding: 0 10%;
+    font-size: 20px;
 }
 
 .modulesSection {
