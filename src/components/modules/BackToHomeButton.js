@@ -15,7 +15,7 @@ export default function BackToHomeButton() {
 
 export function BackToHomeIcon() {
   return (
-    <div style={{ padding: "10% 0 0 0" }}>
+    <div>
       <div className="backToHomeIconButton">
         <Link to={"/tns"}>
           <Tooltip title="Back to Home page">

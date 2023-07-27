@@ -13,13 +13,15 @@ import Unica from "../../assets/Unica.jpeg";
 import Cei from "../../assets/Cei.jpeg";
 import Chubb from "../../assets/Chubb.jpeg";
 import BackToHomeButton from "./BackToHomeButton";
+import { BackToHomeIcon } from "./BackToHomeButton";
 
 export default function Partnership({ isHideGoBackButton = false }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="headerPadding">
+    <>
+      {!isHideGoBackButton && <div className="headerPadding" />}
       {!isHideGoBackButton && <BackToHomeButton />}
       <div className="moduleContainer">
         <h2 className="sectionTitle">Partnership</h2>
@@ -38,7 +40,12 @@ export default function Partnership({ isHideGoBackButton = false }) {
           <img src={Cei} alt="illustration" />
           <img src={Chubb} alt="illustration" />
         </div>
+        {!isHideGoBackButton && (
+          <div style={{ padding: "10% 0 0 0" }}>
+            <BackToHomeIcon />
+          </div>
+        )}
       </div>
-    </div>
+    </>
   );
 }
