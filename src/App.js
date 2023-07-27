@@ -11,7 +11,7 @@ import Partnership from "./components/modules/Partnership";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/tns",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
