@@ -11,6 +11,7 @@ import MetLife from "../../assets/MetLife.png";
 import Nationwide from "../../assets/Nationwide.png";
 import Unica from "../../assets/Unica.jpeg";
 import Cei from "../../assets/Cei.jpeg";
+import Chubb from "../../assets/Chubb.jpeg";
 import BackToHomeButton from "./BackToHomeButton";
 
 export default function Partnership({ isHideGoBackButton = false }) {
@@ -35,6 +36,7 @@ export default function Partnership({ isHideGoBackButton = false }) {
           <img src={CountryWide} alt="illustration" />
           <img src={Unica} alt="illustration" />
           <img src={Cei} alt="illustration" />
+          <img src={Chubb} alt="illustration" />
         </div>
       </div>
     </div>
