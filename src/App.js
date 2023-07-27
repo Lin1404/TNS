@@ -16,22 +16,22 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/showcases",
+    path: "/tns/showcases",
     element: <Showcases />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/workshop",
+    path: "/tns/workshop",
     element: <Workshop />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/certifications",
+    path: "/tns/certifications",
     element: <Certifications />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/partnership",
+    path: "/tns/partnership",
     element: <Partnership />,
     errorElement: <ErrorPage />,
   },

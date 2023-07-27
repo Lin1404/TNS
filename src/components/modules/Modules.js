@@ -2,10 +2,10 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const modulesRouting = [
-  { path: "/showcases", label: "Show Cases" },
-  { path: "/workshop", label: "Our Workshop" },
-  { path: "/certifications", label: "Certifications" },
-  { path: "/partnership", label: "Partnership Support" },
+  { path: "/tns/showcases", label: "Show Cases" },
+  { path: "/tns/workshop", label: "Our Workshop" },
+  { path: "/tns/certifications", label: "Certifications" },
+  { path: "/tns/partnership", label: "Partnership Support" },
 ];
 
 export default function Modules() {
