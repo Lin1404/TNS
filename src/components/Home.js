@@ -9,6 +9,7 @@ import Partnership from "./modules/Partnership";
 import Modules from "./modules/Modules";
 import Reviews from "./modules/Reviews";
 import AccidentProcess from "./AccidentProcess";
+import RepairProcess from "./RepairProcess";
 
 export default function Cover() {
   return (
@@ -17,6 +18,7 @@ export default function Cover() {
         <img src={tnsCover} alt="illustration" style={{ width: "100%" }} />
       </div>
       <AccidentProcess />
+      <RepairProcess />
       <Partnership isHideGoBackButton={true} />
       <div className="certifications paddingBot">
         <div className="ppgAnnouncementContainer">

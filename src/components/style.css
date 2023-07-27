@@ -293,6 +293,10 @@ img:active img{
     font-size: 20px;
 }
 
+.showcaseContainer {
+    width: 50%;
+}
+
 .modulesSection {
     display: grid;
     justify-content: center;

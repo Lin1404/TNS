@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import Carousel from "../Carousel";
-import compare1 from "../../assets/compare1.jpeg";
-import compare2 from "../../assets/compare2.jpeg";
+import compare3 from "../../assets/compare3.png";
 import BackToHomeButton from "./BackToHomeButton";
 import { BackToHomeIcon } from "./BackToHomeButton";
-const imgsToCompare = [compare1, compare2];
+const imgsToCompare = [compare3];
 
 export default function Showcases() {
   useEffect(() => {
@@ -15,9 +14,11 @@ export default function Showcases() {
       <BackToHomeButton />
       <div className="moduleContainer">
         <h2 className="sectionTitle">Case Show:</h2>
-        <Carousel imgs={imgsToCompare} />
+        <div className="showcaseContainer">
+          <Carousel imgs={imgsToCompare} />
+        </div>
+        <BackToHomeIcon />
       </div>
-      <BackToHomeIcon />
     </div>
   );
 }
