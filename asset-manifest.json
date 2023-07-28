@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/tns/static/css/main.347fabe0.css",
-    "main.js": "/tns/static/js/main.5d5ef8ac.js",
+    "main.css": "/tns/static/css/main.59f4be99.css",
+    "main.js": "/tns/static/js/main.ac224a6a.js",
     "static/js/787.0b6ce9d3.chunk.js": "/tns/static/js/787.0b6ce9d3.chunk.js",
-    "static/media/certifications.png": "/tns/static/media/certifications.ceb080002c8da069e674.png",
+    "static/media/compare3.png": "/tns/static/media/compare3.92b3796ba1fd7659243b.png",
     "static/media/tnsCover.jpeg": "/tns/static/media/tnsCover.cc9fe31e7916ce71deaf.jpeg",
+    "static/media/process.png": "/tns/static/media/process.969200c5d45b92d87520.png",
     "static/media/ecoFriendly.png": "/tns/static/media/ecoFriendly.96305dac288f17b4dbc2.png",
     "static/media/callPolice.jpeg": "/tns/static/media/callPolice.94497a4292b271171dc2.jpeg",
     "static/media/Office.jpeg": "/tns/static/media/Office.a4a78ebc53905730587e.jpeg",
     "static/media/tns.svg": "/tns/static/media/tns.9f9227bd2b568978bb1da872025bc0a5.svg",
     "static/media/takeEveident.jpeg": "/tns/static/media/takeEveident.7180d12bbfe997d39c83.jpeg",
     "static/media/notAdmit.jpeg": "/tns/static/media/notAdmit.d6b8666cd859c43102fa.jpeg",
-    "static/media/compare1.jpeg": "/tns/static/media/compare1.2573eeda5ea5ab0ee280.jpeg",
     "static/media/Farmers.jpeg": "/tns/static/media/Farmers.62aa10545954ba8c361a.jpeg",
     "static/media/Hanover.png": "/tns/static/media/Hanover.d310cab3214664f150be.png",
-    "static/media/compare2.jpeg": "/tns/static/media/compare2.57789c344e20cbf7f00a.jpeg",
     "static/media/exchangeInfo1.jpeg": "/tns/static/media/exchangeInfo1.4de817bdc4e410050071.jpeg",
     "static/media/MetLife.png": "/tns/static/media/MetLife.0b1fe881d4b192d02777.png",
     "static/media/Nationwide.png": "/tns/static/media/Nationwide.151693405508b803882d.png",
@@ -22,6 +21,7 @@
     "static/media/icar1.jpeg": "/tns/static/media/icar1.8b69ab0d23765391bd98.jpeg",
     "static/media/statefarm.jpeg": "/tns/static/media/statefarm.0f523307f5055ef3e857.jpeg",
     "static/media/CountryWide.png": "/tns/static/media/CountryWide.a4c5b62a8ee8c64ef079.png",
+    "static/media/Chubb.jpeg": "/tns/static/media/Chubb.7b2191089fdb6d00825b.jpeg",
     "static/media/Kemper.jpeg": "/tns/static/media/Kemper.e8d5910b047127cf8653.jpeg",
     "static/media/icar2.jpeg": "/tns/static/media/icar2.3f55222086dc8f8c45bb.jpeg",
     "static/media/ase.jpeg": "/tns/static/media/ase.e14231fd36f4703596b0.jpeg",
@@ -31,12 +31,12 @@
     "static/media/slick.ttf": "/tns/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/tns/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tns/index.html",
-    "main.347fabe0.css.map": "/tns/static/css/main.347fabe0.css.map",
-    "main.5d5ef8ac.js.map": "/tns/static/js/main.5d5ef8ac.js.map",
+    "main.59f4be99.css.map": "/tns/static/css/main.59f4be99.css.map",
+    "main.ac224a6a.js.map": "/tns/static/js/main.ac224a6a.js.map",
     "787.0b6ce9d3.chunk.js.map": "/tns/static/js/787.0b6ce9d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.347fabe0.css",
-    "static/js/main.5d5ef8ac.js"
+    "static/css/main.59f4be99.css",
+    "static/js/main.ac224a6a.js"
   ]
 }
