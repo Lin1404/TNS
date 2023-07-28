@@ -1,7 +1,7 @@
 import Carousel from "./Carousel";
-import CarRepairs from "../assets/CarRepairs.jpg";
+import process from "../assets/process.png";
 
-const repairProcessImgs = [CarRepairs];
+const repairProcessImgs = [process];
 
 export default function RepairProcess() {
   return (

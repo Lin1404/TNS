@@ -148,7 +148,7 @@ img:active img{
 }
 
 .paddingBot {
-    padding-bottom: 5rem;
+    padding-bottom: 5%;
 }
 
 .paddingTop {
@@ -329,4 +329,23 @@ img:active img{
     align-items: center;
     justify-content: center;
     justify-items: center;
+}
+
+.certificationsExpand {
+    padding:5%;
+}
+.certificationsExpand > h2 {
+    color: #16a6ff;
+}
+.certificationsExpand > h2 > div {
+    font-size: 15px;
+    font-family: cursive;
+    color: #1c70a2;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.certificationsExpand > p {
+    font-weight: 300;
+    font-size: 20px;
 }

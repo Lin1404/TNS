@@ -16,10 +16,8 @@ export default function Workshop() {
     <div>
       <div className="compareSections headerPadding">
         <BackToHomeButton />
-        <div className="moduleContainer">
-          <h2 className="sectionTitle">Our Workshop:</h2>
-          <Carousel imgs={workshop} />
-        </div>
+        <h2 className="sectionTitle">Our Workshop:</h2>
+        <Carousel imgs={workshop} />
       </div>
       <div className="ppgAnnouncementContainer">
         <img src={ecoFriendly} alt="illustration" style={{ width: "40%" }} />
@@ -90,8 +88,9 @@ export default function Workshop() {
             come.
           </p>
         </div>
-        <BackToHomeIcon />
       </div>
+      <BackToHomeIcon />
+      <div className="paddingBot" />
     </div>
   );
 }
