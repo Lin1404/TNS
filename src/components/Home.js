@@ -1,4 +1,4 @@
-import tnsCover from "../assets/tnsCover.jpeg";
+import cover from "../assets/cover.png";
 import ase from "../assets/ase.jpeg";
 import icar1 from "../assets/icar1.jpeg";
 import icar2 from "../assets/icar2.jpeg";
@@ -15,7 +15,7 @@ export default function Cover() {
   return (
     <>
       <div className="paddingTop">
-        <img src={tnsCover} alt="illustration" style={{ width: "100%" }} />
+        <img src={cover} alt="illustration" style={{ width: "100%" }} />
       </div>
       <AccidentProcess />
       <RepairProcess />
