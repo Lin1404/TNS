@@ -1,4 +1,7 @@
 import Carousel from "../Carousel";
+import google from "../../assets/googleIcon.png";
+import yelp from "../../assets/yelpIcon.png";
+import carwise from "../../assets/carwiseIcon.png";
 
 const reviews = [
   {
@@ -31,6 +34,18 @@ export default function Reviews() {
     <div className="backgroundColor paddingTop">
       <div className="sectionTitle">Customer Review:</div>
       <Carousel content={reviews} />
+      <div className="reviewLinksContainer">
+        Exploring more customer reviews on:
+        <a href="https://www.google.com/search?q=tns+auto+group&oq=tns&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRhAMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgzMTE2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x89c24524a9cc1fb9:0x14d0637150a89e4f,1,,,,">
+          <img src={google} alt="illustration" style={{ width: "70%" }} />
+        </a>
+        <a href="https://www.yelp.com/biz/tns-auto-group-brooklyn">
+          <img src={yelp} alt="illustration" style={{ width: "100%" }} />
+        </a>
+        <a href="https://www.carwise.com/auto-body-shops/tns-auto-collision-brooklyn-ny-11219/499040">
+          <img src={carwise} alt="illustration" style={{ width: "80%" }} />
+        </a>
+      </div>
     </div>
   );
 }

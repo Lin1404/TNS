@@ -348,3 +348,14 @@ img:active img{
     font-weight: 300;
     font-size: 20px;
 }
+
+.reviewLinksContainer {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.reviewLinksContainer > a {
+    width: 7%;
+}
