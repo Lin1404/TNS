@@ -1,21 +1,22 @@
-import cover from "../assets/cover.png";
 import ase from "../assets/ase.jpeg";
-import icar1 from "../assets/icar1.jpeg";
 import icar2 from "../assets/icar2.jpeg";
 import ecoFriendly from "../assets/ecoFriendly.png";
 import ppg2 from "../assets/ppg2.jpeg";
 import sp2 from "../assets/sp2.jpeg";
-import Partnership from "./modules/Partnership";
+import Partnership from "./modules/DRP";
 import Modules from "./modules/Modules";
 import Reviews from "./modules/Reviews";
 import AccidentProcess from "./AccidentProcess";
 import RepairProcess from "./RepairProcess";
+import tnsAnime from "../assets/tnsAnime.mp4";
 
-export default function Cover() {
+export default function Home() {
   return (
     <>
       <div className="paddingTop">
-        <img src={cover} alt="illustration" style={{ width: "100%" }} />
+        <video className="VideoTag" autoPlay loop muted>
+          <source src={tnsAnime} type="video/mp4" />
+        </video>
       </div>
       <AccidentProcess />
       <RepairProcess />
@@ -59,7 +60,6 @@ export default function Cover() {
         </p>
         <div className="paddingTop paddingBot">
           <div className="certificationsLogo">
-            <img src={icar1} alt="illustration" />
             <img src={icar2} alt="illustration" />
             <img
               src={sp2}
