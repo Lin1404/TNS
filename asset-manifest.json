@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tns/static/css/main.fd48b71b.css",
-    "main.js": "/tns/static/js/main.749df290.js",
+    "main.css": "/tns/static/css/main.37073df4.css",
+    "main.js": "/tns/static/js/main.5bea6ab7.js",
     "static/js/787.0b6ce9d3.chunk.js": "/tns/static/js/787.0b6ce9d3.chunk.js",
     "static/media/tnsAnime.mp4": "/tns/static/media/tnsAnime.bf16f81127c316297a6d.mp4",
     "static/media/compare3.png": "/tns/static/media/compare3.92b3796ba1fd7659243b.png",
@@ -17,6 +17,7 @@
     "static/media/Hanover.png": "/tns/static/media/Hanover.d310cab3214664f150be.png",
     "static/media/exchangeInfo1.jpeg": "/tns/static/media/exchangeInfo1.4de817bdc4e410050071.jpeg",
     "static/media/MetLife.png": "/tns/static/media/MetLife.0b1fe881d4b192d02777.png",
+    "static/media/yelpIcon.png": "/tns/static/media/yelpIcon.9ebebdb999f64454a43f.png",
     "static/media/Nationwide.png": "/tns/static/media/Nationwide.151693405508b803882d.png",
     "static/media/checkSafety.jpeg": "/tns/static/media/checkSafety.3406bfe9db74fc7450c0.jpeg",
     "static/media/statefarm.jpeg": "/tns/static/media/statefarm.0f523307f5055ef3e857.jpeg",
@@ -31,12 +32,12 @@
     "static/media/slick.ttf": "/tns/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/tns/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tns/index.html",
-    "main.fd48b71b.css.map": "/tns/static/css/main.fd48b71b.css.map",
-    "main.749df290.js.map": "/tns/static/js/main.749df290.js.map",
+    "main.37073df4.css.map": "/tns/static/css/main.37073df4.css.map",
+    "main.5bea6ab7.js.map": "/tns/static/js/main.5bea6ab7.js.map",
     "787.0b6ce9d3.chunk.js.map": "/tns/static/js/787.0b6ce9d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd48b71b.css",
-    "static/js/main.749df290.js"
+    "static/css/main.37073df4.css",
+    "static/js/main.5bea6ab7.js"
   ]
 }
