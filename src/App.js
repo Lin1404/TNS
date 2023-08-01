@@ -7,7 +7,7 @@ import ErrorPage from "./components/ErrorPage";
 import Showcases from "./components/modules/Showcases";
 import Workshop from "./components/modules/Workshop";
 import Certifications from "./components/modules/Certifications";
-import Partnership from "./components/modules/Partnership";
+import DRP from "./components/modules/DRP";
 
 const router = createBrowserRouter([
   {
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tns/partnership",
-    element: <Partnership />,
+    path: "/tns/drp",
+    element: <DRP />,
     errorElement: <ErrorPage />,
   },
 ]);
