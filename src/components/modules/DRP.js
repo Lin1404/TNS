@@ -24,7 +24,7 @@ export default function DRP({ isHideGoBackButton = false }) {
       {!isHideGoBackButton && <div className="headerPadding" />}
       {!isHideGoBackButton && <BackToHomeButton />}
       <div className="moduleContainer">
-        <h2 className="sectionTitle">Partnership</h2>
+        <h2 className="sectionTitle">DRP Partnerwith</h2>
         <div className="certificationsLogo" style={{ display: "block" }}>
           <img src={geico} alt="illustration" />
           <img src={statefarm} alt="illustration" />

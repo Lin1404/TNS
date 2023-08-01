@@ -6,14 +6,14 @@ import BackToHomeButton from "./BackToHomeButton";
 import { BackToHomeIcon } from "./BackToHomeButton";
 const imgsToCompare = [compare3, compare5];
 
-export default function Showcases() {
+export default function BeforeAndAfter() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="compareSections headerPadding">
       <BackToHomeButton />
-      <h2 className="sectionTitle">Case Show:</h2>
+      <h2 className="sectionTitle">Before & After Photos:</h2>
       <Carousel imgs={imgsToCompare} />
       <BackToHomeIcon />
       <div className="paddingBot" />

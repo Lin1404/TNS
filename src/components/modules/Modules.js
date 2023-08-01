@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const modulesRouting = [
   { path: "/tns/drp", label: "DRP Partnerwith" },
-  { path: "/tns/showcases", label: "Before and After Photos" },
+  { path: "/tns/beforeandafter", label: "Before and After Photos" },
   { path: "/tns/team", label: "Our Team" },
   { path: "/tns/certifications", label: "Certifications" },
 ];
