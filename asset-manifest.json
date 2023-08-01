@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/tns/static/css/main.bff198e9.css",
-    "main.js": "/tns/static/js/main.5455a81e.js",
+    "main.css": "/tns/static/css/main.fd48b71b.css",
+    "main.js": "/tns/static/js/main.271cf16c.js",
     "static/js/787.0b6ce9d3.chunk.js": "/tns/static/js/787.0b6ce9d3.chunk.js",
-    "static/media/cover.png": "/tns/static/media/cover.dac711c13180fca17027.png",
-    "static/media/process.png": "/tns/static/media/process.8ec10b2573b655338342.png",
+    "static/media/tnsAnime.mp4": "/tns/static/media/tnsAnime.157bbeec05e79e46358c.mp4",
     "static/media/compare3.png": "/tns/static/media/compare3.92b3796ba1fd7659243b.png",
+    "static/media/process.png": "/tns/static/media/process.bd029692b3ce0096127e.png",
     "static/media/compare5.png": "/tns/static/media/compare5.d13d3ea9023bff0cc8dc.png",
     "static/media/ecoFriendly.png": "/tns/static/media/ecoFriendly.96305dac288f17b4dbc2.png",
     "static/media/callPolice.jpeg": "/tns/static/media/callPolice.94497a4292b271171dc2.jpeg",
@@ -19,7 +19,6 @@
     "static/media/MetLife.png": "/tns/static/media/MetLife.0b1fe881d4b192d02777.png",
     "static/media/Nationwide.png": "/tns/static/media/Nationwide.151693405508b803882d.png",
     "static/media/checkSafety.jpeg": "/tns/static/media/checkSafety.3406bfe9db74fc7450c0.jpeg",
-    "static/media/icar1.jpeg": "/tns/static/media/icar1.8b69ab0d23765391bd98.jpeg",
     "static/media/statefarm.jpeg": "/tns/static/media/statefarm.0f523307f5055ef3e857.jpeg",
     "static/media/CountryWide.png": "/tns/static/media/CountryWide.a4c5b62a8ee8c64ef079.png",
     "static/media/Chubb.jpeg": "/tns/static/media/Chubb.7b2191089fdb6d00825b.jpeg",
@@ -32,12 +31,12 @@
     "static/media/slick.ttf": "/tns/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/tns/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tns/index.html",
-    "main.bff198e9.css.map": "/tns/static/css/main.bff198e9.css.map",
-    "main.5455a81e.js.map": "/tns/static/js/main.5455a81e.js.map",
+    "main.fd48b71b.css.map": "/tns/static/css/main.fd48b71b.css.map",
+    "main.271cf16c.js.map": "/tns/static/js/main.271cf16c.js.map",
     "787.0b6ce9d3.chunk.js.map": "/tns/static/js/787.0b6ce9d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bff198e9.css",
-    "static/js/main.5455a81e.js"
+    "static/css/main.fd48b71b.css",
+    "static/js/main.271cf16c.js"
   ]
 }
