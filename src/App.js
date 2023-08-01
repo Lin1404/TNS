@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ErrorPage from "./components/ErrorPage";
 import Showcases from "./components/modules/Showcases";
-import Workshop from "./components/modules/Workshop";
+import Team from "./components/modules/Team";
 import Certifications from "./components/modules/Certifications";
 import DRP from "./components/modules/DRP";
 
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tns/workshop",
-    element: <Workshop />,
+    path: "/tns/team",
+    element: <Team />,
     errorElement: <ErrorPage />,
   },
   {
