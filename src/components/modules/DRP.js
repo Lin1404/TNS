@@ -15,7 +15,7 @@ import Chubb from "../../assets/Chubb.jpeg";
 import BackToHomeButton from "./BackToHomeButton";
 import { BackToHomeIcon } from "./BackToHomeButton";
 
-export default function Partnership({ isHideGoBackButton = false }) {
+export default function DRP({ isHideGoBackButton = false }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

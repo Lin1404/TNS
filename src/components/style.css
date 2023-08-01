@@ -298,14 +298,13 @@ img:active img{
 }
 
 .modulesSection {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 90%;
-    align-content: center;
     justify-items: center;
     margin: 5%;
+    gap: 2%;
 }
 
 .moduleButtonContainer {
