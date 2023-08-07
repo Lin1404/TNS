@@ -47,6 +47,11 @@
     .reviewModulepaddingTop {
         padding-top: 10%;
     }
+
+    .certificationsLogo {
+        flex-direction: column;
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 480px) {
