@@ -9,7 +9,7 @@ export default function Footer() {
         <img
           src={tnsLogo}
           alt="illustration"
-          style={{ width: "5%", paddingRight: "0.5rem" }}
+          // style={{ width: "5%", paddingRight: "0.5rem" }}
         />
         <h3>TNS Auto Collision</h3>
       </div>

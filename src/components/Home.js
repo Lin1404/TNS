@@ -58,7 +58,7 @@ export default function Home() {
           and certified repair technicians. This assures that your vehicle is
           repaired to factory specs and pre-accident condition.
         </p>
-        <div className="paddingTop paddingBot">
+        <div className="certificationModulePadding paddingBot">
           <div className="certificationsLogo">
             <img src={icar2} alt="illustration" />
             <img

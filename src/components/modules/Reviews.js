@@ -31,7 +31,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <div className="backgroundColor paddingTop">
+    <div className="backgroundColor reviewModulepaddingTop">
       <div className="sectionTitle">Customer Review:</div>
       <Carousel content={reviews} />
       <div className="reviewLinksContainer">

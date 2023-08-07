@@ -1,15 +1,89 @@
 
 .header {
     align-items: center;
-    background-color: #fff;
     position: fixed;
     width: 100%;
     z-index: 99;
+    display: grid;
 }
 
+@media (max-width: 480px) {
+    .headerGroup {
+        flex-direction: column;
+    }
+
+    .paddingTop {
+        padding-top: 81%;
+    }
+
+    .itemContainer {
+        flex-direction: column;
+    }
+
+    .VideoTag {
+        width: 100%;
+    }
+
+    .modulesSection {
+        flex-direction: column;
+    }
+
+    .map > iframe {
+        width: 100%;
+    }
+
+    .moduleButtonContainer {
+        margin: 2%;
+    }
+    .tnsTitle {
+        padding-top: 5%;
+    }
+
+    .tnsTitle > img {
+        width: 20%;
+        padding-right: 0.5rem;
+    }
+    
+    .reviewModulepaddingTop {
+        padding-top: 10%;
+    }
+}
+
+@media (min-width: 480px) {
+    .infoContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .header {
+        grid-template-columns: 60% 40%;
+    }
+
+    .paddingTop {
+        padding-top: 10%;
+    }
+
+    .tnsTitle {
+        font-size: 30px;
+        gap: 1rem;
+    }
+
+    .tnsTitle > img {
+        width: 5%;
+        padding-right: 0.5rem;
+    }
+
+    .certificationModulePadding {
+        padding-top: 81%;
+    }
+
+    .reviewModulepaddingTop {
+        padding-top: 81%;
+    }
+}
 .backgroundColor {
     background-color: aliceblue;
 }
+
 .headerGroup {
     display: flex;
     padding: 0 5%;
@@ -85,11 +159,6 @@ img:active img{
     transition: all 0.3 ease-out;
 }
 
-.header {
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-
 .carousel {
     width: 80%;
     align-self: center;
@@ -109,19 +178,16 @@ img:active img{
     display: grid;
 }
 
-.footerContainer > .tnsTitle {
+.tnsTitle {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
-    gap: 1rem;
     color: #1b73bc;
 }
 
 .infoContainer {
     display: grid;
     padding: 1% 3%;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .infoDetail > div {
@@ -151,9 +217,7 @@ img:active img{
     padding-bottom: 5%;
 }
 
-.paddingTop {
-    padding-top: 7rem;
-}
+
 
 .certificationsInfo {
     display: grid;
