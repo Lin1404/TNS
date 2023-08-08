@@ -7,6 +7,8 @@
     display: grid;
 }
 
+
+
 @media (max-width: 480px) {
     .headerGroup {
         flex-direction: column;
@@ -52,6 +54,21 @@
         flex-direction: column;
         margin-left: 0;
     }
+
+    .headerPadding {
+        padding-top: 80%;
+    }
+
+    .greenAnnouncementContainer {
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+}
+
+@media (max-width: 320px) {
+    .headerPadding {
+        padding-top: 90%;
+    }
 }
 
 @media (min-width: 480px) {
@@ -83,6 +100,15 @@
 
     .reviewModulepaddingTop {
         padding-top: 81%;
+    }
+
+    .headerPadding {
+        padding-top: 15%;
+    }
+
+    .greenAnnouncementContainer {
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
     }
 }
 .backgroundColor {
@@ -281,8 +307,6 @@ img:active img{
     grid-gap: 2rem;
     padding: 0 10% 10% 10%;
     background-image: url(https://www.fastweb.com/uploads/article_photo/photo/2036160/Simple_Environment.jpeg);
-    background-size: 100% 90%;
-    background-repeat: no-repeat;
     opacity: 0.8;
     background-color: #eff8ff;
 }
@@ -344,10 +368,6 @@ img:active img{
 .callUsIcon {
     margin-right: 10px;
     color: #0073ba;
-}
-
-.headerPadding {
-    padding-top: 15%;
 }
 
 .moduleContainer {
