@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="info">
             <h3>Contact us:</h3>
             <div className="infoDetail">
-              <h4>Time</h4>
+              <h4>Hour</h4>
               <div>Monday - Friday 7AM - 5PM</div>
               <div>Saturday 7AM - 3PM</div>
             </div>
