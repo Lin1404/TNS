@@ -13,7 +13,7 @@ import tnsAnime from "../assets/tnsAnime.mp4";
 export default function Home() {
   return (
     <>
-      <div className="paddingTop videoWidth">
+      <div className="paddingTop">
         <video
           className="VideoTag"
           autoPlay
