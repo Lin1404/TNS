@@ -40,19 +40,19 @@ export default function Reviews() {
           target="blank"
           href="https://www.google.com/search?q=tns+auto+group&oq=tns&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRhAMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgzMTE2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x89c24524a9cc1fb9:0x14d0637150a89e4f,1,,,,"
         >
-          <img src={google} alt="illustration" style={{ width: "70%" }} />
-        </a>
-        <a
-          target="blank"
-          href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
-        >
-          <img src={yelp} alt="illustration" style={{ width: "100%" }} />
+          <img src={google} alt="illustration" className="reviewImgs" />
         </a>
         <a
           target="blank"
           href="https://www.carwise.com/auto-body-shops/tns-auto-collision-brooklyn-ny-11219/499040"
         >
-          <img src={carwise} alt="illustration" style={{ width: "80%" }} />
+          <img src={carwise} alt="illustration" className="reviewImgs" />
+        </a>
+        <a
+          target="blank"
+          href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
+        >
+          <img src={yelp} alt="illustration" className="reviewImgs" />
         </a>
       </div>
     </div>
