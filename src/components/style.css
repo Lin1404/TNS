@@ -7,11 +7,8 @@
     display: grid;
 }
 
-/* .videoWidth {
-    width: fill-available;
-} */
 .VideoTag {
-    width: fill-available;
+    width: -webkit-fill-available;
 }
 
 @media (max-width: 480px) {
@@ -21,6 +18,7 @@
 
     .paddingTop {
         padding-top: 81%;
+        background-color: #eff8ff;
     }
 
     .itemContainer {
@@ -73,18 +71,22 @@
         width: 80%;
         padding: 10% 5% 5% 5%;
     }
-    /* .certificationModulePadding {
-        padding-top: 81%;
-    }
 
-    .reviewModulepaddingTop {
-        padding-top: 81%;
-    } */
+    .reviewLinksContainer > a {
+        width: 15%;
+    }
 }
 
 @media (max-width: 320px) {
     .headerPadding {
         padding-top: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    .paddingTop {
+        padding-top: 110%;
+        background-color: #eff8ff;
     }
 }
 
@@ -98,7 +100,8 @@
     }
 
     .paddingTop {
-        padding-top: 10%;
+        padding-top: 11%;
+        background-color: #eff8ff;
     }
 
     .tnsTitle {
@@ -123,6 +126,10 @@
     .certificationsLogo > img {
         width: 20%;
         padding: 1rem;
+    }
+     
+    .reviewLinksContainer > a {
+        width: 7%;
     }
 }
 .backgroundColor {
@@ -454,8 +461,9 @@ img:active img{
     width: 60%;
     align-items: center;
     padding-left: 5%;
+    gap: 5%;
 }
 
-.reviewLinksContainer > a {
-    width: 7%;
+.reviewImgs {
+    width: -webkit-fill-available;
 }
