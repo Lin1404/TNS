@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/tnsauto/static/css/main.54ad72b6.css",
-    "main.js": "/tnsauto/static/js/main.418f540a.js",
+    "main.js": "/tnsauto/static/js/main.18f37430.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.bf16f81127c316297a6d.mp4",
     "static/media/compare3.png": "/tnsauto/static/media/compare3.92b3796ba1fd7659243b.png",
-    "static/media/process.png": "/tnsauto/static/media/process.bd029692b3ce0096127e.png",
+    "static/media/process.png": "/tnsauto/static/media/process.17836788eef0f98fb4c9.png",
     "static/media/compare5.png": "/tnsauto/static/media/compare5.d13d3ea9023bff0cc8dc.png",
     "static/media/ecoFriendly.png": "/tnsauto/static/media/ecoFriendly.96305dac288f17b4dbc2.png",
     "static/media/callPolice.jpeg": "/tnsauto/static/media/callPolice.94497a4292b271171dc2.jpeg",
@@ -33,11 +33,11 @@
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
     "main.54ad72b6.css.map": "/tnsauto/static/css/main.54ad72b6.css.map",
-    "main.418f540a.js.map": "/tnsauto/static/js/main.418f540a.js.map",
+    "main.18f37430.js.map": "/tnsauto/static/js/main.18f37430.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54ad72b6.css",
-    "static/js/main.418f540a.js"
+    "static/js/main.18f37430.js"
   ]
 }
