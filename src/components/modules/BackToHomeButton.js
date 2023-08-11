@@ -5,7 +5,7 @@ import Tooltip from "@mui/material/Tooltip";
 
 export default function BackToHomeButton() {
   return (
-    <Link to={"/tns"}>
+    <Link to={"/tnsauto"}>
       <Tooltip title="Back to Home page">
         <Button style={{ display: "block" }}>Back to Home Page</Button>
       </Tooltip>
@@ -17,7 +17,7 @@ export function BackToHomeIcon() {
   return (
     <div>
       <div className="backToHomeIconButton">
-        <Link to={"/tns"}>
+        <Link to={"/tnsauto"}>
           <Tooltip title="Back to Home page">
             <Button style={{ display: "block" }}>
               <ArrowBackIcon variant="contained" style={{ color: "white" }} />

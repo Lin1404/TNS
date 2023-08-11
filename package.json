@@ -1,7 +1,7 @@
 {
-  "name": "tns",
+  "name": "tnsauto",
   "version": "0.1.0",
-  "homepage": "https://lin1404.github.io/tns/",
+  "homepage": "https://lin1404.github.io/tnsauto/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
