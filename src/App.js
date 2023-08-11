@@ -11,27 +11,27 @@ import DRP from "./components/modules/DRP";
 
 const router = createBrowserRouter([
   {
-    path: "/tns",
+    path: "/tnsauto",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tns/beforeandafter",
+    path: "/tnsauto/beforeandafter",
     element: <BeforeAndAfter />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tns/team",
+    path: "/tnsauto/team",
     element: <Team />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tns/certifications",
+    path: "/tnsauto/certifications",
     element: <Certifications />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tns/drp",
+    path: "/tnsauto/drp",
     element: <DRP />,
     errorElement: <ErrorPage />,
   },
