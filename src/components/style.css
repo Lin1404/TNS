@@ -16,7 +16,8 @@
 }
 
 .certificationsLogo > img {
-    width: 100%;
+    width: 90%;
+    padding: 2% 5%;
 }
 
 @media (max-width: 950px) {
