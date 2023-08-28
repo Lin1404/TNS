@@ -1,10 +1,13 @@
 import { useEffect } from "react";
 import Carousel from "../Carousel";
+import compare1 from "../../assets/compare1.png";
+import compare2 from "../../assets/compare2.png";
 import compare3 from "../../assets/compare3.png";
+import compare4 from "../../assets/compare4.png";
 import compare5 from "../../assets/compare5.png";
 import BackToHomeButton from "./BackToHomeButton";
 import { BackToHomeIcon } from "./BackToHomeButton";
-const imgsToCompare = [compare3, compare5];
+const imgsToCompare = [compare1, compare2, compare3, compare4, compare5];
 
 export default function BeforeAndAfter() {
   useEffect(() => {
