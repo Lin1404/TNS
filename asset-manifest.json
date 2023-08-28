@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tnsauto/static/css/main.54ad72b6.css",
-    "main.js": "/tnsauto/static/js/main.18f37430.js",
+    "main.css": "/tnsauto/static/css/main.8360b020.css",
+    "main.js": "/tnsauto/static/js/main.73152cdb.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.bf16f81127c316297a6d.mp4",
     "static/media/compare3.png": "/tnsauto/static/media/compare3.92b3796ba1fd7659243b.png",
@@ -32,12 +32,12 @@
     "static/media/slick.ttf": "/tnsauto/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
-    "main.54ad72b6.css.map": "/tnsauto/static/css/main.54ad72b6.css.map",
-    "main.18f37430.js.map": "/tnsauto/static/js/main.18f37430.js.map",
+    "main.8360b020.css.map": "/tnsauto/static/css/main.8360b020.css.map",
+    "main.73152cdb.js.map": "/tnsauto/static/js/main.73152cdb.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54ad72b6.css",
-    "static/js/main.18f37430.js"
+    "static/css/main.8360b020.css",
+    "static/js/main.73152cdb.js"
   ]
 }
