@@ -11,7 +11,8 @@ export default function BeforeAndAfter() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="compareSections headerPadding">
+    <div className="compareSections">
+      <div className="backgroundColorWhite paddingTop" />
       <BackToHomeButton />
       <h2 className="sectionTitle">Before & After Photos:</h2>
       <Carousel imgs={imgsToCompare} />

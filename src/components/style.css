@@ -7,6 +7,10 @@
     display: grid;
 }
 
+.backgroundColorWhite {
+    background-color: white;
+}
+
 .VideoTag {
     width: -webkit-fill-available;
 }
@@ -66,10 +70,6 @@
         padding-top: 10%;
     }
 
-    .headerPadding {
-        padding-top: 80%;
-    }
-
     .greenAnnouncementContainer {
         background-size: 100%;
         background-repeat: repeat-y;
@@ -77,12 +77,6 @@
 
     .reviewLinksContainer > a {
         width: 15%;
-    }
-}
-
-@media (max-width: 320px) {
-    .headerPadding {
-        padding-top: 90%;
     }
 }
 
@@ -135,10 +129,6 @@
     .tnsTitle > img {
         width: 5%;
         padding-right: 0.5rem;
-    }
-
-    .headerPadding {
-        padding-top: 15%;
     }
 
     .greenAnnouncementContainer {

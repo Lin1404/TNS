@@ -14,7 +14,8 @@ export default function Team() {
   }, []);
   return (
     <div>
-      <div className="compareSections headerPadding">
+      <div className="compareSections ">
+        <div className="backgroundColorWhite paddingTop " />
         <BackToHomeButton />
         <h2 className="sectionTitle">Our Team:</h2>
         <Carousel imgs={team} />

@@ -8,7 +8,8 @@ export default function Certifications() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="headerPadding">
+    <div>
+      <div className="paddingTop backgroundColorWhite" />
       <BackToHomeButton />
       <div className="moduleContainer">
         <h2 className="sectionTitle">Certifications</h2>

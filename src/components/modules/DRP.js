@@ -9,7 +9,7 @@ export default function DRP({ isHideGoBackButton = false }) {
   }, []);
   return (
     <>
-      {!isHideGoBackButton && <div className="headerPadding" />}
+      {!isHideGoBackButton && <div className="paddingTop" />}
       {!isHideGoBackButton && <BackToHomeButton />}
       <div className="moduleContainer">
         <h2 className="sectionTitle">DRP Partnerwith</h2>
