@@ -16,8 +16,8 @@ export default function Header() {
           <h1 style={{ marginBottom: "5%", fontSize: "40px" }}>
             TNS Auto Collision
           </h1>
-          <h6 style={{ marginTop: 0 }}>
-            Top 1% Rank Auto Body Shop in United State
+          <h6 style={{ marginTop: 0, textAlign: "right" }}>
+            from TNS AUTO GROUP
           </h6>
         </div>
       </div>
