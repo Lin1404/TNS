@@ -1,8 +1,6 @@
-import ase from "../assets/ase.jpeg";
-import icar2 from "../assets/icar2.jpeg";
 import ecoFriendly from "../assets/ecoFriendly.png";
 import ppg2 from "../assets/ppg2.jpeg";
-import sp2 from "../assets/sp2.jpeg";
+import certifications from "../assets/certifications.png";
 import Partnership from "./modules/DRP";
 import Modules from "./modules/Modules";
 import Reviews from "./modules/Reviews";
@@ -66,17 +64,7 @@ export default function Home() {
         </p>
         <div className="certificationModulePadding paddingBot">
           <div className="certificationsLogo">
-            <img src={icar2} alt="illustration" />
-            <img
-              src={sp2}
-              alt="illustration"
-              style={{ height: "4rem", paddingRight: 0 }}
-            />
-            <img
-              src={ase}
-              alt="illustration"
-              style={{ paddingLeft: 0, marginLeft: "-1rem" }}
-            />
+            <img src={certifications} alt="illustration" />
           </div>
         </div>
       </div>

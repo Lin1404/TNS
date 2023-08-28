@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import BackToHomeButton from "./BackToHomeButton";
-import ase from "../../assets/ase.jpeg";
-import icar2 from "../../assets/icar2.jpeg";
-import sp2 from "../../assets/sp2.jpeg";
+import certifications from "../../assets/certifications.png";
 import { BackToHomeIcon } from "./BackToHomeButton";
 
 export default function Certifications() {
@@ -24,17 +22,7 @@ export default function Certifications() {
           repaired to factory specs and pre-accident condition.
         </p>
         <div className="certificationsLogo">
-          <img src={icar2} alt="illustration" />
-          <img
-            src={sp2}
-            alt="illustration"
-            style={{ height: "4rem", paddingRight: 0 }}
-          />
-          <img
-            src={ase}
-            alt="illustration"
-            style={{ paddingLeft: 0, marginLeft: "-1rem" }}
-          />
+          <img src={certifications} alt="illustration" />
         </div>
         <div className="certificationsExpand">
           <h2>
