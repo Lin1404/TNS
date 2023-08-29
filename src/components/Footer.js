@@ -48,7 +48,6 @@ export default function Footer() {
         <div className="map">
           <div className="infoDetail">
             <h4>Our Location</h4>
-            <div>TNS Auto Group</div>
             <div>1011 61st St</div>
             <div> Brooklyn, NY 11219</div>
           </div>
