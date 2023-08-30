@@ -33,7 +33,6 @@ export default function Carousel({ content, imgs }) {
                 alt="illustration"
                 style={{
                   width: "100%",
-                  //  height: "600px"
                 }}
               />
             </div>
