@@ -1,5 +1,5 @@
-import Carousel from "./Carousel";
-import process from "../assets/process.png";
+import Carousel from "../Carousel";
+import process from "../../assets/process.png";
 
 const repairProcessImgs = [process];
 

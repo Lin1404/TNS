@@ -7,6 +7,7 @@ import BeforeAndAfter from "./components/modules/BeforeAndAfter";
 import Team from "./components/modules/Team";
 import Certifications from "./components/modules/Certifications";
 import DRP from "./components/modules/DRP";
+import RepairProcess from "./components/homePageComponents/RepairProcess";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
   {
     path: "/tnsauto/drp",
     element: <DRP />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/repairprocess",
+    element: <RepairProcess />,
     errorElement: <ErrorPage />,
   },
 ]);
