@@ -7,6 +7,7 @@ import { Button } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import RepairProcess from "./homePageComponents/RepairProcess";
 
 const style = {
@@ -31,7 +32,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="paddingTop">
+      <div className="paddingTop paddingBot">
         <video
           className="VideoTag"
           autoPlay
@@ -42,14 +43,40 @@ export default function Home() {
           <source src={tnsAnime} type="video/mp4" />
         </video>
       </div>
-
-      <Button onClick={handleAccidentModalOpen}>
-        CLICK HERE TO LEARN MORE →
-      </Button>
-      <Button onClick={handleRepairModalOpen}>
-        CLICK HERE TO LEARN MORE ABOUT OUR REPAIR PROCESS→
-      </Button>
-
+      <homePageModals className="homePageModalContainer">
+        <accidentModalContainer>
+          <Typography>
+            <h1>Do you know what should do after Accident happen?</h1>
+          </Typography>
+          <Button
+            onClick={handleAccidentModalOpen}
+            style={{
+              backgroundColor: "#1976c7",
+              color: "white",
+              borderRadius: "0",
+              height: "25%",
+            }}
+          >
+            HOW TO HANDLE ACCIDENT PROFESSIONALLY →
+          </Button>
+        </accidentModalContainer>
+        <repairModalContainer>
+          <Typography>
+            <h1>Do you know our Pepair Process?</h1>
+          </Typography>
+          <Button
+            onClick={handleRepairModalOpen}
+            style={{
+              backgroundColor: "#1976c7",
+              color: "white",
+              borderRadius: "0",
+              height: "25%",
+            }}
+          >
+            LEARN MORE ABOUT OUR REPAIR PROCESS →
+          </Button>
+        </repairModalContainer>
+      </homePageModals>
       <Partnership isOnHomePage={true} />
       <Reviews />
 

@@ -1,7 +1,6 @@
 
 .header {
     align-items: center;
-    position: fixed;
     width: 100%;
     z-index: 99;
     display: grid;
@@ -20,6 +19,18 @@
     padding: 2% 5%;
 }
 
+.homePageModalContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 5%;
+    grid-gap: 5%;
+    background-color: #f0f8ff;
+}
+
+.reviewModulepaddingTop {
+    padding: 3% 0;
+}
+
 @media (max-width: 950px) {
     .header {
         display: flex;
@@ -35,7 +46,7 @@
     }
 
     .paddingTop {
-        padding-top: 190px;
+        padding: 5%;
     }
 
     .itemContainer {
@@ -80,18 +91,6 @@
     }
 }
 
-@media (max-width: 375px) {
-    .paddingTop {
-        padding-top: 350px;
-    }
-
-}
-
-@media (max-width:500px) {
-    .paddingTop {
-        padding-top: 250px;
-    }
-}
 @media (min-width: 550px) {
     .itemContainer {
         flex-direction: column;
@@ -113,6 +112,7 @@
 
     .header {
         grid-template-columns: 50% 50%;
+        position: fixed;
     }
 
     .paddingTop {
@@ -331,7 +331,6 @@ img:active img{
     padding: 0 10% 10% 10%;
     background-image: url(https://www.fastweb.com/uploads/article_photo/photo/2036160/Simple_Environment.jpeg);
     opacity: 0.8;
-    background-color: #eff8ff;
 }
 
 .greenAnnouncementContainer > div > h2 {
