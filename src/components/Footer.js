@@ -4,7 +4,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export default function Footer() {
   return (
-    <div className="footerContainer backgroundColor">
+    <div className="footerContainer">
       <div className="tnsTitle">
         <img src={tnsLogo} alt="illustration" />
         <h1>TNS Auto Collision</h1>

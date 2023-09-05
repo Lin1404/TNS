@@ -18,8 +18,8 @@ export default function Modules() {
               className="moduleButton"
               style={{
                 fontFamily: "inherit",
-                fontSize: "1.3rem",
-                color: "#fff",
+                fontSize: "smaller",
+                color: "rgb(62 62 152)",
               }}
             >
               {item.label}
@@ -33,8 +33,8 @@ export default function Modules() {
             className="moduleButton"
             style={{
               fontFamily: "inherit",
-              fontSize: "1.3rem",
-              color: "#fff",
+              fontSize: "smaller",
+              color: "rgb(62 62 152)",
             }}
           >
             Partner Shop

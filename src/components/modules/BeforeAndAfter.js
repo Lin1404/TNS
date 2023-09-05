@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Carousel from "../Carousel";
+import Header from "./Header";
 import compare1 from "../../assets/compare1.png";
 import compare2 from "../../assets/compare2.png";
 import compare3 from "../../assets/compare3.png";
@@ -25,6 +26,7 @@ export default function BeforeAndAfter() {
   }, []);
   return (
     <div className="compareSections">
+      <Header />
       <div className="backgroundColorWhite paddingTop" />
       <BackToHomeButton />
       <h2 className="sectionTitle">Before & After Photos:</h2>

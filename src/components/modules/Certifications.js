@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import BackToHomeButton from "./BackToHomeButton";
 import certifications from "../../assets/certifications.png";
 import { BackToHomeIcon } from "./BackToHomeButton";
+import Header from "./Header";
 
 export default function Certifications() {
   useEffect(() => {
@@ -9,6 +10,7 @@ export default function Certifications() {
   }, []);
   return (
     <div>
+      <Header />
       <div className="paddingTop backgroundColorWhite" />
       <BackToHomeButton />
       <div className="moduleContainer">

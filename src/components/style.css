@@ -36,7 +36,6 @@
 
     .paddingTop {
         padding-top: 190px;
-        background-color: #eff8ff;
     }
 
     .itemContainer {
@@ -84,7 +83,6 @@
 @media (max-width: 375px) {
     .paddingTop {
         padding-top: 350px;
-        background-color: #eff8ff;
     }
 
 }
@@ -114,12 +112,11 @@
     }
 
     .header {
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 50% 50%;
     }
 
     .paddingTop {
         padding-top: 140px;
-        background-color: #eff8ff;
     }
 
     .tnsTitle {
@@ -150,7 +147,7 @@
 
 .headerGroup {
     display: flex;
-    padding: 0 5%;
+    padding: 0 0 0 5%;
     height: 80%;
     align-items: center;
 }
@@ -416,16 +413,11 @@ img:active img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
     justify-items: center;
-    margin: 5%;
-    gap: 2%;
 }
 
 .moduleButtonContainer {
-    background-color: #3e3e98;
-    border-radius: 15px;
-    height: 5rem;
+    height: 100%;
     width: 15rem;
 }
 

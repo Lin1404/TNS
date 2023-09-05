@@ -1,7 +1,8 @@
-import tnsLogo from "../assets/tns.svg";
-import "./style.css";
+import tnsLogo from "../../assets/tns.svg";
+import "../style.css";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import Modules from "../Modules";
 
 export default function Header() {
   return (
@@ -13,15 +14,14 @@ export default function Header() {
           style={{ width: "5rem", paddingRight: "1rem" }}
         />
         <div className="title">
-          <h1 style={{ marginBottom: "5%", fontSize: "40px" }}>
+          <h1
+            style={{ marginBottom: "5%", fontSize: "40px", color: "#1b73bc" }}
+          >
             TNS Auto Collision
           </h1>
-          <h6 style={{ marginTop: 0, textAlign: "right" }}>
-            from TNS AUTO GROUP
-          </h6>
         </div>
       </div>
-      <div className="itemContainer">
+      {/* <div className="itemContainer">
         <div className="headerIcons">
           <LocalPhoneOutlinedIcon className="callUsIcon" />
           (718) 259-0075
@@ -30,7 +30,8 @@ export default function Header() {
           <EmailOutlinedIcon className="callUsIcon" />
           <a href="mailto:tnsautogroup@gmail.com">tnsautogroup@gmail.com</a>
         </div>
-      </div>
+      </div> */}
+      <Modules />
     </div>
   );
 }

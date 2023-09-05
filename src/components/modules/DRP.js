@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import drp from "../../assets/DRP.png";
 import BackToHomeButton from "./BackToHomeButton";
 import { BackToHomeIcon } from "./BackToHomeButton";
+import Header from "./Header";
 
 export default function DRP({ isHideGoBackButton = false }) {
   useEffect(() => {
@@ -9,6 +10,7 @@ export default function DRP({ isHideGoBackButton = false }) {
   }, []);
   return (
     <>
+      <Header />
       {!isHideGoBackButton && <div className="paddingTop" />}
       {!isHideGoBackButton && <BackToHomeButton />}
       <div className="moduleContainer">
