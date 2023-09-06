@@ -29,9 +29,18 @@ export default function Footer() {
           <div className="info">
             <h3>Contact us:</h3>
             <socialMediaIcons className="socialMediaIcons">
-              <img src={facebookLogo} alt="illustration" />
-              <img src={instegramLogo} alt="illustration" />
-              <img src={yelpLogo} alt="illustration" />
+              <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
+                <img src={facebookLogo} alt="illustration" />
+              </a>
+              <a href="https://www.instagram.com/tnsautogroup/" target="blank">
+                <img src={instegramLogo} alt="illustration" />
+              </a>
+              <a
+                href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
+                target="blank"
+              >
+                <img src={yelpLogo} alt="illustration" />
+              </a>
             </socialMediaIcons>
             <div className="infoDetail">
               <div style={{ display: "flex" }}>

@@ -47,7 +47,10 @@ export default function Home() {
         <homePageModals className="homePageModalContainer">
           <accidentModalContainer>
             <Typography>
-              <h2>Do you know what should do after Accident happen?</h2>
+              <h2>Do you know what to do after</h2>{" "}
+              <div className="accidentModalTitle">
+                <h1>Accident</h1> <h2>happen?</h2>
+              </div>
             </Typography>
             <Button
               onClick={handleAccidentModalOpen}

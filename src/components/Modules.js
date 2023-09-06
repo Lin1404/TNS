@@ -37,7 +37,7 @@ export default function Modules() {
               color: "rgb(62 62 152)",
             }}
           >
-            Partner Shop
+            Other Location
           </Button>
         </a>
       </div>

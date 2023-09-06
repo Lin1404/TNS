@@ -26,6 +26,18 @@
     grid-gap: 5%;
 }
 
+.accidentModalTitle{
+    display: flex;
+    align-items: center;
+    gap: 0 4%;
+    justify-content: center;
+    margin-top: -10%;
+}
+
+.accidentModalTitle > h1 {
+    color: red;
+}
+
 .reviewModulepaddingTop {
     padding: 3% 0;
 }
@@ -34,7 +46,7 @@
     display: flow;
 }
 
-.socialMediaIcons > img {
+.socialMediaIcons > a > img {
     width: 10%;
     padding: 0 2%;
 }
