@@ -24,16 +24,6 @@ export default function Header() {
           </h1>
         </div>
       </div>
-      {/* <div className="itemContainer">
-        <div className="headerIcons">
-          <LocalPhoneOutlinedIcon className="callUsIcon" />
-          (718) 259-0075
-        </div>
-        <div className="headerIcons">
-          <EmailOutlinedIcon className="callUsIcon" />
-          <a href="mailto:tnsautogroup@gmail.com">tnsautogroup@gmail.com</a>
-        </div>
-      </div> */}
       <Modules />
     </div>
   );

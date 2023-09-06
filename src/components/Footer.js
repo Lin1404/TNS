@@ -1,4 +1,7 @@
 import tnsLogo from "../assets/tns.svg";
+import yelpLogo from "../assets/yelpLogo.svg";
+import facebookLogo from "../assets/facebookLogo.svg";
+import instegramLogo from "../assets/instagramLogo.svg";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
@@ -25,6 +28,11 @@ export default function Footer() {
         <div>
           <div className="info">
             <h3>Contact us:</h3>
+            <socialMediaIcons className="socialMediaIcons">
+              <img src={facebookLogo} alt="illustration" />
+              <img src={instegramLogo} alt="illustration" />
+              <img src={yelpLogo} alt="illustration" />
+            </socialMediaIcons>
             <div className="infoDetail">
               <div style={{ display: "flex" }}>
                 <LocalPhoneOutlinedIcon />

@@ -24,11 +24,19 @@
     grid-template-columns: 1fr 1fr;
     padding: 5% 5%;
     grid-gap: 5%;
-    background-color: #f0f8ff;
 }
 
 .reviewModulepaddingTop {
     padding: 3% 0;
+}
+
+.socialMediaIcons {
+    display: flow;
+}
+
+.socialMediaIcons > img {
+    width: 10%;
+    padding: 0 2%;
 }
 
 @media (max-width: 950px) {
@@ -43,10 +51,6 @@
         align-items: center;
         flex-direction: row;
         justify-content: center;
-    }
-
-    .paddingTop {
-        padding: 5%;
     }
 
     .itemContainer {
@@ -106,6 +110,17 @@
 }
 
 @media (min-width: 950px) {
+    .videoAndModalsContainer{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .homePageModalContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0%;
+    }
+
     .infoContainer {
         grid-template-columns: 1fr 1fr 1fr;
     }

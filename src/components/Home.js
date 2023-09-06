@@ -32,52 +32,58 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="paddingTop paddingBot">
-        <video
-          className="VideoTag"
-          autoPlay
-          loop
-          muted
-          style={{ width: "70%" }}
-        >
-          <source src={tnsAnime} type="video/mp4" />
-        </video>
-      </div>
-      <homePageModals className="homePageModalContainer">
-        <accidentModalContainer>
-          <Typography>
-            <h1>Do you know what should do after Accident happen?</h1>
-          </Typography>
-          <Button
-            onClick={handleAccidentModalOpen}
-            style={{
-              backgroundColor: "#1976c7",
-              color: "white",
-              borderRadius: "0",
-              height: "25%",
-            }}
+      <videoAndModalsContainer className="paddingTop paddingBot videoAndModalsContainer">
+        <videoContainer>
+          <video
+            className="VideoTag"
+            autoPlay
+            loop
+            muted
+            style={{ width: "100%" }}
           >
-            HOW TO HANDLE ACCIDENT PROFESSIONALLY →
-          </Button>
-        </accidentModalContainer>
-        <repairModalContainer>
-          <Typography>
-            <h1>Do you know our Pepair Process?</h1>
-          </Typography>
-          <Button
-            onClick={handleRepairModalOpen}
-            style={{
-              backgroundColor: "#1976c7",
-              color: "white",
-              borderRadius: "0",
-              height: "25%",
-            }}
-          >
-            LEARN MORE ABOUT OUR REPAIR PROCESS →
-          </Button>
-        </repairModalContainer>
-      </homePageModals>
+            <source src={tnsAnime} type="video/mp4" />
+          </video>
+        </videoContainer>
+        <homePageModals className="homePageModalContainer">
+          <accidentModalContainer>
+            <Typography>
+              <h2>Do you know what should do after Accident happen?</h2>
+            </Typography>
+            <Button
+              onClick={handleAccidentModalOpen}
+              style={{
+                backgroundColor: "#1976c7",
+                color: "white",
+                borderRadius: "0",
+                height: "25%",
+                fontSize: "0.7rem",
+              }}
+            >
+              HOW TO HANDLE ACCIDENT PROFESSIONALLY →
+            </Button>
+          </accidentModalContainer>
+          <repairModalContainer>
+            <Typography>
+              <h2>Do you know our Pepair Process?</h2>
+            </Typography>
+            <Button
+              onClick={handleRepairModalOpen}
+              style={{
+                backgroundColor: "#1976c7",
+                color: "white",
+                borderRadius: "0",
+                height: "25%",
+                fontSize: "0.7rem",
+              }}
+            >
+              LEARN MORE ABOUT OUR REPAIR PROCESS →
+            </Button>
+          </repairModalContainer>
+        </homePageModals>
+      </videoAndModalsContainer>
+
       <Partnership isOnHomePage={true} />
+
       <Reviews />
 
       <Modal
