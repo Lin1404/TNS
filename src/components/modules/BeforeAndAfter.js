@@ -8,8 +8,6 @@ import compare4 from "../../assets/compare4.png";
 import compare5 from "../../assets/compare5.png";
 import compare6 from "../../assets/compare6.png";
 import compare7 from "../../assets/compare7.png";
-import BackToHomeButton from "./BackToHomeButton";
-import { BackToHomeIcon } from "./BackToHomeButton";
 const imgsToCompare = [
   compare1,
   compare2,
@@ -28,10 +26,8 @@ export default function BeforeAndAfter() {
     <div className="compareSections">
       <Header />
       <div className="backgroundColorWhite paddingTop" />
-      <BackToHomeButton />
       <h2 className="sectionTitle">Before & After Photos:</h2>
       <Carousel imgs={imgsToCompare} />
-      <BackToHomeIcon />
       <div className="paddingBot" />
     </div>
   );

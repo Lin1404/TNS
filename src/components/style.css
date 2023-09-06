@@ -420,7 +420,7 @@ img:active img{
 }
 
 .moduleContainer {
-    padding: 5%;
+    padding: 0 5%;
 }
 
 .moduleContainer > p {

@@ -1,10 +1,8 @@
 import { useEffect } from "react";
 import Carousel from "../Carousel";
-import BackToHomeButton from "./BackToHomeButton";
 import office from "../../assets/Office.jpeg";
 import ecoFriendly from "../../assets/ecoFriendly.png";
 import ppg2 from "../../assets/ppg2.jpeg";
-import { BackToHomeIcon } from "./BackToHomeButton";
 import Header from "./Header";
 
 const team = [office];
@@ -18,7 +16,6 @@ export default function Team() {
       <Header />
       <div className="compareSections ">
         <div className="backgroundColorWhite paddingTop " />
-        <BackToHomeButton />
         <h2 className="sectionTitle">Our Team:</h2>
         <Carousel imgs={team} />
       </div>
@@ -92,7 +89,6 @@ export default function Team() {
           </p>
         </div>
       </div>
-      <BackToHomeIcon />
       <div className="paddingBot" />
     </div>
   );
