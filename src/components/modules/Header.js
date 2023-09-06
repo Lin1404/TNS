@@ -1,7 +1,5 @@
 import tnsLogo from "../../assets/tns.svg";
 import "../style.css";
-import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import Modules from "../Modules";
 import { Link } from "react-router-dom";
 
