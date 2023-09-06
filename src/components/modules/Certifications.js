@@ -16,7 +16,7 @@ export default function Certifications() {
       <div className="moduleContainer">
         <h2 className="sectionTitle">Certifications</h2>
         <p>
-          TNS Auto Group is your state of the art collision repair facility.
+          TNS Auto Collision is your state of the art collision repair facility.
         </p>
         <p>
           We meet our goals by utilizing today's most advanced systems in the
