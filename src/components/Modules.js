@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
   { path: "/tnsauto/aboutus", label: "About Us" },
-  { path: "/tnsauto/drp", label: "DRP Partner With" },
+  { path: "/tnsauto/drp", label: "DRP" },
   { path: "/tnsauto/certifications", label: "Certifications" },
   { path: "/tnsauto/team", label: "Our Team" },
-  { path: "/tnsauto/beforeandafter", label: "Before and After Photos" },
+  { path: "/tnsauto/beforeandafter", label: "Gallery" },
 ];
 
 export default function Modules() {
@@ -21,7 +21,7 @@ export default function Modules() {
               style={{
                 fontFamily: "inherit",
                 fontSize: "smaller",
-                color: "rgb(62 62 152)",
+                color: "white",
               }}
             >
               {item.label}
@@ -30,13 +30,13 @@ export default function Modules() {
         </div>
       ))}
       <div className="moduleButtonContainer">
-        <a href="https://www.tnsautoinc.com/">
+        <a href="https://www.tnsautoinc.com/" target="blank">
           <Button
             className="moduleButton"
             style={{
               fontFamily: "inherit",
               fontSize: "smaller",
-              color: "rgb(62 62 152)",
+              color: "white",
             }}
           >
             Other Location

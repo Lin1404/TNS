@@ -9,7 +9,7 @@ export default function Certifications() {
   return (
     <div>
       <Header />
-      <div className="paddingTop backgroundColorWhite" />
+      <div className="backgroundColorWhite" />
       <div className="moduleContainer">
         <h2 className="sectionTitle">Certifications</h2>
         <p>

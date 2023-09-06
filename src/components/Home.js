@@ -32,14 +32,17 @@ export default function Home() {
   return (
     <>
       <Header />
-      <videoAndModalsContainer className="paddingTop paddingBot videoAndModalsContainer">
+      <videoAndModalsContainer className="videoAndModalsContainer">
         <videoContainer>
           <video
             className="VideoTag"
             autoPlay
             loop
             muted
-            style={{ width: "100%" }}
+            style={{
+              width: "100%",
+              padding: "3%",
+            }}
           >
             <source src={tnsAnime} type="video/mp4" />
           </video>
@@ -84,8 +87,6 @@ export default function Home() {
           </repairModalContainer>
         </homePageModals>
       </videoAndModalsContainer>
-
-      <Partnership isOnHomePage={true} />
 
       <Reviews />
 

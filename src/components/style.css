@@ -137,15 +137,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .header {
-        grid-template-columns: 50% 50%;
-        position: fixed;
-    }
-
-    .paddingTop {
-        padding-top: 140px;
-    }
-
     .tnsTitle {
         font-size: 30px;
         gap: 1rem;
@@ -169,7 +160,7 @@
 
 
 .backgroundColor {
-    background-color: aliceblue;
+    background-color: #cae4fd;
 }
 
 .headerGroup {
@@ -437,14 +428,11 @@ img:active img{
 
 .modulesSection {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     justify-items: center;
-}
-
-.moduleButtonContainer {
-    height: 100%;
-    width: 15rem;
+    padding-left: 3%;
+    background-color: #3b3bb3;
 }
 
 .moduleButton {

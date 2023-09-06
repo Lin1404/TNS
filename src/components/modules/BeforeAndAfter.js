@@ -25,7 +25,7 @@ export default function BeforeAndAfter() {
   return (
     <div className="compareSections">
       <Header />
-      <div className="backgroundColorWhite paddingTop" />
+      <div className="backgroundColorWhite" />
       <h2 className="sectionTitle">Before & After Photos:</h2>
       <Carousel imgs={imgsToCompare} />
       <div className="paddingBot" />
