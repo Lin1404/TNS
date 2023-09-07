@@ -1,33 +1,17 @@
-import { Button, Container } from "@mui/material";
+import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import yelpLogo from "../assets/yelpLogo.svg";
 import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
   { path: "/tnsauto/aboutus", label: "About Us" },
   { path: "/tnsauto/drp", label: "DRP" },
   { path: "/tnsauto/certifications", label: "Certifications" },
-  { path: "/tnsauto/team", label: "Our Team" },
   { path: "/tnsauto/gallery", label: "Gallery" },
 ];
-
-function useOnHoverOutside(ref, handler) {
-  useEffect(() => {
-    const listener = (event) => {
-      if (!ref.current || ref.current.contains(event.target)) {
-        return;
-      }
-      handler(event);
-    };
-    document.addEventListener("mouseover", listener);
-    return () => {
-      document.removeEventListener("mouseout", listener);
-    };
-  }, [ref, handler]);
-}
 
 export default function Modules() {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
@@ -47,7 +31,11 @@ export default function Modules() {
                 style={{
                   fontFamily: "inherit",
                   fontSize: "smaller",
-                  color: mouseOnModule === idx ? "#e3d515" : "white",
+                  color:
+                    mouseOnModule === idx ||
+                    window.location.pathname === item.path
+                      ? "#e3d515"
+                      : "white",
                 }}
               >
                 {item.label}

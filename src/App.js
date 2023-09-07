@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ErrorPage from "./components/ErrorPage";
 import Gallery from "./components/modules/Gallery";
-import Team from "./components/modules/Team";
 import Certifications from "./components/modules/Certifications";
 import DRP from "./components/modules/DRP";
 import RepairProcess from "./components/homePageComponents/RepairProcess";
@@ -19,11 +18,6 @@ const router = createBrowserRouter([
   {
     path: "/tnsauto/gallery",
     element: <Gallery />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/tnsauto/team",
-    element: <Team />,
     errorElement: <ErrorPage />,
   },
   {

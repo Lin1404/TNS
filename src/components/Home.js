@@ -24,6 +24,8 @@ const style = {
 export default function Home() {
   const [accidentModalOpen, setAccidentModalOpen] = useState(false);
   const [repairModalOpen, setRepairModalOpen] = useState(false);
+  const [isMouseOnAccidentButton, setIsMouseOnAccidentButton] = useState(false);
+  const [isMouseOnRepairButton, setIsMouseOnRepairButton] = useState(false);
   const handleAccidentModalOpen = () => setAccidentModalOpen(true);
   const handleAccidentModalClose = () => setAccidentModalOpen(false);
   const handleRepairModalOpen = () => setRepairModalOpen(true);
@@ -32,8 +34,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <videoAndModalsContainer className="videoAndModalsContainer">
-        <videoContainer>
+      <div className="videoAndModalsContainer">
+        <div>
           <video
             className="VideoTag"
             autoPlay
@@ -46,9 +48,9 @@ export default function Home() {
           >
             <source src={tnsAnime} type="video/mp4" />
           </video>
-        </videoContainer>
-        <homePageModals className="homePageModalContainer">
-          <accidentModalContainer>
+        </div>
+        <div className="homePageModalContainer">
+          <div>
             <Typography>
               <h2>Do you know what to do after</h2>{" "}
               <div className="accidentModalTitle">
@@ -57,36 +59,38 @@ export default function Home() {
             </Typography>
             <Button
               onClick={handleAccidentModalOpen}
+              onMouseEnter={() => setIsMouseOnAccidentButton(true)}
+              onMouseLeave={() => setIsMouseOnAccidentButton(false)}
               style={{
                 backgroundColor: "#1976c7",
-                color: "white",
+                color: isMouseOnAccidentButton ? "#3b3bb3" : "white",
                 borderRadius: "0",
-                height: "25%",
                 fontSize: "0.7rem",
               }}
             >
               HOW TO HANDLE ACCIDENT PROFESSIONALLY →
             </Button>
-          </accidentModalContainer>
-          <repairModalContainer>
+          </div>
+          <div>
             <Typography>
               <h2>Do you know our Pepair Process?</h2>
             </Typography>
             <Button
               onClick={handleRepairModalOpen}
+              onMouseEnter={() => setIsMouseOnRepairButton(true)}
+              onMouseLeave={() => setIsMouseOnRepairButton(false)}
               style={{
                 backgroundColor: "#1976c7",
-                color: "white",
+                color: isMouseOnRepairButton ? "#3b3bb3" : "white",
                 borderRadius: "0",
-                height: "25%",
                 fontSize: "0.7rem",
               }}
             >
               LEARN MORE ABOUT OUR REPAIR PROCESS →
             </Button>
-          </repairModalContainer>
-        </homePageModals>
-      </videoAndModalsContainer>
+          </div>
+        </div>
+      </div>
 
       <Reviews />
 
