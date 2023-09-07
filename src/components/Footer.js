@@ -28,7 +28,7 @@ export default function Footer() {
         <div>
           <div className="info">
             <h3>Contact us:</h3>
-            <socialMediaIcons className="socialMediaIcons">
+            <div className="socialMediaIcons">
               <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
                 <img src={facebookLogo} alt="illustration" />
               </a>
@@ -41,7 +41,7 @@ export default function Footer() {
               >
                 <img src={yelpLogo} alt="illustration" />
               </a>
-            </socialMediaIcons>
+            </div>
             <div className="infoDetail">
               <div style={{ display: "flex" }}>
                 <LocalPhoneOutlinedIcon />

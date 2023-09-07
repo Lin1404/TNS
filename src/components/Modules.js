@@ -1,5 +1,9 @@
-import { Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import { Link } from "react-router-dom";
+import yelpLogo from "../assets/yelpLogo.svg";
+import facebookLogo from "../assets/facebookLogo.svg";
+import instegramLogo from "../assets/instagramLogo.svg";
+import { useState, useEffect } from "react";
 
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
@@ -7,40 +11,79 @@ const modulesRouting = [
   { path: "/tnsauto/drp", label: "DRP" },
   { path: "/tnsauto/certifications", label: "Certifications" },
   { path: "/tnsauto/team", label: "Our Team" },
-  { path: "/tnsauto/beforeandafter", label: "Gallery" },
+  { path: "/tnsauto/gallery", label: "Gallery" },
 ];
 
+function useOnHoverOutside(ref, handler) {
+  useEffect(() => {
+    const listener = (event) => {
+      if (!ref.current || ref.current.contains(event.target)) {
+        return;
+      }
+      handler(event);
+    };
+    document.addEventListener("mouseover", listener);
+    return () => {
+      document.removeEventListener("mouseout", listener);
+    };
+  }, [ref, handler]);
+}
+
 export default function Modules() {
+  const [mouseOnModule, setmouseOnModule] = useState(-1);
+  const [isMouseOnOhterLocationModule, setIsMouseOnOhterLocationModule] =
+    useState(false);
+
   return (
-    <div className="modulesSection">
-      {modulesRouting.map((item) => (
-        <div className="moduleButtonContainer">
-          <Link to={`${item.path}`}>
+    <div className="modulesContainer">
+      <div className="modulesSection">
+        {modulesRouting.map((item, idx) => (
+          <div className="moduleButtonContainer" key={item.label}>
+            <Link to={`${item.path}`}>
+              <Button
+                onMouseEnter={() => setmouseOnModule(idx)}
+                onMouseLeave={() => setmouseOnModule(-1)}
+                className="moduleButton"
+                style={{
+                  fontFamily: "inherit",
+                  fontSize: "smaller",
+                  color: mouseOnModule === idx ? "#e3d515" : "white",
+                }}
+              >
+                {item.label}
+              </Button>
+            </Link>
+          </div>
+        ))}
+        <div className="moduleButtonContainer" key={"otherlocation"}>
+          <a href="https://www.tnsautoinc.com/" target="blank">
             <Button
               className="moduleButton"
+              onMouseEnter={() => setIsMouseOnOhterLocationModule(true)}
+              onMouseLeave={() => setIsMouseOnOhterLocationModule(false)}
               style={{
                 fontFamily: "inherit",
                 fontSize: "smaller",
-                color: "white",
+                color: isMouseOnOhterLocationModule ? "#e3d515" : "white",
               }}
             >
-              {item.label}
+              Other Location
             </Button>
-          </Link>
+          </a>
         </div>
-      ))}
-      <div className="moduleButtonContainer">
-        <a href="https://www.tnsautoinc.com/" target="blank">
-          <Button
-            className="moduleButton"
-            style={{
-              fontFamily: "inherit",
-              fontSize: "smaller",
-              color: "white",
-            }}
-          >
-            Other Location
-          </Button>
+      </div>
+      <div className="socialMediaIconsOnModules">
+        <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
+          <img src={facebookLogo} alt="illustration" />
+        </a>
+        <a href="https://www.instagram.com/tnsautogroup/" target="blank">
+          <img src={instegramLogo} alt="illustration" />
+        </a>
+        <a
+          href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
+          target="blank"
+        >
+          <img src={yelpLogo} alt="illustration" />
         </a>
       </div>
     </div>

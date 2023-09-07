@@ -42,6 +42,32 @@
     padding: 3% 0;
 }
 
+.modulesContainer {
+    display: grid;
+    /* background-color: #3b3bb3; */
+    background: linear-gradient(10deg, #3b3bb3, #cae4fd);
+    grid-template-columns: 3fr 1fr;
+}
+
+.modulesSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+    padding-left: 3%;
+
+}
+
+.moduleButton {
+    height: 100%;
+    width: 100%;
+}
+
+/* .moduleButton :hover {
+    width: 100%;
+    background-color: yellow;
+} */
+
 .socialMediaIcons {
     display: flow;
 }
@@ -50,6 +76,17 @@
     width: 10%;
     padding: 0 2%;
 }
+
+.socialMediaIconsOnModules {
+    display: flow;
+    text-align-last: right;
+    align-self: end;
+}
+
+.socialMediaIconsOnModules > a > img {
+    width: 10%;
+    padding: 0 2%;
+} 
 
 @media (max-width: 950px) {
     .header {
@@ -426,19 +463,6 @@ img:active img{
     width: 50%;
 }
 
-.modulesSection {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    justify-items: center;
-    padding-left: 3%;
-    background-color: #3b3bb3;
-}
-
-.moduleButton {
-    height: 100%;
-    width: 100%;
-}
 
 .backToHomeIconButton {
     width: 60px;
