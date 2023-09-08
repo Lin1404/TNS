@@ -15,6 +15,7 @@ export default function Footer() {
       <div className="infoContainer">
         <div className="introduction">
           <h1>About Us</h1>
+          <p>We are serving the community since 1995.</p>
           <p>
             "With 25+ years of experience in the automotive collision industry,
             consider us your repair expert for your vehicle all in one stop.
