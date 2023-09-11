@@ -37,23 +37,23 @@ export default function AboutUs() {
         />
         <div>
           <h5>WHO WE ARE</h5>
-          <p>We are serving the community since 1995.</p>
-          <p>
+          <span>We are serving the community since 1995.</span>
+          <span>
             With over 25 years of extensive expertise within the automotive
             collision industry, we are your premier destination for
             comprehensive vehicle repair services. Our unwavering commitment to
             quality and safety underscores our mission. We proudly collaborate
             with a wide array of leading insurance providers, holding the
             esteemed certifications.
-          </p>
-          <p>
+          </span>
+          <span>
             Whether you require assistance with insurance claims or require
             meticulous reparations, rest assured that our team of highly skilled
             technicians, bearing platinum I-CAR and ASE certifications, is at
             your service. Your damaged vehicle is in capable hands, and our
             exceptional customer service is here to guide you throughout the
             process.
-          </p>
+          </span>
         </div>
       </div>
       {/* <div className="ppgAnnouncementContainer">

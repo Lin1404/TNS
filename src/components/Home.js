@@ -1,4 +1,3 @@
-import Partnership from "./modules/DRP";
 import Reviews from "./modules/Reviews";
 import AccidentProcess from "./homePageComponents/AccidentProcess";
 import tnsAnime from "../assets/tnsAnime.mp4";
@@ -42,7 +41,7 @@ export default function Home() {
             loop
             muted
             style={{
-              width: "100%",
+              width: "94%",
               padding: "3%",
             }}
           >

@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, Menu, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import yelpLogo from "../assets/yelpLogo.svg";
 import facebookLogo from "../assets/facebookLogo.svg";
@@ -13,12 +13,21 @@ const modulesRouting = [
   { path: "/tnsauto/gallery", label: "Gallery" },
 ];
 
-export default function Modules() {
+export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
   const [isMouseOnOhterLocationModule, setIsMouseOnOhterLocationModule] =
     useState(false);
 
-  return (
+  const [anchorEl, setAnchorEl] = useState(null);
+  const openMenu = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  return !isButton ? (
     <div className="modulesContainer">
       <div className="modulesSection">
         {modulesRouting.map((item, idx) => (
@@ -74,6 +83,43 @@ export default function Modules() {
           <img src={yelpLogo} alt="illustration" />
         </a>
       </div>
+    </div>
+  ) : (
+    <div>
+      <Button
+        className="modulesbutton"
+        aria-controls={openMenu ? "modulesMenu" : undefined}
+        aria-haspopup="true"
+        aria-expanded={openMenu ? "true" : undefined}
+        onClick={handleClick}
+      >
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span>
+      </Button>
+      <Menu
+        id="modulesMenu"
+        anchorEl={anchorEl}
+        open={openMenu}
+        onClose={handleMenuClose}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "left",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "left",
+        }}
+      >
+        {modulesRouting.map((item, idx) => (
+          <Link key={item.path} to={`${item.path}`}>
+            <MenuItem onClick={handleMenuClose}>{item.label}</MenuItem>
+          </Link>
+        ))}
+        <a href="https://www.tnsautoinc.com/" target="blank">
+          <MenuItem onClick={handleMenuClose}>Other Location</MenuItem>
+        </a>
+      </Menu>
     </div>
   );
 }

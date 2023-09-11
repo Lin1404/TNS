@@ -6,6 +6,26 @@
     display: grid;
 }
 
+.modulesbutton {
+    display: grid !important;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15%;
+
+}
+
+.modulesMenu {
+    top:9% !important;
+    left: 80% !important;
+}
+
+.icon-bar {
+    display: block;
+    width: 30px;
+    height: 7px;
+    border-radius: 6px;
+    background: #3b3bb3;
+}
+
 .backgroundColorWhite {
     background-color: white;
 }
@@ -55,7 +75,6 @@
 
 .modulesContainer {
     display: grid;
-    /* background-color: #3b3bb3; */
     background: linear-gradient(10deg, #3b3bb3, #cae4fd);
     grid-template-columns: 3fr 1fr;
 }
@@ -73,11 +92,6 @@
     height: 100%;
     width: 100%;
 }
-
-/* .moduleButton :hover {
-    width: 100%;
-    background-color: yellow;
-} */
 
 .socialMediaIcons {
     display: flow;
@@ -105,10 +119,6 @@
     padding: 0 5%;
 }
 
-.galleryModal {
-    
-}
-
 .galleryModalButtonContainer {
     position: absolute;
     color: navy;
@@ -131,32 +141,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-@media (max-width: 950px) {
+@media (max-width: 700px) {
     .header {
-        display: flex;
+        grid-template-columns: 9fr 1fr;
     }
-
-    .headerGroup {
-        display: flex;
-        padding: 0 0 0 5%;
-        height: 80%;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .itemContainer {
-        flex-direction: column;
-    }
-
-    .VideoTag {
-        width: 100%;
-    }
-
-    .modulesSection {
-        flex-direction: column;
-    }
+    
+}
+@media (max-width: 950px) {
 
     .map > iframe {
         width: 100%;
@@ -185,20 +176,6 @@
 
     .reviewLinksContainer > a {
         width: 15%;
-    }
-}
-
-@media (min-width: 550px) {
-    .itemContainer {
-        flex-direction: column;
-    }
-}
-@media (max-width: 550px) {
-    .header {
-        display: grid;
-    }
-    .itemContainer {
-        flex-direction: row;
     }
 }
 
@@ -458,19 +435,6 @@ img:active img{
     margin: 2%;
     transition: .3s;
     opacity: .3;
-}
-
-.itemContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.itemContainer:hover > :hover{
-    opacity: 1;   
-    border-radius: 20px;
-    border-color: #0073ba;
-    background-color: #d7ceff;
 }
 
 .headerIcons {
