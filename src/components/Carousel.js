@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Carousel({ content, imgs }) {
+export default function Carousel({ content, imgs, settingProps }) {
   const settings = {
     dots: false,
     infinite: true,
@@ -12,7 +12,8 @@ export default function Carousel({ content, imgs }) {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    arrows: false,
+    arrows: true,
+    ...settingProps,
   };
 
   return (

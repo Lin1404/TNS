@@ -26,6 +26,17 @@
     grid-gap: 5%;
 }
 
+.homeModalButtonContainer {
+    position: absolute;
+    color: navy;
+    opacity: 0.5;
+    display: grid;
+    justify-content: end;
+    width: 100%;
+    margin-top: -32px;
+    margin-left: -32px;
+}
+
 .accidentModalTitle{
     display: flex;
     align-items: center;
@@ -87,6 +98,39 @@
     width: 10%;
     padding: 0 2%;
 } 
+
+.galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 5%;
+}
+
+.galleryModal {
+    
+}
+
+.galleryModalButtonContainer {
+    position: absolute;
+    color: navy;
+    opacity: 0.5;
+    display: grid;
+    justify-content: end;
+    width: 100%;
+}
+
+.galleryModalButton {
+    color: navy !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: navy !important;
+}
+
+.aboutUsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 @media (max-width: 950px) {
     .header {
@@ -194,8 +238,6 @@
     }
 }
 
-
-
 .backgroundColor {
     background-color: #cae4fd;
 }
@@ -277,6 +319,7 @@ img:active img{
 
 .carousel {
     width: 80%;
+    margin-left: 20%;
     align-self: center;
     padding-top: 3%;
 }
@@ -322,7 +365,7 @@ img:active img{
 .sliderContainer {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
 }
 
 .introduction{

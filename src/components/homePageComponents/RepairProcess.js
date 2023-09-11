@@ -9,7 +9,13 @@ export default function RepairProcess() {
       <div className="compareSections">
         <div className="moduleContainer">
           <h2 className="sectionTitle">Do you know the Repair Process?</h2>
-          <Carousel imgs={repairProcessImgs} />
+          <img
+            src={repairProcessImgs}
+            alt="illustration"
+            style={{
+              width: "100%",
+            }}
+          />
         </div>
       </div>
     </div>

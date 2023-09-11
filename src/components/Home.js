@@ -94,13 +94,13 @@ export default function Home() {
 
       <Reviews />
 
-      <Modal
-        open={accidentModalOpen}
-        onClose={handleAccidentModalClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
+      <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
         <Box sx={style}>
+          <div className="homeModalButtonContainer">
+            <button size="small" onClick={handleAccidentModalClose}>
+              X
+            </button>
+          </div>
           <div>
             <AccidentProcess />
           </div>
@@ -112,11 +112,27 @@ export default function Home() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <div>
-            <RepairProcess />
+        <div>
+          <div className="homeModalButtonContainer">
+            <button
+              size="small"
+              onClick={handleRepairModalClose}
+              className="galleryModalButton"
+            >
+              X
+            </button>
           </div>
-        </Box>
+          <Box sx={style}>
+            <div className="homeModalButtonContainer">
+              <button size="small" onClick={handleAccidentModalClose}>
+                X
+              </button>
+            </div>
+            <div>
+              <RepairProcess />
+            </div>
+          </Box>
+        </div>
       </Modal>
     </>
   );
