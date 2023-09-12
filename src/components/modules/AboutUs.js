@@ -5,6 +5,8 @@ import tnsShop from "../../assets/tnsShop.png";
 import ecoFriendly from "../../assets/ecoFriendly.png";
 import ppg2 from "../../assets/ppg2.jpeg";
 import Header from "./Header";
+import { Grid, Typography } from "@mui/material";
+import CheckIcon from "@mui/icons-material/Check";
 
 export default function AboutUs() {
   useEffect(() => {
@@ -20,7 +22,7 @@ export default function AboutUs() {
           src={tnsShop}
           alt="illustration"
           style={{
-            width: "95%",
+            width: "70%",
             paddingBottom: "5%",
           }}
         />
@@ -35,25 +37,44 @@ export default function AboutUs() {
             alignSelf: "center",
           }}
         />
-        <div>
-          <h5>WHO WE ARE</h5>
-          <span>We are serving the community since 1995.</span>
-          <span>
-            With over 25 years of extensive expertise within the automotive
-            collision industry, we are your premier destination for
-            comprehensive vehicle repair services. Our unwavering commitment to
-            quality and safety underscores our mission. We proudly collaborate
-            with a wide array of leading insurance providers, holding the
-            esteemed certifications.
-          </span>
-          <span>
-            Whether you require assistance with insurance claims or require
-            meticulous reparations, rest assured that our team of highly skilled
-            technicians, bearing platinum I-CAR and ASE certifications, is at
-            your service. Your damaged vehicle is in capable hands, and our
-            exceptional customer service is here to guide you throughout the
-            process.
-          </span>
+        <div className="aboutUsText">
+          <Typography variant="h5">WHO WE ARE</Typography>
+          <Typography>We are serving the community since 1995.</Typography>
+          <div className="aboutUsTextContext">
+            With{" "}
+            <span style={{ fontSize: "xx-large", color: "#1b73bc" }}>25+</span>{" "}
+            years of automotive collision experience, we are your one-stop
+            repair expert. We prioritize quality and safety, partnering with
+            major insurance companies and holding Geico Auto Repair Express
+            certification. Trust our platinum I-CAR & ASE certified technicians
+            for your vehicle's insurance claims and repairs.
+          </div>
+          <div className="aboutUsSectionsContainer">
+            <div className="aboutUsSections">
+              <CheckIcon />
+              <span>25+ Years Of Experience</span>
+            </div>
+            <div className="aboutUsSections">
+              <CheckIcon />
+              <span>Manufacturer Certified Facility</span>
+            </div>
+            <div className="aboutUsSections">
+              <CheckIcon />
+              <span>State of the Art Equipment</span>
+            </div>
+            <div className="aboutUsSections">
+              <CheckIcon />
+              <span>I-CAR Gold Class Facility</span>
+            </div>
+            <div className="aboutUsSections">
+              <CheckIcon />
+              <span>I-CAR Platinum Technicians</span>
+            </div>
+            <div className="aboutUsSections">
+              <CheckIcon />
+              <span>Lifetime Warranty</span>
+            </div>
+          </div>
         </div>
       </div>
       {/* <div className="ppgAnnouncementContainer">

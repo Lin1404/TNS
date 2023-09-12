@@ -8,6 +8,7 @@ import Certifications from "./components/modules/Certifications";
 import DRP from "./components/modules/DRP";
 import RepairProcess from "./components/homePageComponents/RepairProcess";
 import AboutUs from "./components/modules/AboutUs";
+import Chat from "./components/message/Chat";
 
 const router = createBrowserRouter([
   {
@@ -46,7 +47,9 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
+
       <Footer />
+      <Chat />
     </div>
   );
 }

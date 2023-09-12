@@ -31,7 +31,7 @@ export default function Home() {
   const handleRepairModalClose = () => setRepairModalOpen(false);
 
   return (
-    <>
+    <div>
       <Header />
       <div className="videoAndModalsContainer">
         <div>
@@ -133,6 +133,7 @@ export default function Home() {
           </Box>
         </div>
       </Modal>
-    </>
+    </div>
   );
 }
+

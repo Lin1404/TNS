@@ -10,7 +10,6 @@
     display: grid !important;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 15%;
-
 }
 
 .modulesMenu {
@@ -21,8 +20,7 @@
 .icon-bar {
     display: block;
     width: 30px;
-    height: 7px;
-    border-radius: 6px;
+    height: 5px;
     background: #3b3bb3;
 }
 
@@ -141,6 +139,50 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.aboutUsText {
+    display: grid;
+    padding: 3%;
+    grid-gap: 5%;
+}
+
+.aboutUsTextContext {
+    text-align: justify;
+    font-family: system-ui;
+}
+
+.aboutUsSectionsContainer {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 1.8em;
+    font-weight: 400;
+}
+
+.aboutUsSections {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.aboutUsSections > svg {
+    color: #1b73bc;
+    font-size: xx-large;
+}
+
+.aboutUsSections > span {
+    padding: 0 3%;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.messageButtonContainer {
+    position: sticky;
+    bottom: 10%;
+}
+
 @media (max-width: 700px) {
     .header {
         grid-template-columns: 9fr 1fr;

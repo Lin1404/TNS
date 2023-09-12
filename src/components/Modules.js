@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import yelpLogo from "../assets/yelpLogo.svg";
 import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
@@ -25,6 +25,18 @@ export default function Modules({ isButton = false }) {
   };
   const handleMenuClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleOtherLocationExpand = (event) => {
+    console.log("in");
+    setAnchorEl(event.currentTarget);
+    setIsMouseOnOhterLocationModule(true);
+  };
+
+  const handleOtherLocationClose = () => {
+    console.log("leave");
+    setAnchorEl(null);
+    setIsMouseOnOhterLocationModule(false);
   };
 
   return !isButton ? (
@@ -53,21 +65,51 @@ export default function Modules({ isButton = false }) {
           </div>
         ))}
         <div className="moduleButtonContainer" key={"otherlocation"}>
-          <a href="https://www.tnsautoinc.com/" target="blank">
-            <Button
-              className="moduleButton"
-              onMouseEnter={() => setIsMouseOnOhterLocationModule(true)}
-              onMouseLeave={() => setIsMouseOnOhterLocationModule(false)}
-              style={{
-                fontFamily: "inherit",
-                fontSize: "smaller",
-                color: isMouseOnOhterLocationModule ? "#e3d515" : "white",
-              }}
-            >
-              Other Location
-            </Button>
-          </a>
+          <Button
+            className="moduleButton"
+            onMouseEnter={() => setIsMouseOnOhterLocationModule(true)}
+            onMouseLeave={() => setIsMouseOnOhterLocationModule(false)}
+            style={{
+              fontFamily: "inherit",
+              fontSize: "smaller",
+              color: isMouseOnOhterLocationModule ? "#e3d515" : "white",
+            }}
+            aria-controls={openMenu ? "modulesMenu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={openMenu ? "true" : undefined}
+            onClick={handleClick}
+          >
+            Other Location
+          </Button>
         </div>
+
+        <Menu
+          id="modulesMenu"
+          anchorEl={anchorEl}
+          open={openMenu}
+          onClose={handleMenuClose}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "left",
+          }}
+          transformOrigin={{
+            vertical: "buttom",
+            horizontal: "left",
+          }}
+        >
+          <MenuItem onClick={handleMenuClose}>
+            2065 Forest Avenue, Staten Island, NY, 10303
+          </MenuItem>
+          <MenuItem onClick={handleMenuClose}>
+            <a
+              href="https://www.tnsautoinc.com/"
+              target="blank"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              SEE WEBSITE →
+            </a>
+          </MenuItem>
+        </Menu>
       </div>
       <div className="socialMediaIconsOnModules">
         <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
@@ -112,11 +154,15 @@ export default function Modules({ isButton = false }) {
         }}
       >
         {modulesRouting.map((item, idx) => (
-          <Link key={item.path} to={`${item.path}`}>
+          <Link to={`${item.path}`} style={{ textDecoration: "none" }}>
             <MenuItem onClick={handleMenuClose}>{item.label}</MenuItem>
           </Link>
         ))}
-        <a href="https://www.tnsautoinc.com/" target="blank">
+        <a
+          href="https://www.tnsautoinc.com/"
+          target="blank"
+          style={{ textDecoration: "none" }}
+        >
           <MenuItem onClick={handleMenuClose}>Other Location</MenuItem>
         </a>
       </Menu>
