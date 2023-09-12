@@ -40,7 +40,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="compareSections">
+    <div>
       <Header />
       <div className="backgroundColorWhite" />
       <h2 className="sectionTitle">Before & After Photos:</h2>

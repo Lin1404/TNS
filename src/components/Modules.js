@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
   { path: "/tnsauto/aboutus", label: "About Us" },
+  { path: "/tnsauto/service", label: "Service" },
   { path: "/tnsauto/drp", label: "DRP" },
   { path: "/tnsauto/certifications", label: "Certifications" },
   { path: "/tnsauto/gallery", label: "Gallery" },
@@ -25,18 +26,6 @@ export default function Modules({ isButton = false }) {
   };
   const handleMenuClose = () => {
     setAnchorEl(null);
-  };
-
-  const handleOtherLocationExpand = (event) => {
-    console.log("in");
-    setAnchorEl(event.currentTarget);
-    setIsMouseOnOhterLocationModule(true);
-  };
-
-  const handleOtherLocationClose = () => {
-    console.log("leave");
-    setAnchorEl(null);
-    setIsMouseOnOhterLocationModule(false);
   };
 
   return !isButton ? (

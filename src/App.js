@@ -9,6 +9,7 @@ import DRP from "./components/modules/DRP";
 import RepairProcess from "./components/homePageComponents/RepairProcess";
 import AboutUs from "./components/modules/AboutUs";
 import Chat from "./components/message/Chat";
+import Service from "./components/modules/Service";
 
 const router = createBrowserRouter([
   {
@@ -41,13 +42,17 @@ const router = createBrowserRouter([
     element: <AboutUs />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/tnsauto/service",
+    element: <Service />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
-
       <Footer />
       <Chat />
     </div>
