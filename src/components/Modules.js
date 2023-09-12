@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import yelpLogo from "../assets/yelpLogo.svg";
 import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },

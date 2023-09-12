@@ -1,7 +1,4 @@
-import Carousel from "../Carousel";
 import process from "../../assets/process.png";
-
-const repairProcessImgs = [process];
 
 export default function RepairProcess() {
   return (
@@ -10,7 +7,7 @@ export default function RepairProcess() {
         <div className="moduleContainer">
           <h2 className="sectionTitle">Do you know the Repair Process?</h2>
           <img
-            src={repairProcessImgs}
+            src={process}
             alt="illustration"
             style={{
               width: "100%",

@@ -123,7 +123,7 @@ export default function Home() {
           </div>
           <Box sx={style}>
             <div className="homeModalButtonContainer">
-              <button size="small" onClick={handleAccidentModalClose}>
+              <button size="small" onClick={handleRepairModalClose}>
                 X
               </button>
             </div>

@@ -1,5 +1,5 @@
-import TelegramIcon from "@mui/icons-material/Telegram";
-import { Button } from "@mui/material";
+// import TelegramIcon from "@mui/icons-material/Telegram";
+// import { Button } from "@mui/material";
 
 export default function Chat() {
   return (
@@ -14,4 +14,3 @@ export default function Chat() {
     </div>
   );
 }
-

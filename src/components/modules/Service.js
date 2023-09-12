@@ -1,11 +1,6 @@
-import { useEffect } from "react";
-import Carousel from "../Carousel";
-import office from "../../assets/Office.jpeg";
-import tnsShop from "../../assets/tnsShop.png";
 import ecoFriendly from "../../assets/ecoFriendly.png";
 import ppg2 from "../../assets/ppg2.jpeg";
 import Header from "./Header";
-import { Grid, Typography } from "@mui/material";
 import serviceIcon1 from "../../assets/serviceIcon1.png";
 import serviceIcon2 from "../../assets/serviceIcon2.png";
 import serviceIcon3 from "../../assets/serviceIcon3.png";
