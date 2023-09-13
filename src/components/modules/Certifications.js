@@ -22,7 +22,7 @@ export default function Certifications() {
           repaired to factory specs and pre-accident condition.
         </p>
         <div className="certificationsLogo">
-          <img src={certifications} alt="illustration" />
+          <img src={certifications} alt="certifications" />
         </div>
         <div className="certificationsExpand">
           <h2>

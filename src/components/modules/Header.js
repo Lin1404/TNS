@@ -37,7 +37,7 @@ export default function Header() {
         <Link to={"/tnsauto"}>
           <img
             src={tnsLogo}
-            alt="illustration"
+            alt="TNS logo"
             style={{ width: "5rem", paddingRight: "1rem" }}
           />
         </Link>
@@ -57,7 +57,7 @@ export default function Header() {
         <Link to={"/tnsauto"}>
           <img
             src={tnsLogo}
-            alt="illustration"
+            alt="TNS logo"
             style={{ width: "5rem", paddingRight: "1rem" }}
           />
         </Link>

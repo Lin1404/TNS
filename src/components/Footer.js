@@ -9,11 +9,11 @@ export default function Footer() {
   return (
     <div className="footerContainer backgroundColor ">
       <div className="tnsTitle">
-        <img src={tnsLogo} alt="illustration" />
+        <img src={tnsLogo} alt="TNS Logo" />
         <h1>TNS Auto Collision</h1>
       </div>
       <div className="infoContainer">
-        <div className="introduction">
+        {/* <div className="introduction">
           <h1>About Us</h1>
           <p>We are serving the community since 1995.</p>
           <p>
@@ -25,22 +25,22 @@ export default function Footer() {
             customer services and platinum I-CAR & ASE certified technicians to
             handle your damage vehicle."
           </p>
-        </div>
+        </div> */}
         <div>
           <div className="info">
             <h3>Contact us:</h3>
             <div className="socialMediaIcons">
               <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
-                <img src={facebookLogo} alt="illustration" />
+                <img src={facebookLogo} alt="Facebook Logo" />
               </a>
               <a href="https://www.instagram.com/tnsautogroup/" target="blank">
-                <img src={instegramLogo} alt="illustration" />
+                <img src={instegramLogo} alt="Instegram Logo" />
               </a>
               <a
                 href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
                 target="blank"
               >
-                <img src={yelpLogo} alt="illustration" />
+                <img src={yelpLogo} alt="Yelp Logo" />
               </a>
             </div>
             <div className="infoDetail">
@@ -64,16 +64,16 @@ export default function Footer() {
         </div>
 
         <div className="map">
-          <div className="infoDetail">
+          {/* <div className="infoDetail">
             <h4>Our Location</h4>
             <div>1011 61st St</div>
             <div> Brooklyn, NY 11219</div>
-          </div>
+          </div> */}
           <h3>Locate Us:</h3>
           <iframe
             title="Map"
-            width="300"
-            height="200"
+            width="700"
+            height="275"
             frameBorder="0"
             scrolling="no"
             marginHeight="0"

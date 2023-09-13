@@ -264,7 +264,7 @@
     }
 
     .infoContainer {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     .tnsTitle {
@@ -395,7 +395,7 @@ img:active img{
 
 .infoContainer {
     display: grid;
-    padding: 1% 3%;
+    padding: 0% 3%;
 }
 
 .infoDetail > div {

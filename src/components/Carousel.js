@@ -31,7 +31,7 @@ export default function Carousel({ content, imgs, settingProps }) {
             <div key={item} className="carouselImg">
               <img
                 src={item}
-                alt="illustration"
+                alt="Carouse Images"
                 style={{
                   width: "100%",
                 }}

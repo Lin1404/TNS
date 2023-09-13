@@ -102,16 +102,16 @@ export default function Modules({ isButton = false }) {
       </div>
       <div className="socialMediaIconsOnModules">
         <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
-          <img src={facebookLogo} alt="illustration" />
+          <img src={facebookLogo} alt="facebookLogo" />
         </a>
         <a href="https://www.instagram.com/tnsautogroup/" target="blank">
-          <img src={instegramLogo} alt="illustration" />
+          <img src={instegramLogo} alt="instegramLogo" />
         </a>
         <a
           href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
           target="blank"
         >
-          <img src={yelpLogo} alt="illustration" />
+          <img src={yelpLogo} alt="yelpLogo" />
         </a>
       </div>
     </div>

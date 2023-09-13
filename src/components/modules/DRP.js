@@ -12,7 +12,7 @@ export default function DRP() {
       <div className="moduleContainer">
         <h2 className="sectionTitle">DRP Partner With</h2>
         <div className="certificationsLogo">
-          <img src={drp} alt="illustration" />
+          <img src={drp} alt="DRP" />
         </div>
       </div>
     </>

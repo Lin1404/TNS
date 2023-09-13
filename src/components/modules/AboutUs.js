@@ -17,7 +17,7 @@ export default function AboutUs() {
         <h2 className="sectionTitle">About Us:</h2>
         <img
           src={tnsShop}
-          alt="illustration"
+          alt="shop"
           style={{
             width: "70%",
             paddingBottom: "5%",
@@ -27,7 +27,7 @@ export default function AboutUs() {
       <div className="aboutUsContainer">
         <img
           src={office}
-          alt="illustration"
+          alt="office"
           style={{
             width: "90%",
             justifySelf: "center",

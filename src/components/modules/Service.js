@@ -1,4 +1,5 @@
 import ecoFriendly from "../../assets/ecoFriendly.png";
+import ppg from "../../assets/ppg.jpeg";
 import ppg2 from "../../assets/ppg2.jpeg";
 import Header from "./Header";
 import serviceIcon1 from "../../assets/serviceIcon1.png";
@@ -40,7 +41,7 @@ export default function Service() {
             </div>
           </div>
         </div>
-        <h2 className="sectionTitle">Best Color Result:</h2>
+        <h2 className="sectionTitle">Our Best Color Result:</h2>
         <div className="ppgAnnouncementContainer">
           <img src={ecoFriendly} alt="illustration" style={{ width: "25%" }} />
           <div className="ppgAnnouncement">
@@ -64,8 +65,13 @@ export default function Service() {
         </div>
         <img
           src={ppg2}
-          alt="illustration"
+          alt="ppg"
           style={{ width: "20%", paddingBottom: "5%" }}
+        />
+        <img
+          src={ppg}
+          alt="ppg"
+          style={{ width: "20%", padding: "0 0 5% 5%" }}
         />
         <div className="greenAnnouncementContainer">
           <div>

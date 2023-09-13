@@ -55,7 +55,7 @@ export default function Gallery() {
             >
               <img
                 src={item}
-                alt="illustration"
+                alt="Before & After"
                 style={{
                   width: "100%",
                 }}

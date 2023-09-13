@@ -8,7 +8,7 @@ export default function RepairProcess() {
           <h2 className="sectionTitle">Do you know the Repair Process?</h2>
           <img
             src={process}
-            alt="illustration"
+            alt="Repair Process"
             style={{
               width: "100%",
             }}
