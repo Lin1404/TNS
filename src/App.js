@@ -1,13 +1,15 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ErrorPage from "./components/ErrorPage";
-import BeforeAndAfter from "./components/modules/BeforeAndAfter";
-import Team from "./components/modules/Team";
+import Gallery from "./components/modules/Gallery";
 import Certifications from "./components/modules/Certifications";
 import DRP from "./components/modules/DRP";
+import RepairProcess from "./components/homePageComponents/RepairProcess";
+import AboutUs from "./components/modules/AboutUs";
+import Chat from "./components/message/Chat";
+import Service from "./components/modules/Service";
 
 const router = createBrowserRouter([
   {
@@ -16,13 +18,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/beforeandafter",
-    element: <BeforeAndAfter />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/tnsauto/team",
-    element: <Team />,
+    path: "/tnsauto/gallery",
+    element: <Gallery />,
     errorElement: <ErrorPage />,
   },
   {
@@ -35,14 +32,29 @@ const router = createBrowserRouter([
     element: <DRP />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/tnsauto/repairprocess",
+    element: <RepairProcess />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/aboutus",
+    element: <AboutUs />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/service",
+    element: <Service />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <RouterProvider router={router} />
       <Footer />
+      <Chat />
     </div>
   );
 }

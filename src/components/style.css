@@ -1,10 +1,27 @@
 
 .header {
     align-items: center;
-    position: fixed;
     width: 100%;
     z-index: 99;
     display: grid;
+}
+
+.modulesbutton {
+    display: grid !important;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15%;
+}
+
+.modulesMenu {
+    top:9% !important;
+    left: 80% !important;
+}
+
+.icon-bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #3b3bb3;
 }
 
 .backgroundColorWhite {
@@ -20,36 +37,189 @@
     padding: 2% 5%;
 }
 
-@media (max-width: 950px) {
+.homePageModalContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 2%;
+    grid-gap: 5%;
+}
+
+.homeModalButtonContainer {
+    position: absolute;
+    color: navy;
+    opacity: 0.5;
+    display: grid;
+    justify-content: end;
+    width: 100%;
+    margin-top: -32px;
+    margin-left: -32px;
+}
+
+.accidentModalTitle{
+    display: flex;
+    align-items: center;
+    gap: 0 4%;
+    justify-content: center;
+    margin-top: -10%;
+}
+
+.accidentModalTitle > h1 {
+    color: red;
+}
+
+.reviewModulepaddingTop {
+    padding: 3% 0;
+}
+
+.modulesContainer {
+    display: grid;
+    background: linear-gradient(10deg, #3b3bb3, #cae4fd);
+    grid-template-columns: 3fr 1fr;
+}
+
+.modulesSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+    padding-left: 3%;
+
+}
+
+.moduleButton {
+    height: 100%;
+    width: 100%;
+}
+
+.socialMediaIcons {
+    display: flow;
+}
+
+.socialMediaIcons > a > img {
+    width: 10%;
+    padding: 0 2%;
+}
+
+.socialMediaIconsOnModules {
+    display: flow;
+    text-align-last: right;
+    align-self: end;
+}
+
+.socialMediaIconsOnModules > a > img {
+    width: 10%;
+    padding: 0 2%;
+} 
+
+.galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 5%;
+}
+
+.galleryModalButtonContainer {
+    position: absolute;
+    color: navy;
+    opacity: 0.5;
+    display: grid;
+    justify-content: end;
+    width: 100%;
+}
+
+.galleryModalButton {
+    color: navy !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: navy !important;
+}
+
+.aboutUsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aboutUsText {
+    display: grid;
+    padding: 3%;
+    grid-gap: 5%;
+}
+
+.aboutUsTextContext {
+    text-align: justify;
+    font-family: system-ui;
+}
+
+.aboutUsSectionsContainer {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 1.8em;
+    font-weight: 400;
+}
+
+.aboutUsSections {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.aboutUsSections > svg {
+    color: #1b73bc;
+    font-size: xx-large;
+}
+
+.aboutUsSections > span {
+    padding: 0 3%;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.serviceContextGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 5% 5% 10% 5%;
+    grid-gap: 5%;
+    align-items: center;
+    row-gap: 25%;
+}
+
+.serviceContextGrid > img {
+    width: 80%;
+    justify-self: right;
+}
+
+.serviceContextContainer {
+    display: grid;
+    grid-gap: 10%;
+}
+
+.serviceContextContainer > div {
+    justify-self: left;
+    font-family: system-ui;
+    font-size: large;
+}
+
+.messageButtonContainer {
+    position: sticky;
+    bottom: 10%;
+}
+
+.messageButtonContainer :hover {
+    background-color: #095684;
+}
+
+@media (max-width: 700px) {
     .header {
-        display: flex;
+        grid-template-columns: 9fr 1fr;
     }
-
-    .headerGroup {
-        display: flex;
-        padding: 0 0 0 5%;
-        height: 80%;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .paddingTop {
-        padding-top: 190px;
-        background-color: #eff8ff;
-    }
-
-    .itemContainer {
-        flex-direction: column;
-    }
-
-    .VideoTag {
-        width: 100%;
-    }
-
-    .modulesSection {
-        flex-direction: column;
-    }
+    
+}
+@media (max-width: 950px) {
 
     .map > iframe {
         width: 100%;
@@ -81,45 +251,20 @@
     }
 }
 
-@media (max-width: 375px) {
-    .paddingTop {
-        padding-top: 350px;
-        background-color: #eff8ff;
-    }
-
-}
-
-@media (max-width:500px) {
-    .paddingTop {
-        padding-top: 250px;
-    }
-}
-@media (min-width: 550px) {
-    .itemContainer {
-        flex-direction: column;
-    }
-}
-@media (max-width: 550px) {
-    .header {
-        display: grid;
-    }
-    .itemContainer {
-        flex-direction: row;
-    }
-}
-
 @media (min-width: 950px) {
+    .videoAndModalsContainer{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .homePageModalContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 5%;
+    }
+
     .infoContainer {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .header {
-        grid-template-columns: 60% 40%;
-    }
-
-    .paddingTop {
-        padding-top: 140px;
-        background-color: #eff8ff;
     }
 
     .tnsTitle {
@@ -133,7 +278,7 @@
     }
 
     .greenAnnouncementContainer {
-        background-size: 100% 90%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
     }
 
@@ -142,15 +287,13 @@
     }
 }
 
-
-
 .backgroundColor {
-    background-color: aliceblue;
+    background-color: #cae4fd;
 }
 
 .headerGroup {
     display: flex;
-    padding: 0 5%;
+    padding: 0 0 0 5%;
     height: 80%;
     align-items: center;
 }
@@ -225,6 +368,7 @@ img:active img{
 
 .carousel {
     width: 80%;
+    margin-left: 20%;
     align-self: center;
     padding-top: 3%;
 }
@@ -270,7 +414,7 @@ img:active img{
 .sliderContainer {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
 }
 
 .introduction{
@@ -334,7 +478,6 @@ img:active img{
     padding: 0 10% 10% 10%;
     background-image: url(https://www.fastweb.com/uploads/article_photo/photo/2036160/Simple_Environment.jpeg);
     opacity: 0.8;
-    background-color: #eff8ff;
 }
 
 .greenAnnouncementContainer > div > h2 {
@@ -366,19 +509,6 @@ img:active img{
     opacity: .3;
 }
 
-.itemContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.itemContainer:hover > :hover{
-    opacity: 1;   
-    border-radius: 20px;
-    border-color: #0073ba;
-    background-color: #d7ceff;
-}
-
 .headerIcons {
     height: 50px;
     width: 50%;
@@ -397,7 +527,7 @@ img:active img{
 }
 
 .moduleContainer {
-    padding: 5%;
+    padding: 0 5%;
 }
 
 .moduleContainer > p {
@@ -412,27 +542,6 @@ img:active img{
     width: 50%;
 }
 
-.modulesSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    justify-items: center;
-    margin: 5%;
-    gap: 2%;
-}
-
-.moduleButtonContainer {
-    background-color: #3e3e98;
-    border-radius: 15px;
-    height: 5rem;
-    width: 15rem;
-}
-
-.moduleButton {
-    height: 100%;
-    width: 100%;
-}
 
 .backToHomeIconButton {
     width: 60px;

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
-import BackToHomeButton from "./BackToHomeButton";
 import certifications from "../../assets/certifications.png";
-import { BackToHomeIcon } from "./BackToHomeButton";
+import Header from "./Header";
 
 export default function Certifications() {
   useEffect(() => {
@@ -9,12 +8,12 @@ export default function Certifications() {
   }, []);
   return (
     <div>
-      <div className="paddingTop backgroundColorWhite" />
-      <BackToHomeButton />
+      <Header />
+      <div className="backgroundColorWhite" />
       <div className="moduleContainer">
         <h2 className="sectionTitle">Certifications</h2>
         <p>
-          TNS Auto Group is your state of the art collision repair facility.
+          TNS Auto Collision is your state of the art collision repair facility.
         </p>
         <p>
           We meet our goals by utilizing today's most advanced systems in the
@@ -63,7 +62,6 @@ export default function Certifications() {
             the quality of service they receive.
           </p>
         </div>
-        <BackToHomeIcon />
       </div>
     </div>
   );

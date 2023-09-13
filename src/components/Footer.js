@@ -1,10 +1,13 @@
 import tnsLogo from "../assets/tns.svg";
+import yelpLogo from "../assets/yelpLogo.svg";
+import facebookLogo from "../assets/facebookLogo.svg";
+import instegramLogo from "../assets/instagramLogo.svg";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export default function Footer() {
   return (
-    <div className="footerContainer backgroundColor">
+    <div className="footerContainer backgroundColor ">
       <div className="tnsTitle">
         <img src={tnsLogo} alt="illustration" />
         <h1>TNS Auto Collision</h1>
@@ -12,6 +15,7 @@ export default function Footer() {
       <div className="infoContainer">
         <div className="introduction">
           <h1>About Us</h1>
+          <p>We are serving the community since 1995.</p>
           <p>
             "With 25+ years of experience in the automotive collision industry,
             consider us your repair expert for your vehicle all in one stop.
@@ -25,6 +29,20 @@ export default function Footer() {
         <div>
           <div className="info">
             <h3>Contact us:</h3>
+            <div className="socialMediaIcons">
+              <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
+                <img src={facebookLogo} alt="illustration" />
+              </a>
+              <a href="https://www.instagram.com/tnsautogroup/" target="blank">
+                <img src={instegramLogo} alt="illustration" />
+              </a>
+              <a
+                href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
+                target="blank"
+              >
+                <img src={yelpLogo} alt="illustration" />
+              </a>
+            </div>
             <div className="infoDetail">
               <div style={{ display: "flex" }}>
                 <LocalPhoneOutlinedIcon />
