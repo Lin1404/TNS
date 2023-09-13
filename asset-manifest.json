@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tnsauto/static/css/main.ab9b973b.css",
-    "main.js": "/tnsauto/static/js/main.a339953a.js",
+    "main.css": "/tnsauto/static/css/main.097410a1.css",
+    "main.js": "/tnsauto/static/js/main.eecb21d4.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.bf16f81127c316297a6d.mp4",
     "static/media/process.png": "/tnsauto/static/media/process.17836788eef0f98fb4c9.png",
     "static/media/tnsShop.png": "/tnsauto/static/media/tnsShop.e2b7168d163cf7fde159.png",
-    "static/media/compare5.png": "/tnsauto/static/media/compare5.a8d7f517b0bcb119ecb1.png",
-    "static/media/compare1.png": "/tnsauto/static/media/compare1.45f62659d1dfc36e69f2.png",
-    "static/media/compare4.png": "/tnsauto/static/media/compare4.2751319720787b4315ee.png",
-    "static/media/compare2.png": "/tnsauto/static/media/compare2.39025bf2fa18bc4e8863.png",
-    "static/media/compare3.png": "/tnsauto/static/media/compare3.1803a51e09527071ed00.png",
-    "static/media/compare7.png": "/tnsauto/static/media/compare7.9ac52a908eb651e03e6b.png",
+    "static/media/compare1.png": "/tnsauto/static/media/compare1.d3468c187a75268028d2.png",
+    "static/media/compare2.png": "/tnsauto/static/media/compare2.9ac960ab091c4155f2ef.png",
+    "static/media/compare4.png": "/tnsauto/static/media/compare4.711cd946b3fdbe8f3f06.png",
+    "static/media/compare5.png": "/tnsauto/static/media/compare5.2c97434d478ccac6955d.png",
+    "static/media/compare3.png": "/tnsauto/static/media/compare3.668303efa5c924bd5ea3.png",
+    "static/media/compare7.png": "/tnsauto/static/media/compare7.10c8ca1baa24fa0beea7.png",
     "static/media/ecoFriendly.png": "/tnsauto/static/media/ecoFriendly.96305dac288f17b4dbc2.png",
     "static/media/certifications.png": "/tnsauto/static/media/certifications.ee6f09fabce4de8aed85.png",
     "static/media/tns.svg": "/tnsauto/static/media/tns.8c23c543c0ef8a21473f45982a069c15.svg",
@@ -21,8 +21,9 @@
     "static/media/takeEveident.jpeg": "/tnsauto/static/media/takeEveident.7180d12bbfe997d39c83.jpeg",
     "static/media/notAdmit.jpeg": "/tnsauto/static/media/notAdmit.d6b8666cd859c43102fa.jpeg",
     "static/media/exchangeInfo1.jpeg": "/tnsauto/static/media/exchangeInfo1.4de817bdc4e410050071.jpeg",
-    "static/media/yelpIcon.png": "/tnsauto/static/media/yelpIcon.9ebebdb999f64454a43f.png",
+    "static/media/yelpIcon.png": "/tnsauto/static/media/yelpIcon.645e847a099b88af6d95.png",
     "static/media/checkSafety.jpeg": "/tnsauto/static/media/checkSafety.3406bfe9db74fc7450c0.jpeg",
+    "static/media/ppg.jpeg": "/tnsauto/static/media/ppg.005409869884b4636e35.jpeg",
     "static/media/instagramLogo.svg": "/tnsauto/static/media/instagramLogo.a0a9a83448ddb5827d70493a84d37806.svg",
     "static/media/slick.svg": "/tnsauto/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/yelpLogo.svg": "/tnsauto/static/media/yelpLogo.cf5805c70afc161d6d6af94cf48ecc72.svg",
@@ -31,12 +32,12 @@
     "static/media/facebookLogo.svg": "/tnsauto/static/media/facebookLogo.1d8e0397525aadb52a029adc60908a02.svg",
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
-    "main.ab9b973b.css.map": "/tnsauto/static/css/main.ab9b973b.css.map",
-    "main.a339953a.js.map": "/tnsauto/static/js/main.a339953a.js.map",
+    "main.097410a1.css.map": "/tnsauto/static/css/main.097410a1.css.map",
+    "main.eecb21d4.js.map": "/tnsauto/static/js/main.eecb21d4.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab9b973b.css",
-    "static/js/main.a339953a.js"
+    "static/css/main.097410a1.css",
+    "static/js/main.eecb21d4.js"
   ]
 }
