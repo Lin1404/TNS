@@ -10,6 +10,7 @@ import RepairProcess from "./components/homePageComponents/RepairProcess";
 import AboutUs from "./components/modules/AboutUs";
 import Chat from "./components/message/Chat";
 import Service from "./components/modules/Service";
+import Contact from "./components/modules/Contact";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
   {
     path: "/tnsauto/service",
     element: <Service />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/contact",
+    element: <Contact />,
     errorElement: <ErrorPage />,
   },
 ]);

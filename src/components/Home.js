@@ -96,7 +96,11 @@ export default function Home() {
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
         <Box sx={style}>
           <div className="homeModalButtonContainer">
-            <button size="small" onClick={handleAccidentModalClose}>
+            <button
+              type="button"
+              size="small"
+              onClick={handleAccidentModalClose}
+            >
               X
             </button>
           </div>
