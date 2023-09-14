@@ -48,11 +48,7 @@ export default function MessageWindow() {
   };
 
   return (
-    <Box
-    // border={1}
-    // borderRadius={2}
-    // color={"#002984"}
-    >
+    <Box>
       <h3>Contact Us:</h3>
       <FormControl>
         <Form onSubmit={handleOnSubmit}>
