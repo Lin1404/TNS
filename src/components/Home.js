@@ -2,7 +2,7 @@ import Reviews from "./modules/Reviews";
 import AccidentProcess from "./homePageComponents/AccidentProcess";
 import tnsAnime from "../assets/tnsAnime.mp4";
 import Header from "./modules/Header";
-import { Button } from "@mui/material";
+import { Button, Container, Divider, Grid, Stack } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
 import Box from "@mui/material/Box";
@@ -91,6 +91,75 @@ export default function Home() {
         </div>
       </div>
 
+      <Grid container xs={12} columnGap={15} className="highlight">
+        <Box>
+          <Stack>
+            <Typography variant="h4" padding={1}>
+              25+
+            </Typography>
+            {/* <hr></hr> */}
+            <Divider variant="middle" />
+            <Typography variant="body1" padding={1}>
+              Year of Experience
+            </Typography>
+          </Stack>
+        </Box>
+        <Box>
+          <Stack>
+            <Typography variant="h4" padding={1}>
+              130+
+            </Typography>
+            <Divider variant="middle" />
+            <Typography variant="body1" padding={1}>
+              Fully Trained Stuff
+            </Typography>
+          </Stack>
+        </Box>
+        <Box>
+          <Stack>
+            <Typography variant="h4" padding={1}>
+              14
+            </Typography>
+            <Divider variant="middle" />
+            <Typography variant="body1" paddingTop={1}>
+              Parner With
+            </Typography>
+            <Typography variant="body1">Major Insurance</Typography>
+          </Stack>
+        </Box>
+        <Box>
+          <Stack>
+            <Typography variant="h4" padding={1}>
+              1%
+            </Typography>
+            <Divider variant="middle" />
+            <Typography variant="body1" padding={1}>
+              Top Rank in U.S.
+            </Typography>
+          </Stack>
+        </Box>
+      </Grid>
+      <Grid xs={12} className="highlight" paddingTop={0}>
+        <Stack>
+          <Typography variant="h3" color={"darkslategray"}>
+            Lifetime Warranty
+          </Typography>
+          <Typography
+            variant="body1"
+            paddingTop={5}
+            paddingLeft={25}
+            paddingRight={25}
+          >
+            Your repair is guaranteed for as long as you own your car. Our
+            warranty covers the mechanics, paint, parts and collision work
+            associated with your claim. Other warranties may apply.
+          </Typography>
+          <Typography variant="caption" paddingTop={2}>
+            * Make sure keep the invoice for Lifetime Warranty, labor not
+            included
+          </Typography>
+        </Stack>
+      </Grid>
       <Reviews />
 
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>

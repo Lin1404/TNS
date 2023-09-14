@@ -91,6 +91,14 @@
     width: 100%;
 }
 
+.highlight {
+    justify-content: center;
+    background-color: #709099;
+    opacity: 0.8;
+    color: cornsilk;
+    padding: 8% 0;
+}
+
 .socialMediaIcons {
     display: flow;
 }
@@ -255,6 +263,7 @@
     .videoAndModalsContainer{
         display: grid;
         grid-template-columns: 2fr 1fr;
+        padding-bottom: 5%;
     }
     .homePageModalContainer{
         display: grid;

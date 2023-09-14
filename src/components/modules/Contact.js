@@ -1,4 +1,4 @@
-import { Grid, Box, Container, Stack } from "@mui/material";
+import { Grid, Box, Container, Stack, Paper } from "@mui/material";
 import MessageWindow from "../message/MessageWindow";
 import Header from "./Header";
 import { useState } from "react";
@@ -89,9 +89,7 @@ function ContactInfo() {
     },
   ];
   return (
-    <Container
-    // style={{ paddingTop: "17%" }}
-    >
+    <Container>
       <h3>GET IN TOUCH</h3>
       <Grid
         padding={3}
@@ -103,7 +101,9 @@ function ContactInfo() {
         {infoArr.map((item, idx) => {
           return (
             <Grid xs={5}>
-              <Box
+              <Paper
+                square={false}
+                elevation={5}
                 sx={{
                   width: "100%",
                   height: 190,
@@ -112,8 +112,6 @@ function ContactInfo() {
                     opacity: [0.9, 0.8, 0.7],
                   },
                 }}
-                border={1}
-                borderColor="darkgray"
                 onMouseEnter={() => sethoverOnElement(idx)}
                 onMouseLeave={() => sethoverOnElement(-1)}
               >
@@ -141,7 +139,7 @@ function ContactInfo() {
                     {item.value}
                   </text>
                 </Stack>
-              </Box>
+              </Paper>
             </Grid>
           );
         })}
