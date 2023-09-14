@@ -213,7 +213,7 @@
     background-color: #095684;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .header {
         grid-template-columns: 9fr 1fr;
     }

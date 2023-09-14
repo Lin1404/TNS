@@ -15,14 +15,16 @@ const SERVICE_ID = "service_rkvpp6n";
 const TEMPLATE_ID = "template_e06xv0o";
 const USER_ID = "r4Jj97hnasFu2RRk8";
 
+
+const initForm = {
+  name: "",
+  phone: "",
+  email: "",
+  model: "",
+  message: "",
+};
 export default function MessageWindow() {
-  const [formValues, setFormValues] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    model: "",
-    message: "",
-  });
+  const [formValues, setFormValues] = useState(initForm);
   const [isOnSubmit, setIsOnSubmit] = useState(false);
   const handleOnSubmit = (e) => {
     if (
@@ -33,13 +35,15 @@ export default function MessageWindow() {
     ) {
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+          console.log("SUCCESS SUBMIT FORM!", response.status);
+          setFormValues(initForm);
+          setIsOnSubmit(false);
+          e.target.reset();
         },
         (error) => {
           console.log("FAILED...", error);
         }
       );
-      e.target.reset();
     }
   };
 
@@ -60,6 +64,7 @@ export default function MessageWindow() {
                   label="Name"
                   name="name"
                   required
+                  sx={{ width: "100%" }}
                   onChange={(e) =>
                     setFormValues({ ...formValues, name: e.target.value })
                   }
@@ -69,6 +74,7 @@ export default function MessageWindow() {
               <Grid xs={6} textAlign={"right"}>
                 <TextField
                   id="model"
+                  sx={{ width: "100%" }}
                   label="Car Model (Optional)"
                   name="model"
                   onChange={(e) =>
@@ -103,6 +109,7 @@ export default function MessageWindow() {
                   label="E-mail"
                   name="email"
                   required
+                  sx={{ width: "100%" }}
                   error={isOnSubmit && formValues.email === ""}
                   onChange={(e) =>
                     setFormValues({ ...formValues, email: e.target.value })
