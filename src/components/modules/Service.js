@@ -6,6 +6,7 @@ import serviceIcon1 from "../../assets/serviceIcon1.png";
 import serviceIcon2 from "../../assets/serviceIcon2.png";
 import serviceIcon3 from "../../assets/serviceIcon3.png";
 import serviceIcon4 from "../../assets/serviceIcon4.png";
+import service from "../../assets/service.jpg";
 
 export default function Service() {
   return (
@@ -41,6 +42,11 @@ export default function Service() {
             </div>
           </div>
         </div>
+        <img
+          src={service}
+          alt="good service"
+          style={{ width: "80%", paddingBottom: "5%" }}
+        />
         <h2 className="sectionTitle">Our Best Color Result:</h2>
         <div className="ppgAnnouncementContainer">
           <img src={ecoFriendly} alt="illustration" style={{ width: "25%" }} />

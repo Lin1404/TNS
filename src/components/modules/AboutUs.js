@@ -4,6 +4,7 @@ import tnsShop from "../../assets/tnsShop.png";
 import Header from "./Header";
 import { Typography } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
+import team from "../../assets/team.png";
 
 export default function AboutUs() {
   useEffect(() => {
@@ -26,8 +27,8 @@ export default function AboutUs() {
       </div>
       <div className="aboutUsContainer">
         <img
-          src={office}
-          alt="office"
+          src={team}
+          alt="our team"
           style={{
             width: "90%",
             justifySelf: "center",

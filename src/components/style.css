@@ -34,7 +34,7 @@
 
 .certificationsLogo > img {
     width: 90%;
-    padding: 2% 5%;
+    padding: 2% 5% 8% 5%;
 }
 
 .homePageModalContainer{
@@ -68,7 +68,7 @@
 }
 
 .reviewModulepaddingTop {
-    padding: 3% 0;
+    padding: 6% 0;
 }
 
 .modulesContainer {
