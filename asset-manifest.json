@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tnsauto/static/css/main.097410a1.css",
-    "main.js": "/tnsauto/static/js/main.d90b2f8c.js",
+    "main.css": "/tnsauto/static/css/main.25c28009.css",
+    "main.js": "/tnsauto/static/js/main.b703f2d2.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.bf16f81127c316297a6d.mp4",
     "static/media/process.png": "/tnsauto/static/media/process.17836788eef0f98fb4c9.png",
@@ -32,12 +32,12 @@
     "static/media/facebookLogo.svg": "/tnsauto/static/media/facebookLogo.1d8e0397525aadb52a029adc60908a02.svg",
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
-    "main.097410a1.css.map": "/tnsauto/static/css/main.097410a1.css.map",
-    "main.d90b2f8c.js.map": "/tnsauto/static/js/main.d90b2f8c.js.map",
+    "main.25c28009.css.map": "/tnsauto/static/css/main.25c28009.css.map",
+    "main.b703f2d2.js.map": "/tnsauto/static/js/main.b703f2d2.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.097410a1.css",
-    "static/js/main.d90b2f8c.js"
+    "static/css/main.25c28009.css",
+    "static/js/main.b703f2d2.js"
   ]
 }
