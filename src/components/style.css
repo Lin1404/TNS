@@ -67,6 +67,24 @@
     color: red;
 }
 
+.moduelButton {
+    width: 70%;
+    align-self: center;
+    padding-top: 5% !important;
+}
+
+.moduelButton > p {
+    color: white;
+    background-color: #1976c7;
+    opacity: 0.8;
+    padding: 3%;
+}
+
+.moduelButton :hover {
+    background-color: white;
+    color: #1976c7;
+}
+
 .reviewModulepaddingTop {
     padding: 6% 0;
 }

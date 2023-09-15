@@ -1,4 +1,4 @@
-import { Grid, Box, Container, Stack, Paper } from "@mui/material";
+import { Grid, Container, Stack, Paper } from "@mui/material";
 import MessageWindow from "../message/MessageWindow";
 import Header from "./Header";
 import { useState } from "react";

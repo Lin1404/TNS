@@ -2,12 +2,13 @@ import Reviews from "./modules/Reviews";
 import AccidentProcess from "./homePageComponents/AccidentProcess";
 import tnsAnime from "../assets/tnsAnime.mp4";
 import Header from "./modules/Header";
-import { Button, Container, Divider, Grid, Stack } from "@mui/material";
+import { Button, Divider, Grid, Stack } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import RepairProcess from "./homePageComponents/RepairProcess";
+import useWindowDimensions from "./useWindowDimensions";
 
 const style = {
   position: "absolute",
@@ -21,10 +22,9 @@ const style = {
 };
 
 export default function Home() {
+  const { width } = useWindowDimensions();
   const [accidentModalOpen, setAccidentModalOpen] = useState(false);
   const [repairModalOpen, setRepairModalOpen] = useState(false);
-  const [isMouseOnAccidentButton, setIsMouseOnAccidentButton] = useState(false);
-  const [isMouseOnRepairButton, setIsMouseOnRepairButton] = useState(false);
   const handleAccidentModalOpen = () => setAccidentModalOpen(true);
   const handleAccidentModalClose = () => setAccidentModalOpen(false);
   const handleRepairModalOpen = () => setRepairModalOpen(true);
@@ -48,47 +48,36 @@ export default function Home() {
             <source src={tnsAnime} type="video/mp4" />
           </video>
         </div>
-        <div className="homePageModalContainer">
-          <div>
-            <Typography>
-              <h2>Do you know what to do after</h2>{" "}
-              <div className="accidentModalTitle">
-                <h1>Accident</h1> <h2>happen?</h2>
-              </div>
-            </Typography>
-            <Button
-              onClick={handleAccidentModalOpen}
-              onMouseEnter={() => setIsMouseOnAccidentButton(true)}
-              onMouseLeave={() => setIsMouseOnAccidentButton(false)}
-              style={{
-                backgroundColor: "#1976c7",
-                color: isMouseOnAccidentButton ? "#3b3bb3" : "white",
-                borderRadius: "0",
-                fontSize: "0.7rem",
-              }}
-            >
-              HOW TO HANDLE ACCIDENT PROFESSIONALLY →
-            </Button>
-          </div>
-          <div>
-            <Typography>
-              <h2>Do you know our Pepair Process?</h2>
-            </Typography>
-            <Button
-              onClick={handleRepairModalOpen}
-              onMouseEnter={() => setIsMouseOnRepairButton(true)}
-              onMouseLeave={() => setIsMouseOnRepairButton(false)}
-              style={{
-                backgroundColor: "#1976c7",
-                color: isMouseOnRepairButton ? "#3b3bb3" : "white",
-                borderRadius: "0",
-                fontSize: "0.7rem",
-              }}
-            >
-              LEARN MORE ABOUT OUR REPAIR PROCESS →
-            </Button>
-          </div>
-        </div>
+
+        <Grid containter padding={2} sx={{ alignSelf: "center" }}>
+          <Grid paddingBottom={5} xs={width < 900 ? 5 : 12}>
+            <Stack>
+              <Typography variant="h5">
+                Do you know what to do after accident happpen?
+              </Typography>
+              <Button
+                className="moduelButton"
+                onClick={handleAccidentModalOpen}
+              >
+                <Typography variant="body2">
+                  HOW TO HANDLE ACCIDENT PROFESSIONALLY →
+                </Typography>
+              </Button>
+            </Stack>
+          </Grid>
+          <Grid>
+            <Stack>
+              <Typography variant="h5">
+                Do you know our repair process?
+              </Typography>
+              <Button className="moduelButton" onClick={handleRepairModalOpen}>
+                <Typography variant="body2">
+                  LEARN MORE ABOUT OUR REPAIR PROCESS →
+                </Typography>
+              </Button>
+            </Stack>
+          </Grid>
+        </Grid>
       </div>
 
       <Grid container xs={12} columnGap={15} className="highlight">
@@ -97,7 +86,6 @@ export default function Home() {
             <Typography variant="h4" padding={1}>
               25+
             </Typography>
-            {/* <hr></hr> */}
             <Divider variant="middle" />
             <Typography variant="body1" padding={1}>
               Year of Experience
