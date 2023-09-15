@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/tnsauto/static/css/main.25c28009.css",
-    "main.js": "/tnsauto/static/js/main.b703f2d2.js",
+    "main.css": "/tnsauto/static/css/main.8f1f64ff.css",
+    "main.js": "/tnsauto/static/js/main.ae453328.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
-    "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.bf16f81127c316297a6d.mp4",
+    "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.30fc5bf0593b7a1d1fec.mp4",
     "static/media/process.png": "/tnsauto/static/media/process.17836788eef0f98fb4c9.png",
     "static/media/tnsShop.png": "/tnsauto/static/media/tnsShop.e2b7168d163cf7fde159.png",
     "static/media/compare1.png": "/tnsauto/static/media/compare1.d3468c187a75268028d2.png",
+    "static/media/service.jpg": "/tnsauto/static/media/service.371f7a2dcf6055767b13.jpg",
     "static/media/compare2.png": "/tnsauto/static/media/compare2.9ac960ab091c4155f2ef.png",
     "static/media/compare4.png": "/tnsauto/static/media/compare4.711cd946b3fdbe8f3f06.png",
     "static/media/compare5.png": "/tnsauto/static/media/compare5.2c97434d478ccac6955d.png",
     "static/media/compare3.png": "/tnsauto/static/media/compare3.668303efa5c924bd5ea3.png",
     "static/media/compare7.png": "/tnsauto/static/media/compare7.10c8ca1baa24fa0beea7.png",
     "static/media/ecoFriendly.png": "/tnsauto/static/media/ecoFriendly.96305dac288f17b4dbc2.png",
+    "static/media/team.png": "/tnsauto/static/media/team.0aa1644d3a695d439d7d.png",
     "static/media/certifications.png": "/tnsauto/static/media/certifications.ee6f09fabce4de8aed85.png",
+    "static/media/DRP.png": "/tnsauto/static/media/DRP.785e6ccfb95e8724c810.png",
     "static/media/tns.svg": "/tnsauto/static/media/tns.8c23c543c0ef8a21473f45982a069c15.svg",
     "static/media/callPolice.jpeg": "/tnsauto/static/media/callPolice.94497a4292b271171dc2.jpeg",
-    "static/media/DRP.png": "/tnsauto/static/media/DRP.91e24197b0dbb9c22d85.png",
-    "static/media/Office.jpeg": "/tnsauto/static/media/Office.a4a78ebc53905730587e.jpeg",
+    "static/media/geico.png": "/tnsauto/static/media/geico.1d173aca17485b009c3e.png",
     "static/media/takeEveident.jpeg": "/tnsauto/static/media/takeEveident.7180d12bbfe997d39c83.jpeg",
     "static/media/notAdmit.jpeg": "/tnsauto/static/media/notAdmit.d6b8666cd859c43102fa.jpeg",
     "static/media/exchangeInfo1.jpeg": "/tnsauto/static/media/exchangeInfo1.4de817bdc4e410050071.jpeg",
@@ -32,12 +34,12 @@
     "static/media/facebookLogo.svg": "/tnsauto/static/media/facebookLogo.1d8e0397525aadb52a029adc60908a02.svg",
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
-    "main.25c28009.css.map": "/tnsauto/static/css/main.25c28009.css.map",
-    "main.b703f2d2.js.map": "/tnsauto/static/js/main.b703f2d2.js.map",
+    "main.8f1f64ff.css.map": "/tnsauto/static/css/main.8f1f64ff.css.map",
+    "main.ae453328.js.map": "/tnsauto/static/js/main.ae453328.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25c28009.css",
-    "static/js/main.b703f2d2.js"
+    "static/css/main.8f1f64ff.css",
+    "static/js/main.ae453328.js"
   ]
 }
