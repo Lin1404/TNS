@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import office from "../../assets/Office.jpeg";
 import tnsShop from "../../assets/tnsShop.png";
 import Header from "./Header";
 import { Typography } from "@mui/material";
