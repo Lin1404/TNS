@@ -49,7 +49,7 @@ export default function MessageWindow() {
 
   return (
     <Box>
-      <h3>Contact Us:</h3>
+      <h3>COMMENT IMPROVE:</h3>
       <FormControl>
         <Form onSubmit={handleOnSubmit}>
           <Stack spacing={3} padding={3}>
@@ -120,7 +120,6 @@ export default function MessageWindow() {
               multiline
               required
               rows={6}
-              helperText="We Love to Hear Your Feedback!"
               error={isOnSubmit && formValues.message === ""}
               onChange={(e) =>
                 setFormValues({ ...formValues, message: e.target.value })

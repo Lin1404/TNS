@@ -1,12 +1,12 @@
 import ecoFriendly from "../../assets/ecoFriendly.png";
-import ppg from "../../assets/ppg.jpeg";
 import ppg2 from "../../assets/ppg2.jpeg";
 import Header from "./Header";
 import serviceIcon1 from "../../assets/serviceIcon1.png";
 import serviceIcon2 from "../../assets/serviceIcon2.png";
 import serviceIcon3 from "../../assets/serviceIcon3.png";
 import serviceIcon4 from "../../assets/serviceIcon4.png";
-import service from "../../assets/service.jpg";
+import { Button, Container } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Service() {
   return (
@@ -18,15 +18,15 @@ export default function Service() {
           <div className="serviceContextGrid">
             <img src={serviceIcon1} alt="illustration" />
             <div className="serviceContextContainer">
-              <div>Computerized Diagnosis estimate</div>
+              <div>Computerized estimate</div>
               <div>Computerized Frame and Unibody</div>
               <div>Expert Computerized Color Matching</div>
             </div>
             <img src={serviceIcon2} alt="illustration" />
             <div className="serviceContextContainer">
-              <div>Insurance Claim Specialist</div>
-              <div>Free Consultations</div>
-              <div>Certified Stuff</div>
+              <div>Insurance Claim Specialist with Licence</div>
+              <div>Free Claim Consultation</div>
+              <div>All Staff are Certified</div>
             </div>
             <img src={serviceIcon3} alt="illustration" />
             <div className="serviceContextContainer">
@@ -42,11 +42,21 @@ export default function Service() {
             </div>
           </div>
         </div>
-        <img
-          src={service}
-          alt="good service"
-          style={{ width: "80%", paddingBottom: "5%" }}
-        />
+        <Container sx={{ paddingBottom: "5%" }}>
+          <Link to={"/tnsauto/satisfaction"}>
+            <Button
+              className="moduleButton"
+              variant="contained"
+              style={{
+                fontFamily: "inherit",
+                fontSize: "large",
+                width: "30%",
+              }}
+            >
+              Customer Satisfaction →
+            </Button>
+          </Link>
+        </Container>
         <h2 className="sectionTitle">Our Best Color Result:</h2>
         <div className="ppgAnnouncementContainer">
           <img src={ecoFriendly} alt="illustration" style={{ width: "25%" }} />
@@ -73,11 +83,6 @@ export default function Service() {
           src={ppg2}
           alt="ppg"
           style={{ width: "20%", paddingBottom: "5%" }}
-        />
-        <img
-          src={ppg}
-          alt="ppg"
-          style={{ width: "20%", padding: "0 0 5% 5%" }}
         />
         <div className="greenAnnouncementContainer">
           <div>

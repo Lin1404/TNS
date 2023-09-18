@@ -99,7 +99,7 @@ export default function Home() {
             </Typography>
             <Divider variant="middle" />
             <Typography variant="body1" padding={1}>
-              Fully Trained Stuff
+              Fully Trained Staff
             </Typography>
           </Stack>
         </Box>

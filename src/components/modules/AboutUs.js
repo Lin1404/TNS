@@ -35,8 +35,6 @@ export default function AboutUs() {
           }}
         />
         <div className="aboutUsText">
-          <Typography variant="h5">WHO WE ARE</Typography>
-          <Typography>We are serving the community since 1995.</Typography>
           <div className="aboutUsTextContext">
             With{" "}
             <span style={{ fontSize: "xx-large", color: "#1b73bc" }}>25+</span>{" "}
@@ -46,15 +44,8 @@ export default function AboutUs() {
             certification. Trust our platinum I-CAR & ASE certified technicians
             for your vehicle's insurance claims and repairs.
           </div>
+          <Typography>We are serving the community since 1995.</Typography>
           <div className="aboutUsSectionsContainer">
-            <div className="aboutUsSections">
-              <CheckIcon />
-              <span>25+ Years Of Experience</span>
-            </div>
-            <div className="aboutUsSections">
-              <CheckIcon />
-              <span>Manufacturer Certified Facility</span>
-            </div>
             <div className="aboutUsSections">
               <CheckIcon />
               <span>State of the Art Equipment</span>

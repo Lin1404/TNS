@@ -11,6 +11,7 @@ import AboutUs from "./components/modules/AboutUs";
 import Chat from "./components/message/Chat";
 import Service from "./components/modules/Service";
 import Contact from "./components/modules/Contact";
+import Satisfaction from "./components/modules/Satisfaction";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,11 @@ const router = createBrowserRouter([
   {
     path: "/tnsauto/contact",
     element: <Contact />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/satisfaction",
+    element: <Satisfaction />,
     errorElement: <ErrorPage />,
   },
 ]);

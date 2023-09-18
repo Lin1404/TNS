@@ -1,11 +1,12 @@
-import { Grid, Container, Stack, Paper } from "@mui/material";
+import { Grid, Container, Stack, Paper, Typography } from "@mui/material";
 import MessageWindow from "../message/MessageWindow";
 import Header from "./Header";
 import { useState } from "react";
 import AccessAlarmsIcon from "@mui/icons-material/AccessAlarms";
-import ForwardToInboxOutlinedIcon from "@mui/icons-material/ForwardToInboxOutlined";
+import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ShareLocationOutlinedIcon from "@mui/icons-material/ShareLocationOutlined";
 import PhonelinkRingOutlinedIcon from "@mui/icons-material/PhonelinkRingOutlined";
+import ForumIcon from "@mui/icons-material/Forum";
 import useWindowDimensions from "../useWindowDimensions";
 
 export default function Contact() {
@@ -38,7 +39,7 @@ function ContactInfo() {
           }}
         />
       ),
-      title: "OUR LOCATION",
+      title: "BROOKLYN LOCATION",
       value: (
         <>
           <div>1011 61st St</div>
@@ -48,27 +49,37 @@ function ContactInfo() {
     },
     {
       icon: (
-        <PhonelinkRingOutlinedIcon
+        <MyLocationIcon
           style={{
             fontSize: "xxx-large",
             color: hoverOnElement === 1 ? "white" : "navy",
           }}
         />
       ),
-      title: "CALL US",
-      value: "(718) 259-0075",
+      title: "Staten Island LOCATION",
+      value: (
+        <>
+          <div>2065 Forest Avenue</div>
+          <div>Staten Island, NY, 10303</div>
+        </>
+      ),
     },
     {
       icon: (
-        <ForwardToInboxOutlinedIcon
+        <ForumIcon
           style={{
             fontSize: "xxx-large",
             color: hoverOnElement === 2 ? "white" : "navy",
           }}
         />
       ),
-      title: "EMAIL US",
-      value: "tnsautogroup@gamil.com",
+      title: "GET IN TOUCH",
+      value: (
+        <>
+          <div>(718) 259-0075</div>
+          <div>tnsautogroup@gamil.com</div>
+        </>
+      ),
     },
     {
       icon: (
@@ -82,8 +93,8 @@ function ContactInfo() {
       title: "BUSINESS HOURS",
       value: (
         <>
-          <div>Mon - Fri : 7:00 am - 5:00 pm</div>
-          <div>Sat : 7:00 am - 3:00 pm</div>
+          <div>Mon - Sat : 7:00 am - 5:00 pm</div>
+          <div>Sun : Closed</div>
         </>
       ),
     },
