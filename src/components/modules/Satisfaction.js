@@ -2,6 +2,7 @@ import Header from "./Header";
 import satisfaction1 from "../../assets/satisfaction1.jpg";
 import satisfaction3 from "../../assets/satisfaction3.png";
 import { Container } from "@mui/material";
+import Reviews from "./Reviews";
 
 export default function Satisfaction() {
   return (
@@ -17,6 +18,7 @@ export default function Satisfaction() {
           style={{ width: "100%", paddingTop: "3%" }}
         />
       </Container>
+      <Reviews />
     </div>
   );
 }

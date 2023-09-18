@@ -30,9 +30,9 @@ export default function Service() {
             </div>
             <img src={serviceIcon3} alt="illustration" />
             <div className="serviceContextContainer">
-              <div>Dust Free Spray Booth</div>
-              <div>Liser Measurement Machine</div>
-              <div>Professional Body Work Tech</div>
+              <div>Body Work and Frame Damage Fix</div>
+              <div>Part Replacement</div>
+              <div>Pick-Up/Delivery Service</div>
             </div>
             <img src={serviceIcon4} alt="illustration" />
             <div className="serviceContextContainer">

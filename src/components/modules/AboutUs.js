@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import tnsShop from "../../assets/tnsShop.png";
 import Header from "./Header";
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import team from "../../assets/team.png";
 
@@ -35,7 +35,7 @@ export default function AboutUs() {
           }}
         />
         <div className="aboutUsText">
-          <div className="aboutUsTextContext">
+          <Typography>
             With{" "}
             <span style={{ fontSize: "xx-large", color: "#1b73bc" }}>25+</span>{" "}
             years of automotive collision experience, we are your one-stop
@@ -43,26 +43,52 @@ export default function AboutUs() {
             major insurance companies and holding Geico Auto Repair Express
             certification. Trust our platinum I-CAR & ASE certified technicians
             for your vehicle's insurance claims and repairs.
-          </div>
-          <Typography>We are serving the community since 1995.</Typography>
-          <div className="aboutUsSectionsContainer">
-            <div className="aboutUsSections">
-              <CheckIcon />
-              <span>State of the Art Equipment</span>
-            </div>
-            <div className="aboutUsSections">
-              <CheckIcon />
-              <span>I-CAR Gold Class Facility</span>
-            </div>
-            <div className="aboutUsSections">
-              <CheckIcon />
-              <span>I-CAR Platinum Technicians</span>
-            </div>
-            <div className="aboutUsSections">
-              <CheckIcon />
-              <span>Lifetime Warranty</span>
-            </div>
-          </div>
+          </Typography>
+          <Typography
+            variant="h4"
+            style={{ fontFamily: "cursive", fontWeight: "600" }}
+          >
+            We are serving the community since{" "}
+            <span style={{ color: "#1b73bc" }}>1995</span>.
+          </Typography>
+          <Grid container xs={12}>
+            <Grid item className="aboutUsSectionsContainer" xs={6}>
+              <div className="aboutUsSections">
+                <CheckIcon />
+                <span>State of the Art Equipment</span>
+              </div>
+              <div className="aboutUsSections">
+                <CheckIcon />
+                <span>I-CAR Gold Class Facility</span>
+              </div>
+              <div className="aboutUsSections">
+                <CheckIcon />
+                <span>I-CAR Platinum Technicians</span>
+              </div>
+              <div className="aboutUsSections">
+                <CheckIcon />
+                <span>Lifetime Warranty</span>
+              </div>
+            </Grid>
+            <Grid item className="aboutUsSectionsContainer" xs={6}>
+              <div className="aboutUsSections">
+                <CheckIcon />
+                <span>Walk-in AnyTime</span>
+              </div>
+              <div className="aboutUsSections">
+                <CheckIcon />
+                <span>Partner with Major Insurances</span>
+              </div>
+              <div className="aboutUsSections">
+                <CheckIcon />
+                <span>Prioritize Customer Satisfaction</span>
+              </div>
+              <div className="aboutUsSections">
+                <CheckIcon />
+                <span>One Stop Repair Your Car</span>
+              </div>
+            </Grid>
+          </Grid>
         </div>
       </div>
 

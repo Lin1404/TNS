@@ -118,11 +118,11 @@ export default function Home() {
         <Box>
           <Stack>
             <Typography variant="h4" padding={1}>
-              1%
+              Top 10
             </Typography>
             <Divider variant="middle" />
             <Typography variant="body1" padding={1}>
-              Top Rank in U.S.
+              Rank in East Coast
             </Typography>
           </Stack>
         </Box>

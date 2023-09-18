@@ -78,6 +78,7 @@
     background-color: #1976c7;
     opacity: 0.8;
     padding: 3%;
+    border-radius: 15px;
 }
 
 .moduelButton :hover {
@@ -169,12 +170,7 @@
 .aboutUsText {
     display: grid;
     padding: 3%;
-    grid-gap: 5%;
-}
-
-.aboutUsTextContext {
-    text-align: justify;
-    font-family: system-ui;
+    align-items: center;
 }
 
 .aboutUsSectionsContainer {
@@ -228,6 +224,12 @@
     justify-self: left;
     font-family: system-ui;
     font-size: large;
+}
+
+@media (max-width: 1220px) {
+    .serviceContextContainer > div {
+        font-size: smaller;
+    }
 }
 
 .messageButtonContainer {
