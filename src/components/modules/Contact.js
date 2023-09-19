@@ -1,16 +1,18 @@
-import { Grid, Container, Stack, Paper, Typography } from "@mui/material";
+import { Grid, Container, Stack, Paper } from "@mui/material";
 import MessageWindow from "../message/MessageWindow";
 import Header from "./Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AccessAlarmsIcon from "@mui/icons-material/AccessAlarms";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ShareLocationOutlinedIcon from "@mui/icons-material/ShareLocationOutlined";
-import PhonelinkRingOutlinedIcon from "@mui/icons-material/PhonelinkRingOutlined";
 import ForumIcon from "@mui/icons-material/Forum";
 import useWindowDimensions from "../useWindowDimensions";
 
 export default function Contact() {
   const { width } = useWindowDimensions();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Header />

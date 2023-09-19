@@ -43,6 +43,7 @@ export default function AboutUs() {
             major insurance companies and holding Geico Auto Repair Express
             certification. Trust our platinum I-CAR & ASE certified technicians
             for your vehicle's insurance claims and repairs.
+            {/* We emphasize collaboration, respect and empathy throughout our interactions, and pride ourselves on our responsiveness and flexibility。 */}
           </Typography>
           <Typography
             variant="h4"

@@ -57,18 +57,13 @@ export default function Footer() {
             </div>
             <div className="infoDetail">
               <h4>Hour</h4>
-              <div>Monday - Friday 7AM - 5PM</div>
-              <div>Saturday 7AM - 3PM</div>
+              <div>Monday - Saturday 7AM - 5PM</div>
+              <div>Sunday Closed</div>
             </div>
           </div>
         </div>
 
         <div className="map">
-          {/* <div className="infoDetail">
-            <h4>Our Location</h4>
-            <div>1011 61st St</div>
-            <div> Brooklyn, NY 11219</div>
-          </div> */}
           <h3>Locate Us:</h3>
           <iframe
             title="Map"

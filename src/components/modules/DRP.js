@@ -1,15 +1,6 @@
 import { useEffect } from "react";
 import drp from "../../assets/DRP.png";
 import Header from "./Header";
-import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
-import geico from "../../assets/geico.png";
 
 export default function DRP() {
   useEffect(() => {
