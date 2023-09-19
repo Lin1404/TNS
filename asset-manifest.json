@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tnsauto/static/css/main.42e2d201.css",
-    "main.js": "/tnsauto/static/js/main.29a1b15b.js",
+    "main.css": "/tnsauto/static/css/main.f496fb06.css",
+    "main.js": "/tnsauto/static/js/main.85a3c61c.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.30fc5bf0593b7a1d1fec.mp4",
     "static/media/process.png": "/tnsauto/static/media/process.17836788eef0f98fb4c9.png",
@@ -20,7 +20,6 @@
     "static/media/DRP.png": "/tnsauto/static/media/DRP.785e6ccfb95e8724c810.png",
     "static/media/tns.svg": "/tnsauto/static/media/tns.8c23c543c0ef8a21473f45982a069c15.svg",
     "static/media/callPolice.jpeg": "/tnsauto/static/media/callPolice.94497a4292b271171dc2.jpeg",
-    "static/media/geico.png": "/tnsauto/static/media/geico.1d173aca17485b009c3e.png",
     "static/media/takeEveident.jpeg": "/tnsauto/static/media/takeEveident.7180d12bbfe997d39c83.jpeg",
     "static/media/notAdmit.jpeg": "/tnsauto/static/media/notAdmit.d6b8666cd859c43102fa.jpeg",
     "static/media/exchangeInfo1.jpeg": "/tnsauto/static/media/exchangeInfo1.4de817bdc4e410050071.jpeg",
@@ -34,12 +33,12 @@
     "static/media/facebookLogo.svg": "/tnsauto/static/media/facebookLogo.1d8e0397525aadb52a029adc60908a02.svg",
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
-    "main.42e2d201.css.map": "/tnsauto/static/css/main.42e2d201.css.map",
-    "main.29a1b15b.js.map": "/tnsauto/static/js/main.29a1b15b.js.map",
+    "main.f496fb06.css.map": "/tnsauto/static/css/main.f496fb06.css.map",
+    "main.85a3c61c.js.map": "/tnsauto/static/js/main.85a3c61c.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42e2d201.css",
-    "static/js/main.29a1b15b.js"
+    "static/css/main.f496fb06.css",
+    "static/js/main.85a3c61c.js"
   ]
 }
