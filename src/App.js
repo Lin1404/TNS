@@ -9,9 +9,10 @@ import DRP from "./components/modules/DRP";
 import RepairProcess from "./components/homePageComponents/RepairProcess";
 import AboutUs from "./components/modules/AboutUs";
 import Chat from "./components/message/Chat";
-import Service from "./components/modules/Service";
+import Services from "./components/modules/Services";
 import Contact from "./components/modules/Contact";
 import Satisfaction from "./components/modules/Satisfaction";
+import Career from "./components/modules/Career";
 
 const router = createBrowserRouter([
   {
@@ -45,8 +46,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/service",
-    element: <Service />,
+    path: "/tnsauto/services",
+    element: <Services />,
     errorElement: <ErrorPage />,
   },
   {
@@ -57,6 +58,11 @@ const router = createBrowserRouter([
   {
     path: "/tnsauto/satisfaction",
     element: <Satisfaction />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/career",
+    element: <Career />,
     errorElement: <ErrorPage />,
   },
 ]);

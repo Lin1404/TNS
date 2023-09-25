@@ -10,18 +10,14 @@ import { Form } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { MuiTelInput } from "mui-tel-input";
-
-const SERVICE_ID = "service_rkvpp6n";
-const TEMPLATE_ID = "template_e06xv0o";
-const USER_ID = "r4Jj97hnasFu2RRk8";
-
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../utils/emailjs";
 
 const initForm = {
   name: "",
   phone: "",
   email: "",
   model: "",
-  message: "",
+  customerMessage: "",
 };
 export default function MessageWindow() {
   const [formValues, setFormValues] = useState(initForm);
@@ -31,7 +27,7 @@ export default function MessageWindow() {
       formValues.name !== "" &&
       formValues.phone.length === 12 &&
       formValues.email !== "" &&
-      formValues.message !== ""
+      formValues.customerMessage !== ""
     ) {
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
         (response) => {
@@ -84,7 +80,7 @@ export default function MessageWindow() {
                 <MuiTelInput
                   id="phone"
                   label="Phone Number"
-                  name="phone"
+                  name="customerPhone"
                   required
                   defaultCountry="US"
                   forceCallingCode="1"
@@ -103,7 +99,7 @@ export default function MessageWindow() {
                 <TextField
                   id="email"
                   label="E-mail"
-                  name="email"
+                  name="customerEmail"
                   required
                   sx={{ width: "100%" }}
                   error={isOnSubmit && formValues.email === ""}
@@ -114,15 +110,18 @@ export default function MessageWindow() {
               </Grid>
             </Grid>
             <TextField
-              id="message"
+              id="customerMessage"
               label="Message"
-              name="message"
+              name="customerMessage"
               multiline
               required
               rows={6}
-              error={isOnSubmit && formValues.message === ""}
+              error={isOnSubmit && formValues.customerMessage === ""}
               onChange={(e) =>
-                setFormValues({ ...formValues, message: e.target.value })
+                setFormValues({
+                  ...formValues,
+                  customerMessage: e.target.value,
+                })
               }
             />
             <Button
