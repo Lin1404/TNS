@@ -8,7 +8,7 @@ import { useState } from "react";
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
   { path: "/tnsauto/aboutus", label: "About Us" },
-  { path: "/tnsauto/service", label: "Service" },
+  { path: "/tnsauto/services", label: "Services" },
   { path: "/tnsauto/drp", label: "DRP" },
   { path: "/tnsauto/certifications", label: "Certifications" },
   { path: "/tnsauto/gallery", label: "Gallery" },

@@ -8,7 +8,7 @@ import serviceIcon4 from "../../assets/serviceIcon4.png";
 import { Button, Container } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export default function Service() {
+export default function Services() {
   return (
     <>
       <Header />
@@ -18,7 +18,7 @@ export default function Service() {
           <div className="serviceContextGrid">
             <img src={serviceIcon1} alt="illustration" />
             <div className="serviceContextContainer">
-              <div>Computerized estimate</div>
+              <div>Computerized Estimate</div>
               <div>Computerized Frame and Unibody</div>
               <div>Expert Computerized Color Matching</div>
             </div>
