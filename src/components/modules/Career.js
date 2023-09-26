@@ -14,7 +14,6 @@ import {
   Box,
   Snackbar,
   Alert,
-  OutlinedInput,
   Chip,
   Typography,
   Divider,
@@ -153,9 +152,9 @@ export default function Career() {
         <Container className="careerContext">
           <Typography>Applying at TNS Auto Collision is easy! </Typography>
           <Typography>
-            You can send us an email. Please include a cover letter and resume,
-            as well as any other information you think will help us evaluate
-            your qualifications.
+            You can send email to: tnsautogroup@gmail.com. Please include a
+            cover letter and resume, as well as any other information you think
+            will help us evaluate your qualifications.
           </Typography>
           <Typography>
             You can apply through our online application. Apply using the form
