@@ -309,7 +309,7 @@
     }
 
     .infoContainer {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr 2fr;
     }
 
     .tnsTitle {
@@ -446,7 +446,6 @@ img:active img{
 .infoDetail > div {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .map {
@@ -462,8 +461,16 @@ img:active img{
     width: 80%;
 }
 
-.introduction{
-    margin: 0 5% 5% 5%;
+.info {
+    text-align-last: left;
+}
+
+.footerLinks > a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: larger;
+    text-align: left;
+    padding: 5% 15%;
 }
 
 .paddingBot {

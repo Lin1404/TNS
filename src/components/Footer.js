@@ -4,6 +4,7 @@ import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import { Button, Container, Stack, Typography } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -13,22 +14,19 @@ export default function Footer() {
         <h1>TNS Auto Collision</h1>
       </div>
       <div className="infoContainer">
-        {/* <div className="introduction">
-          <h1>About Us</h1>
-          <p>We are serving the community since 1995.</p>
-          <p>
-            "With 25+ years of experience in the automotive collision industry,
-            consider us your repair expert for your vehicle all in one stop.
-            Quality and safety is our priority. We partner with almost all major
-            insurances and are certified Geico Auto Repair Express. From
-            insurance claims to reparations, you can rely on our exceptional
-            customer services and platinum I-CAR & ASE certified technicians to
-            handle your damage vehicle."
-          </p>
-        </div> */}
+        <Stack className="footerLinks">
+          <h3 style={{ textAlign: "left", padding: "0 15%" }}>
+            BROWSE OUR WEBSITE
+          </h3>
+          <a href="/tnsauto/aboutus">About Us</a>
+          <a href="/tnsauto/services">Services</a>
+          <a href="/tnsauto/gallery">Befor & After</a>
+          <a href="/tnsauto/career">Career</a>
+          <a href="https://www.tnsautoinc.com/">TNS Staten Island</a>
+        </Stack>
         <div>
           <div className="info">
-            <h3>Contact us:</h3>
+            <h3>CONTACT US:</h3>
             <div className="socialMediaIcons">
               <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
                 <img src={facebookLogo} alt="Facebook Logo" />
@@ -50,13 +48,16 @@ export default function Footer() {
               </div>
               <div>
                 <EmailOutlinedIcon />
-                <a href="mailto:tnsautogroup@gmail.com">
+                <a
+                  href="mailto:tnsautogroup@gmail.com"
+                  style={{ textDecoration: "none" }}
+                >
                   tnsautogroup@gmail.com
                 </a>
               </div>
             </div>
             <div className="infoDetail">
-              <h4>Hour</h4>
+              <h3>HOUR</h3>
               <div>Monday - Saturday 7AM - 5PM</div>
               <div>Sunday Closed</div>
             </div>
@@ -64,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div className="map">
-          <h3>Locate Us:</h3>
+          <h3>LOCATE US:</h3>
           <iframe
             title="Map"
             width="700"
