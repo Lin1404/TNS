@@ -226,6 +226,22 @@
     font-size: large;
 }
 
+.careerIntroduction > p {
+    text-align: left;
+    font-family: cursive;
+    padding: 1% 3%;
+    letter-spacing: 0.1rem;
+}
+
+.careerContext {
+    text-align: left;
+    
+}
+
+.careerContext > p {
+    font-family: cursive;
+    padding: 0.5%;
+}
 @media (max-width: 1220px) {
     .serviceContextContainer > div {
         font-size: smaller;

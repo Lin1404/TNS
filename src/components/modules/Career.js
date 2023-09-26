@@ -14,6 +14,10 @@ import {
   Box,
   Snackbar,
   Alert,
+  OutlinedInput,
+  Chip,
+  Typography,
+  Divider,
 } from "@mui/material";
 import { Form } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -23,18 +27,18 @@ import Header from "./Header";
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../utils/emailjs";
 
 const positionsArr = [
-  { value: "serviceAdvisor", label: "Service Advisor" },
-  { value: "receivetion", label: "Receivetion" },
-  { value: "accounting", label: "Accounting Specialist" },
-  { value: "hr", label: "Human Resources Manager" },
-  { value: "marketing", label: "Marketing Specialist" },
-  { value: "officeManager", label: "Office Manager" },
-  { value: "shopManager", label: "Shop Manager" },
-  { value: "frameTech", label: "Frame Technician" },
-  { value: "bodyTech", label: "Body Technician" },
-  { value: "prepTech", label: "Prep Technician" },
-  { value: "paintTech", label: "Paint Technician" },
-  { value: "detailer", label: "Automotive Detailer" },
+  "Service Advisor",
+  "Receivetion",
+  "Accounting Specialist",
+  "Human Resources Manager",
+  "Marketing Specialist",
+  "Office Manager",
+  "Shop Manager",
+  "Frame Technician",
+  "Body Technician",
+  "Prep Technician",
+  "Paint Technician",
+  "Automotive Detailer",
 ];
 
 const initForm = {
@@ -44,7 +48,7 @@ const initForm = {
   gender: "",
   authorization: "",
   yoe: 0,
-  position: "",
+  positions: [],
   excompany: "",
   applicationMessage: "",
 };
@@ -70,9 +74,9 @@ export default function Career() {
       formValues.phone.length === 12 &&
       formValues.email !== "" &&
       formValues.gender !== "" &&
-      formValues.authorization !== ""
+      formValues.authorization !== "" &&
+      formValues.positions.length !== 0
     ) {
-      console.log(e.target);
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
         (response) => {
           console.log("SUCCESS SUBMIT FORM!", response.status);
@@ -91,12 +95,84 @@ export default function Career() {
     }
   };
 
+  console.log(formValues.positions);
   return (
     <>
       <Header />
-      <h2 className="sectionTitle">We want to know more about you</h2>
+      <h2 className="sectionTitle">Online Job Application</h2>
+      <Container className="careerIntroduction">
+        <Typography>
+          TNS Auto Collision is hiring career-focused professionals, including
+          General Service Technicians, Automotive Technicians, Service Advisors,
+          and Store Managers. We are committed to serving our local community,
+          and if you are someone who is driven by a career-oriented mindset and
+          possesses a genuine passion for consistently delivering exceptional
+          customer service, we invite you to explore the opportunities with us.
+        </Typography>
+        <Typography>
+          We offer training opportunities for those without experience.By
+          joining our team, you will not only have a fulfilling job but also the
+          chance to make a positive impact within your own community by
+          assisting your neighbors.
+        </Typography>
+        <Typography
+          variant="h3"
+          sx={{ color: "#828fd8", padding: "2%", fontFamily: "cursive" }}
+        >
+          JOIN US TODAY !
+        </Typography>
+      </Container>
       <Container>
-        <Box sx={{ paddingBottom: "10%" }}>
+        <Typography
+          variant="h4"
+          sx={{
+            textAlign: "left",
+            paddingTop: "3%",
+          }}
+        >
+          Benefits
+        </Typography>
+        <Container className="careerContext" sx={{ padding: "1% 0" }}>
+          <Typography>- Competitive Weekly Pay</Typography>
+          <Typography>
+            - Discounted Services on Personal and Immediate Family Vehicles
+          </Typography>
+          <Typography>- Paid Vacation and Sick Time</Typography>
+          <Typography>- Short Term Disability Plan</Typography>
+          <Typography>- 6 Holidays</Typography>
+          <Typography>- 401(k) Retirement Savings Plan</Typography>
+          <Typography>- Health Savings Account</Typography>
+          <Typography>- Opportunity for Advancement</Typography>
+        </Container>
+      </Container>
+
+      <Container sx={{ paddingBottom: "2%" }}>
+        <Typography variant="h4" sx={{ textAlign: "left", paddingTop: "3%" }}>
+          How to apply:
+        </Typography>
+        <Container className="careerContext">
+          <Typography>Applying at TNS Auto Collision is easy! </Typography>
+          <Typography>
+            You can send us an email. Please include a cover letter and resume,
+            as well as any other information you think will help us evaluate
+            your qualifications.
+          </Typography>
+          <Typography>
+            You can apply through our online application. Apply using the form
+            below.
+          </Typography>
+        </Container>
+      </Container>
+
+      <Divider variant="middle" />
+      <Container>
+        <Box sx={{ padding: "5% 0" }}>
+          <Typography
+            variant="h4"
+            sx={{ color: "#828fd8", fontFamily: "cursive" }}
+          >
+            We want to know more about you
+          </Typography>
           <FormControl>
             <Form onSubmit={handleOnSubmit}>
               <Stack spacing={3} padding={3}>
@@ -206,22 +282,36 @@ export default function Career() {
                   </RadioGroup>
                 </FormControl>
 
-                <FormControl error={isOnSubmit && formValues.position === ""}>
-                  <FormLabel id="position" title="HELO">
-                    Select the position you want to apply
+                <FormControl
+                  sx={{ m: 1, width: 670 }}
+                  error={isOnSubmit && formValues.positions.length === 0}
+                >
+                  <FormLabel id="positions" title="HELO">
+                    Select the position(s) you want to apply
                   </FormLabel>
                   <Select
-                    labelId="position"
-                    id="position"
-                    name="position"
-                    value={formValues.position}
+                    multiple
+                    labelId="positions"
+                    id="positions"
+                    name="positions"
+                    value={formValues.positions}
+                    renderValue={(selected) => (
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                        {selected.map((value) => (
+                          <Chip key={value} label={value} />
+                        ))}
+                      </Box>
+                    )}
                     onChange={(e) =>
-                      setFormValues({ ...formValues, position: e.target.value })
+                      setFormValues({
+                        ...formValues,
+                        positions: e.target.value,
+                      })
                     }
                   >
                     {positionsArr.map((position) => (
-                      <MenuItem value={position.label}>
-                        {position.label}
+                      <MenuItem value={position} key={position}>
+                        {position}
                       </MenuItem>
                     ))}
                   </Select>
