@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tnsauto/static/css/main.04d914ab.css",
-    "main.js": "/tnsauto/static/js/main.807c9233.js",
+    "main.css": "/tnsauto/static/css/main.84d66507.css",
+    "main.js": "/tnsauto/static/js/main.72663102.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.30fc5bf0593b7a1d1fec.mp4",
     "static/media/process.png": "/tnsauto/static/media/process.17836788eef0f98fb4c9.png",
@@ -25,6 +25,7 @@
     "static/media/exchangeInfo1.jpeg": "/tnsauto/static/media/exchangeInfo1.4de817bdc4e410050071.jpeg",
     "static/media/yelpIcon.png": "/tnsauto/static/media/yelpIcon.645e847a099b88af6d95.png",
     "static/media/checkSafety.jpeg": "/tnsauto/static/media/checkSafety.3406bfe9db74fc7450c0.jpeg",
+    "static/media/youtubeLogo.png": "/tnsauto/static/media/youtubeLogo.13784e6e7010b8f439f4.png",
     "static/media/instagramLogo.svg": "/tnsauto/static/media/instagramLogo.a0a9a83448ddb5827d70493a84d37806.svg",
     "static/media/slick.svg": "/tnsauto/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/yelpLogo.svg": "/tnsauto/static/media/yelpLogo.cf5805c70afc161d6d6af94cf48ecc72.svg",
@@ -33,12 +34,12 @@
     "static/media/facebookLogo.svg": "/tnsauto/static/media/facebookLogo.1d8e0397525aadb52a029adc60908a02.svg",
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
-    "main.04d914ab.css.map": "/tnsauto/static/css/main.04d914ab.css.map",
-    "main.807c9233.js.map": "/tnsauto/static/js/main.807c9233.js.map",
+    "main.84d66507.css.map": "/tnsauto/static/css/main.84d66507.css.map",
+    "main.72663102.js.map": "/tnsauto/static/js/main.72663102.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04d914ab.css",
-    "static/js/main.807c9233.js"
+    "static/css/main.84d66507.css",
+    "static/js/main.72663102.js"
   ]
 }
