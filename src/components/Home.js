@@ -2,13 +2,14 @@ import Reviews from "./modules/Reviews";
 import AccidentProcess from "./homePageComponents/AccidentProcess";
 import tnsAnime from "../assets/tnsAnime.mp4";
 import Header from "./modules/Header";
-import { Button, Divider, Grid, Stack } from "@mui/material";
+import { Button, Container, Divider, Grid, Stack } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import RepairProcess from "./homePageComponents/RepairProcess";
 import useWindowDimensions from "./useWindowDimensions";
+import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 
 const style = {
   position: "absolute",
@@ -48,8 +49,50 @@ export default function Home() {
             <source src={tnsAnime} type="video/mp4" />
           </video>
         </div>
-
-        <Grid containter padding={2} sx={{ alignSelf: "center" }}>
+        <Container className="homePageModalContainer">
+          {/* <Grid container>
+            <Grid item xs={2}>
+              <Typography variant="h3">Choose</Typography>
+            </Grid>
+            <Grid item xs={2}>
+              <Typography variant="h3" sx={{ color: "navy" }}>
+                TNS
+              </Typography>
+            </Grid>
+          </Grid> */}
+          <Typography variant="h3" sx={{ color: "navy" }}>
+            Choose TNS
+          </Typography>
+          <Typography variant="h4">Choose High Quality Service</Typography>
+          <Box className="modalText">
+            <Typography>- Accept All Major Insurance Carries</Typography>
+            <Typography>- No Appointment, Walk-In Any Time</Typography>
+            <Typography>- Free Professional Estimate</Typography>
+            <Typography>
+              - 24 Hours Towing Service{" "}
+              <LocalPhoneOutlinedIcon sx={{ verticalAlign: "text-bottom" }} />
+              (917) 535 - 6353
+            </Typography>
+          </Box>
+          <Grid container>
+            <Grid item xs={6}>
+              <Button className="moduelButton" onClick={handleRepairModalOpen}>
+                <Typography variant="body2">3 STEP FIX YOUR CAR →</Typography>
+              </Button>
+            </Grid>
+            <Grid item xs={6}>
+              <Button
+                className="moduelButton"
+                onClick={handleAccidentModalOpen}
+              >
+                <Typography variant="body2">
+                  HANDLE ACCIDENT PROFESSIONALLY →
+                </Typography>
+              </Button>
+            </Grid>
+          </Grid>
+        </Container>
+        {/* <Grid containter padding={2} sx={{ alignSelf: "center" }}>
           <Grid paddingBottom={5} xs={width < 900 ? 5 : 12}>
             <Stack>
               <Typography variant="h5">
@@ -77,7 +120,7 @@ export default function Home() {
               </Button>
             </Stack>
           </Grid>
-        </Grid>
+        </Grid> */}
       </div>
 
       <Grid container xs={12} columnGap={15} className="highlight">

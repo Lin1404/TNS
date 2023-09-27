@@ -37,11 +37,22 @@
     padding: 2% 5% 8% 5%;
 }
 
-.homePageModalContainer{
+.homePageModalContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5% 2%;
     grid-gap: 5%;
+}
+
+.modalText {
+    text-align: left;
+    padding: 5% 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.modalText > p {
+    font-size: larger;
+    font-family: sans-serif;
 }
 
 .homeModalButtonContainer {
@@ -68,17 +79,22 @@
 }
 
 .moduelButton {
-    width: 70%;
+    width: 90%;
+    height: 100%;
     align-self: center;
     padding-top: 5% !important;
 }
 
 .moduelButton > p {
     color: white;
+    height: 100%;
     background-color: #1976c7;
     opacity: 0.8;
     padding: 3%;
     border-radius: 15px;
+    text-align: center;
+    text-justify: inter-cluster;
+    width: 100%;
 }
 
 .moduelButton :hover {
@@ -136,6 +152,7 @@
 .socialMediaIconsOnModules > a > img {
     width: 10%;
     padding: 0 2%;
+    vertical-align: -webkit-baseline-middle;
 } 
 
 .galleryContainer {
@@ -298,7 +315,7 @@
 @media (min-width: 950px) {
     .videoAndModalsContainer{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 3fr 2fr;
         padding-bottom: 5%;
     }
     .homePageModalContainer{

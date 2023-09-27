@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import yelpLogo from "../assets/yelpLogo.svg";
 import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
+import youtubeLogo from "../assets/youtubeLogo.png";
+import google from "../assets/googleIcon.png";
 import { useState } from "react";
 
 const modulesRouting = [
@@ -13,12 +15,12 @@ const modulesRouting = [
   { path: "/tnsauto/certifications", label: "Certifications" },
   { path: "/tnsauto/gallery", label: "Gallery" },
   { path: "/tnsauto/contact", label: "Contact" },
+  { path: "/tnsauto/career", label: "Career" },
 ];
 
 export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
-  const [isMouseOnOhterLocationModule, setIsMouseOnOhterLocationModule] =
-    useState(false);
+  // const [isMouseOnOhterLocationModule, setIsMouseOnOhterLocationModule] = useState(false);
 
   const [anchorEl, setAnchorEl] = useState(null);
   const openMenu = Boolean(anchorEl);
@@ -54,7 +56,7 @@ export default function Modules({ isButton = false }) {
             </Link>
           </div>
         ))}
-        <div className="moduleButtonContainer" key={"otherlocation"}>
+        {/* <div className="moduleButtonContainer" key={"otherlocation"}>
           <Button
             className="moduleButton"
             onMouseEnter={() => setIsMouseOnOhterLocationModule(true)}
@@ -99,7 +101,7 @@ export default function Modules({ isButton = false }) {
               SEE WEBSITE →
             </a>
           </MenuItem>
-        </Menu>
+        </Menu> */}
       </div>
       <div className="socialMediaIconsOnModules">
         <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
@@ -113,6 +115,18 @@ export default function Modules({ isButton = false }) {
           target="blank"
         >
           <img src={yelpLogo} alt="yelpLogo" />
+        </a>
+        <a
+          target="blank"
+          href="https://www.google.com/search?q=tns+auto+group&oq=tns&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRhAMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgzMTE2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x89c24524a9cc1fb9:0x14d0637150a89e4f,1,,,,"
+        >
+          <img src={google} alt="google" className="reviewImgs" />
+        </a>
+        <a
+        // href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
+        // target="blank"
+        >
+          <img src={youtubeLogo} alt="youtubeLogo" />
         </a>
       </div>
     </div>
@@ -148,13 +162,13 @@ export default function Modules({ isButton = false }) {
             <MenuItem onClick={handleMenuClose}>{item.label}</MenuItem>
           </Link>
         ))}
-        <a
+        {/* <a
           href="https://www.tnsautoinc.com/"
           target="blank"
           style={{ textDecoration: "none" }}
         >
           <MenuItem onClick={handleMenuClose}>Other Location</MenuItem>
-        </a>
+        </a> */}
       </Menu>
     </div>
   );

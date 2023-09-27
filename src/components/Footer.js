@@ -4,7 +4,9 @@ import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import { Button, Container, Stack, Typography } from "@mui/material";
+import google from "../assets/googleIcon.png";
+import youtubeLogo from "../assets/youtubeLogo.png";
+import { Stack } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -39,6 +41,18 @@ export default function Footer() {
                 target="blank"
               >
                 <img src={yelpLogo} alt="Yelp Logo" />
+              </a>
+              <a
+                target="blank"
+                href="https://www.google.com/search?q=tns+auto+group&oq=tns&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRhAMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgzMTE2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x89c24524a9cc1fb9:0x14d0637150a89e4f,1,,,,"
+              >
+                <img src={google} alt="google" className="reviewImgs" />
+              </a>
+              <a
+              // href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
+              // target="blank"
+              >
+                <img src={youtubeLogo} alt="youtubeLogo" />
               </a>
             </div>
             <div className="infoDetail">
