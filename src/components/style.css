@@ -274,14 +274,10 @@
     background-color: #095684;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .header {
         grid-template-columns: 9fr 1fr;
     }
-    
-}
-@media (max-width: 950px) {
-
     .map > iframe {
         width: 100%;
     }
