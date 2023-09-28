@@ -13,6 +13,7 @@ import Services from "./components/modules/Services";
 import Contact from "./components/modules/Contact";
 import Satisfaction from "./components/modules/Satisfaction";
 import Career from "./components/modules/Career";
+import ComingSoon from "./components/ComingSoon";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,11 @@ const router = createBrowserRouter([
   {
     path: "/tnsauto/career",
     element: <Career />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/comingsoon",
+    element: <ComingSoon />,
     errorElement: <ErrorPage />,
   },
 ]);
