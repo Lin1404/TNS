@@ -82,7 +82,7 @@ export default function Footer() {
           <h3>LOCATE US:</h3>
           <iframe
             title="Map"
-            width="700"
+            width="500"
             height="275"
             frameBorder="0"
             scrolling="no"
