@@ -1,4 +1,4 @@
-import { Button, Menu, MenuItem } from "@mui/material";
+import { Button, Menu, MenuItem, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import yelpLogo from "../assets/yelpLogo.svg";
 import facebookLogo from "../assets/facebookLogo.svg";
@@ -20,11 +20,12 @@ const modulesRouting = [
 
 export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
-  // const [isMouseOnOhterLocationModule, setIsMouseOnOhterLocationModule] = useState(false);
+  const [isMouseOnOhterLocationModule, setIsMouseOnOhterLocationModule] =
+    useState(false);
 
   const [anchorEl, setAnchorEl] = useState(null);
   const openMenu = Boolean(anchorEl);
-  const handleClick = (event) => {
+  const handleMouseEnter = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleMenuClose = () => {
@@ -36,24 +37,97 @@ export default function Modules({ isButton = false }) {
       <div className="modulesSection">
         {modulesRouting.map((item, idx) => (
           <div className="moduleButtonContainer" key={item.label}>
-            <Link to={`${item.path}`}>
-              <Button
-                onMouseEnter={() => setmouseOnModule(idx)}
-                onMouseLeave={() => setmouseOnModule(-1)}
-                className="moduleButton"
-                style={{
-                  fontFamily: "inherit",
-                  fontSize: "smaller",
-                  color:
-                    mouseOnModule === idx ||
-                    window.location.pathname === item.path
-                      ? "#e3d515"
-                      : "white",
-                }}
-              >
-                {item.label}
-              </Button>
-            </Link>
+            {item.label === "Gallery" ? (
+              <div onMouseLeave={handleMenuClose}>
+                <Button
+                  className="moduleButton"
+                  onMouseEnter={handleMouseEnter}
+                  style={{
+                    fontFamily: "inherit",
+                    fontSize: "smaller",
+                    color: openMenu ? "#e3d515" : "white",
+                  }}
+                  aria-controls={openMenu ? "modulesMenu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={openMenu ? "true" : undefined}
+                >
+                  Gallery
+                </Button>
+
+                <Menu
+                  id="modulesMenu"
+                  anchorEl={anchorEl}
+                  open={openMenu}
+                  onClose={handleMenuClose}
+                  anchorOrigin={{
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }}
+                  transformOrigin={{
+                    vertical: "buttom",
+                    horizontal: "left",
+                  }}
+                >
+                  <MenuItem onClick={handleMenuClose}>
+                    <Link
+                      to={"/tnsauto/gallery"}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>Before & After</Typography>
+                    </Link>
+                    {/* <a
+                      href="/tnsauto/gallery"
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>Before & After</Typography>
+                    </a> */}
+                  </MenuItem>
+                  <MenuItem onClick={handleMenuClose}>
+                    <Link
+                      to={"/tnsauto/satisfaction"}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>Customer Satisfaction</Typography>
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleMenuClose}>
+                    <Link
+                      to={"/tnsauto/comingsoon"}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>Facility</Typography>
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleMenuClose}>
+                    <Link
+                      to={"/tnsauto/comingsoon"}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>Shows/Activity Events</Typography>
+                    </Link>
+                  </MenuItem>
+                </Menu>
+              </div>
+            ) : (
+              <Link to={`${item.path}`}>
+                <Button
+                  onMouseEnter={() => setmouseOnModule(idx)}
+                  onMouseLeave={() => setmouseOnModule(-1)}
+                  className="moduleButton"
+                  style={{
+                    fontFamily: "inherit",
+                    fontSize: "smaller",
+                    color:
+                      mouseOnModule === idx ||
+                      window.location.pathname === item.path
+                        ? "#e3d515"
+                        : "white",
+                  }}
+                >
+                  {item.label}
+                </Button>
+              </Link>
+            )}
           </div>
         ))}
         {/* <div className="moduleButtonContainer" key={"otherlocation"}>
@@ -69,7 +143,7 @@ export default function Modules({ isButton = false }) {
             aria-controls={openMenu ? "modulesMenu" : undefined}
             aria-haspopup="true"
             aria-expanded={openMenu ? "true" : undefined}
-            onClick={handleClick}
+            onClick={handleMouseEnter}
           >
             Other Location
           </Button>
@@ -137,7 +211,7 @@ export default function Modules({ isButton = false }) {
         aria-controls={openMenu ? "modulesMenu" : undefined}
         aria-haspopup="true"
         aria-expanded={openMenu ? "true" : undefined}
-        onClick={handleClick}
+        onClick={handleMouseEnter}
       >
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
