@@ -20,9 +20,6 @@ const modulesRouting = [
 
 export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
-  const [isMouseOnOhterLocationModule, setIsMouseOnOhterLocationModule] =
-    useState(false);
-
   const [anchorEl, setAnchorEl] = useState(null);
   const openMenu = Boolean(anchorEl);
   const handleMouseEnter = (event) => {
@@ -38,10 +35,10 @@ export default function Modules({ isButton = false }) {
         {modulesRouting.map((item, idx) => (
           <div className="moduleButtonContainer" key={item.label}>
             {item.label === "Gallery" ? (
-              <div onMouseLeave={handleMenuClose}>
+              <div id="moduleManu">
                 <Button
                   className="moduleButton"
-                  onMouseEnter={handleMouseEnter}
+                  onMouseOver={handleMouseEnter}
                   style={{
                     fontFamily: "inherit",
                     fontSize: "smaller",
@@ -59,6 +56,7 @@ export default function Modules({ isButton = false }) {
                   anchorEl={anchorEl}
                   open={openMenu}
                   onClose={handleMenuClose}
+                  MenuListProps={{ onMouseLeave: handleMenuClose }}
                   anchorOrigin={{
                     vertical: "bottom",
                     horizontal: "left",
@@ -75,12 +73,6 @@ export default function Modules({ isButton = false }) {
                     >
                       <Typography>Before & After</Typography>
                     </Link>
-                    {/* <a
-                      href="/tnsauto/gallery"
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
-                      <Typography>Before & After</Typography>
-                    </a> */}
                   </MenuItem>
                   <MenuItem onClick={handleMenuClose}>
                     <Link
@@ -130,52 +122,6 @@ export default function Modules({ isButton = false }) {
             )}
           </div>
         ))}
-        {/* <div className="moduleButtonContainer" key={"otherlocation"}>
-          <Button
-            className="moduleButton"
-            onMouseEnter={() => setIsMouseOnOhterLocationModule(true)}
-            onMouseLeave={() => setIsMouseOnOhterLocationModule(false)}
-            style={{
-              fontFamily: "inherit",
-              fontSize: "smaller",
-              color: isMouseOnOhterLocationModule ? "#e3d515" : "white",
-            }}
-            aria-controls={openMenu ? "modulesMenu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={openMenu ? "true" : undefined}
-            onClick={handleMouseEnter}
-          >
-            Other Location
-          </Button>
-        </div>
-
-        <Menu
-          id="modulesMenu"
-          anchorEl={anchorEl}
-          open={openMenu}
-          onClose={handleMenuClose}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "left",
-          }}
-          transformOrigin={{
-            vertical: "buttom",
-            horizontal: "left",
-          }}
-        >
-          <MenuItem onClick={handleMenuClose}>
-            2065 Forest Avenue, Staten Island, NY, 10303
-          </MenuItem>
-          <MenuItem onClick={handleMenuClose}>
-            <a
-              href="https://www.tnsautoinc.com/"
-              target="blank"
-              style={{ textDecoration: "none", color: "black" }}
-            >
-              SEE WEBSITE →
-            </a>
-          </MenuItem>
-        </Menu> */}
       </div>
       <div className="socialMediaIconsOnModules">
         <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
@@ -196,10 +142,7 @@ export default function Modules({ isButton = false }) {
         >
           <img src={google} alt="google" className="reviewImgs" />
         </a>
-        <a
-        // href="https://www.yelp.com/biz/tns-auto-group-brooklyn"
-        // target="blank"
-        >
+        <a>
           <img src={youtubeLogo} alt="youtubeLogo" />
         </a>
       </div>
@@ -236,13 +179,6 @@ export default function Modules({ isButton = false }) {
             <MenuItem onClick={handleMenuClose}>{item.label}</MenuItem>
           </Link>
         ))}
-        {/* <a
-          href="https://www.tnsautoinc.com/"
-          target="blank"
-          style={{ textDecoration: "none" }}
-        >
-          <MenuItem onClick={handleMenuClose}>Other Location</MenuItem>
-        </a> */}
       </Menu>
     </div>
   );
