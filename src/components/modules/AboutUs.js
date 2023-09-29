@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import tnsShop from "../../assets/tnsShop.png";
+import tnsShop from "../../assets/rain.jpg";
 import Header from "./Header";
 import { Grid, Typography } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
