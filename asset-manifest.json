@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/tnsauto/static/css/main.7909184e.css",
-    "main.js": "/tnsauto/static/js/main.7d7a1f41.js",
+    "main.js": "/tnsauto/static/js/main.70581503.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
-    "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.30fc5bf0593b7a1d1fec.mp4",
+    "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.d625af84dc8492020ef5.mp4",
     "static/media/process.png": "/tnsauto/static/media/process.17836788eef0f98fb4c9.png",
     "static/media/rain.jpg": "/tnsauto/static/media/rain.667579c862c04e63357b.jpg",
     "static/media/compare1.png": "/tnsauto/static/media/compare1.d3468c187a75268028d2.png",
@@ -35,11 +35,11 @@
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
     "main.7909184e.css.map": "/tnsauto/static/css/main.7909184e.css.map",
-    "main.7d7a1f41.js.map": "/tnsauto/static/js/main.7d7a1f41.js.map",
+    "main.70581503.js.map": "/tnsauto/static/js/main.70581503.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7909184e.css",
-    "static/js/main.7d7a1f41.js"
+    "static/js/main.70581503.js"
   ]
 }
