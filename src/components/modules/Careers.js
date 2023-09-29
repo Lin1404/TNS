@@ -52,7 +52,7 @@ const initForm = {
   applicationMessage: "",
 };
 
-export default function Career() {
+export default function Careers() {
   const [formValues, setFormValues] = useState(initForm);
   const [isOnSubmit, setIsOnSubmit] = useState(false);
   const [isExperienced, setIsExperienced] = useState(false);

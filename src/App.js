@@ -12,7 +12,7 @@ import Chat from "./components/message/Chat";
 import Services from "./components/modules/Services";
 import Contact from "./components/modules/Contact";
 import Satisfaction from "./components/modules/Satisfaction";
-import Career from "./components/modules/Career";
+import Careers from "./components/modules/Careers";
 import ComingSoon from "./components/ComingSoon";
 
 const router = createBrowserRouter([
@@ -62,8 +62,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/career",
-    element: <Career />,
+    path: "/tnsauto/careers",
+    element: <Careers />,
     errorElement: <ErrorPage />,
   },
   {

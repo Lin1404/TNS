@@ -77,16 +77,16 @@ export default function Header() {
       )}
 
       <Dialog open={isDialogOpen} onClose={() => setIsDialogOpen(false)}>
-        <DialogTitle>Please Enter Parner Code:</DialogTitle>
+        <DialogTitle>Please Enter Partner Code:</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            To See the TNS Proposal, please enter the parner code:
+            To See the TNS Proposal, please enter the partner code:
           </DialogContentText>
           <TextField
             autoFocus
             margin="dense"
             id="code"
-            label="Parner Code"
+            label="Partner Code"
             type="coode"
             fullWidth
             variant="standard"
@@ -147,16 +147,16 @@ export default function Header() {
   //   </div>
   // )
   // <Dialog open={isDialogOpen} onClose={()=>setIsDialogOpen(false)}>
-  // <DialogTitle>Please Enter Parner Code:</DialogTitle>
+  // <DialogTitle>Please Enter Partner Code:</DialogTitle>
   // <DialogContent>
   //   <DialogContentText>
-  //     To See the TNS Proposal, please enter the parner code.
+  //     To See the TNS Proposal, please enter the partner code.
   //   </DialogContentText>
   //   <TextField
   //   autoFocus
   //   margin="dense"
   //         id="code"
-  //         label="Parner Code"
+  //         label="Partner Code"
   //         type="coode"
   //         fullWidth
   //         variant="standard"

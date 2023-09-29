@@ -15,7 +15,7 @@ const modulesRouting = [
   { path: "/tnsauto/certifications", label: "Certifications" },
   { path: "/tnsauto/gallery", label: "Gallery" },
   { path: "/tnsauto/contact", label: "Contact" },
-  { path: "/tnsauto/career", label: "Career" },
+  { path: "/tnsauto/careers", label: "Careers" },
 ];
 
 export default function Modules({ isButton = false }) {

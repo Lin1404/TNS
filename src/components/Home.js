@@ -77,7 +77,7 @@ export default function Home() {
           <Grid container>
             <Grid item xs={6}>
               <Button className="moduelButton" onClick={handleRepairModalOpen}>
-                <Typography variant="body2">3 STEP FIX YOUR CAR →</Typography>
+                <Typography variant="body2">3 STEPS FIX YOUR CAR →</Typography>
               </Button>
             </Grid>
             <Grid item xs={6}>
@@ -153,7 +153,7 @@ export default function Home() {
             </Typography>
             <Divider variant="middle" />
             <Typography variant="body1" paddingTop={1}>
-              Parner With
+              Partner With
             </Typography>
             <Typography variant="body1">Major Insurance</Typography>
           </Stack>
