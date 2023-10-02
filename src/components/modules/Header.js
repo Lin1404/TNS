@@ -3,19 +3,8 @@ import "../style.css";
 import Modules from "../Modules";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "../useWindowDimensions";
-import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  TextField,
-} from "@mui/material";
-import { useState } from "react";
 
 export default function Header() {
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const { width } = useWindowDimensions();
 
   return (
@@ -42,12 +31,6 @@ export default function Header() {
               </h1>
             </div>
           </div>
-          <Button
-            className="proposalButton"
-            onClick={() => setIsDialogOpen(true)}
-          >
-            Proposal
-          </Button>
           <Modules />
         </div>
       ) : (
@@ -75,28 +58,6 @@ export default function Header() {
           <Modules isButton={true} />
         </div>
       )}
-
-      <Dialog open={isDialogOpen} onClose={() => setIsDialogOpen(false)}>
-        <DialogTitle>Please Enter Parner Code:</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            To See the TNS Proposal, please enter the parner code:
-          </DialogContentText>
-          <TextField
-            autoFocus
-            margin="dense"
-            id="code"
-            label="Parner Code"
-            type="coode"
-            fullWidth
-            variant="standard"
-          />
-          <DialogActions>
-            <Button onClick={() => setIsDialogOpen(false)}>Cancel</Button>
-            <Button onClick={() => setIsDialogOpen(false)}>Submit</Button>
-          </DialogActions>
-        </DialogContent>
-      </Dialog>
     </>
   );
 

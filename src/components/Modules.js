@@ -1,11 +1,22 @@
-import { Button, Menu, MenuItem, Typography } from "@mui/material";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Menu,
+  MenuItem,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { Link } from "react-router-dom";
 import yelpLogo from "../assets/yelpLogo.svg";
 import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
 import youtubeLogo from "../assets/youtubeLogo.png";
 import google from "../assets/googleIcon.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
@@ -16,11 +27,13 @@ const modulesRouting = [
   { path: "/tnsauto/gallery", label: "Gallery" },
   { path: "/tnsauto/contact", label: "Contact" },
   { path: "/tnsauto/career", label: "Career" },
+  { path: "/tnsauto/comingsoon", label: "Portfolio" },
 ];
 
 export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
   const [anchorEl, setAnchorEl] = useState(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const openMenu = Boolean(anchorEl);
   const handleMouseEnter = (event) => {
     setAnchorEl(event.currentTarget);
@@ -100,6 +113,20 @@ export default function Modules({ isButton = false }) {
                   </MenuItem>
                 </Menu>
               </div>
+            ) : item.label === "Portfolio" ? (
+              <Button
+                className="moduleButton"
+                onMouseEnter={() => setmouseOnModule(idx)}
+                onMouseLeave={() => setmouseOnModule(-1)}
+                style={{
+                  fontFamily: "inherit",
+                  fontSize: "smaller",
+                  color: mouseOnModule === idx ? "#e3d515" : "white",
+                }}
+                onClick={() => setIsDialogOpen(true)}
+              >
+                Portfolio
+              </Button>
             ) : (
               <Link to={`${item.path}`}>
                 <Button
@@ -122,6 +149,27 @@ export default function Modules({ isButton = false }) {
             )}
           </div>
         ))}
+        <Dialog open={isDialogOpen} onClose={() => setIsDialogOpen(false)}>
+          <DialogTitle>Please Enter Partner Code:</DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              To See the TNS Portfolio, please enter the partner code.
+            </DialogContentText>
+            <TextField
+              autoFocus
+              margin="dense"
+              id="code"
+              label="Enter Partner Code"
+              type="coode"
+              fullWidth
+              variant="standard"
+            />
+            <DialogActions>
+              <Button onClick={() => setIsDialogOpen(false)}>Cancel</Button>
+              <Button onClick={() => setIsDialogOpen(false)}>Submit</Button>
+            </DialogActions>
+          </DialogContent>
+        </Dialog>
       </div>
       <div className="socialMediaIconsOnModules">
         <a href="https://www.facebook.com/TNSAutoGroup/" target="blank">
