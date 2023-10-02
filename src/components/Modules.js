@@ -16,7 +16,7 @@ import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
 import youtubeLogo from "../assets/youtubeLogo.png";
 import google from "../assets/googleIcon.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },

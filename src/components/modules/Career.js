@@ -94,7 +94,6 @@ export default function Career() {
     }
   };
 
-  console.log(formValues.positions);
   return (
     <>
       <Header />
