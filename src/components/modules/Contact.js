@@ -58,7 +58,7 @@ function ContactInfo() {
           }}
         />
       ),
-      title: "Staten Island LOCATION",
+      title: "STATEN ISLAND LOCATION",
       value: (
         <>
           <div>2065 Forest Avenue</div>

@@ -42,12 +42,6 @@ export default function Header() {
               </h1>
             </div>
           </div>
-          <Button
-            className="proposalButton"
-            onClick={() => setIsDialogOpen(true)}
-          >
-            Proposal
-          </Button>
           <Modules />
         </div>
       ) : (
