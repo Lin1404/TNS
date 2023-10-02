@@ -116,14 +116,12 @@ export default function Modules({ isButton = false }) {
             ) : item.label === "Portfolio" ? (
               <Button
                 className="moduleButton"
+                onMouseEnter={() => setmouseOnModule(idx)}
+                onMouseLeave={() => setmouseOnModule(-1)}
                 style={{
                   fontFamily: "inherit",
                   fontSize: "smaller",
-                  color:
-                    mouseOnModule === idx ||
-                    window.location.pathname === item.path
-                      ? "#e3d515"
-                      : "white",
+                  color: mouseOnModule === idx ? "#e3d515" : "white",
                 }}
                 onClick={() => setIsDialogOpen(true)}
               >
