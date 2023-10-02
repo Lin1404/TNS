@@ -131,7 +131,7 @@ export default function Home() {
             </Typography>
             <Divider variant="middle" />
             <Typography variant="body1" padding={1}>
-              Year of Experience
+              Years of Experience
             </Typography>
           </Stack>
         </Box>
@@ -142,7 +142,7 @@ export default function Home() {
             </Typography>
             <Divider variant="middle" />
             <Typography variant="body1" padding={1}>
-              Fully Trained Staff
+              Fully Trained Staffs
             </Typography>
           </Stack>
         </Box>
