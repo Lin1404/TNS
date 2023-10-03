@@ -4,9 +4,10 @@ import facility1 from "../../assets/facility1.jpg";
 import facility2 from "../../assets/facility2.jpg";
 import facility3 from "../../assets/facility3.jpg";
 import facility4 from "../../assets/facility4.jpg";
+import facility5 from "../../assets/facility5.jpg";
 import { Grid } from "@mui/material";
 
-const facilities = [facility3, facility1, facility2];
+const facilities = [facility3, facility1, facility2, facility5];
 
 export default function Facility() {
   return (
