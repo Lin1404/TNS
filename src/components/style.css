@@ -81,25 +81,10 @@
 .moduelButton {
     width: 90%;
     height: 100%;
-    align-self: center;
-    padding-top: 5% !important;
-}
-
-.moduelButton > p {
-    color: white;
-    height: 100%;
-    background-color: #1976c7;
     opacity: 0.8;
-    padding: 3%;
-    border-radius: 15px;
+    padding: 3% !important;
+    border-radius: 15px !important;
     text-align: center;
-    text-justify: inter-cluster;
-    width: 100%;
-}
-
-.moduelButton :hover {
-    background-color: white;
-    color: #1976c7;
 }
 
 .reviewModulepaddingTop {
@@ -434,6 +419,12 @@ img:active img{
     transition: all 0.3 ease-out;
 }
 
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
 .carousel {
     width: 80%;
     margin-left: 20%;
@@ -476,12 +467,6 @@ img:active img{
 }
 .map > h3 {
     max-inline-size: fit-content;
-}
-
-.sliderContainer {
-    display: flex;
-    justify-content: center;
-    width: 80%;
 }
 
 .info {

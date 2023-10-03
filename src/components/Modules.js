@@ -16,7 +16,7 @@ import facebookLogo from "../assets/facebookLogo.svg";
 import instegramLogo from "../assets/instagramLogo.svg";
 import youtubeLogo from "../assets/youtubeLogo.png";
 import google from "../assets/googleIcon.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
@@ -25,9 +25,9 @@ const modulesRouting = [
   { path: "/tnsauto/drp", label: "DRP" },
   { path: "/tnsauto/certifications", label: "Certifications" },
   { path: "/tnsauto/gallery", label: "Gallery" },
+  { path: "/tnsauto/comingsoon", label: "Portfolio" },
   { path: "/tnsauto/contact", label: "Contact" },
   { path: "/tnsauto/career", label: "Career" },
-  { path: "/tnsauto/comingsoon", label: "Portfolio" },
 ];
 
 export default function Modules({ isButton = false }) {
@@ -41,7 +41,6 @@ export default function Modules({ isButton = false }) {
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
-
   return !isButton ? (
     <div className="modulesContainer">
       <div className="modulesSection">
