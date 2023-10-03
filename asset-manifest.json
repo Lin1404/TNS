@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/tnsauto/static/css/main.7909184e.css",
-    "main.js": "/tnsauto/static/js/main.7626f1ae.js",
+    "main.css": "/tnsauto/static/css/main.d283acd9.css",
+    "main.js": "/tnsauto/static/js/main.dec63d89.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.d625af84dc8492020ef5.mp4",
-    "static/media/process.png": "/tnsauto/static/media/process.17836788eef0f98fb4c9.png",
     "static/media/rain.jpg": "/tnsauto/static/media/rain.667579c862c04e63357b.jpg",
     "static/media/compare1.png": "/tnsauto/static/media/compare1.d3468c187a75268028d2.png",
     "static/media/satisfaction1.jpg": "/tnsauto/static/media/satisfaction1.371f7a2dcf6055767b13.jpg",
     "static/media/compare2.png": "/tnsauto/static/media/compare2.9ac960ab091c4155f2ef.png",
+    "static/media/step3.png": "/tnsauto/static/media/step3.8e124f61348bc5c91dde.png",
     "static/media/compare4.png": "/tnsauto/static/media/compare4.711cd946b3fdbe8f3f06.png",
     "static/media/compare5.png": "/tnsauto/static/media/compare5.2c97434d478ccac6955d.png",
     "static/media/compare3.png": "/tnsauto/static/media/compare3.668303efa5c924bd5ea3.png",
     "static/media/compare7.png": "/tnsauto/static/media/compare7.10c8ca1baa24fa0beea7.png",
     "static/media/satisfaction3.png": "/tnsauto/static/media/satisfaction3.58832633450b063a6223.png",
+    "static/media/step2.png": "/tnsauto/static/media/step2.bb2db2ed6a163fbdf30b.png",
     "static/media/ecoFriendly.png": "/tnsauto/static/media/ecoFriendly.96305dac288f17b4dbc2.png",
     "static/media/team.png": "/tnsauto/static/media/team.0aa1644d3a695d439d7d.png",
+    "static/media/step1.png": "/tnsauto/static/media/step1.a615748e801b620dd10b.png",
     "static/media/certifications.png": "/tnsauto/static/media/certifications.ee6f09fabce4de8aed85.png",
     "static/media/DRP.png": "/tnsauto/static/media/DRP.785e6ccfb95e8724c810.png",
     "static/media/tns.svg": "/tnsauto/static/media/tns.8c23c543c0ef8a21473f45982a069c15.svg",
@@ -34,12 +36,12 @@
     "static/media/facebookLogo.svg": "/tnsauto/static/media/facebookLogo.1d8e0397525aadb52a029adc60908a02.svg",
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
-    "main.7909184e.css.map": "/tnsauto/static/css/main.7909184e.css.map",
-    "main.7626f1ae.js.map": "/tnsauto/static/js/main.7626f1ae.js.map",
+    "main.d283acd9.css.map": "/tnsauto/static/css/main.d283acd9.css.map",
+    "main.dec63d89.js.map": "/tnsauto/static/js/main.dec63d89.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7909184e.css",
-    "static/js/main.7626f1ae.js"
+    "static/css/main.d283acd9.css",
+    "static/js/main.dec63d89.js"
   ]
 }
