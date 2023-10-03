@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tnsauto/static/css/main.d283acd9.css",
-    "main.js": "/tnsauto/static/js/main.0ea86548.js",
+    "main.js": "/tnsauto/static/js/main.783f29f3.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.d625af84dc8492020ef5.mp4",
     "static/media/tnsShop.png": "/tnsauto/static/media/tnsShop.5785ae594401aec29b70.png",
@@ -23,8 +23,8 @@
     "static/media/ecoFriendly.png": "/tnsauto/static/media/ecoFriendly.96305dac288f17b4dbc2.png",
     "static/media/team.png": "/tnsauto/static/media/team.0aa1644d3a695d439d7d.png",
     "static/media/step1.png": "/tnsauto/static/media/step1.a615748e801b620dd10b.png",
+    "static/media/DRP.png": "/tnsauto/static/media/DRP.d6029b7ad143480ebe97.png",
     "static/media/certifications.png": "/tnsauto/static/media/certifications.ee6f09fabce4de8aed85.png",
-    "static/media/DRP.png": "/tnsauto/static/media/DRP.785e6ccfb95e8724c810.png",
     "static/media/tns.svg": "/tnsauto/static/media/tns.8c23c543c0ef8a21473f45982a069c15.svg",
     "static/media/callPolice.jpeg": "/tnsauto/static/media/callPolice.94497a4292b271171dc2.jpeg",
     "static/media/Office.jpeg": "/tnsauto/static/media/Office.a4a78ebc53905730587e.jpeg",
@@ -43,11 +43,11 @@
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
     "main.d283acd9.css.map": "/tnsauto/static/css/main.d283acd9.css.map",
-    "main.0ea86548.js.map": "/tnsauto/static/js/main.0ea86548.js.map",
+    "main.783f29f3.js.map": "/tnsauto/static/js/main.783f29f3.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d283acd9.css",
-    "static/js/main.0ea86548.js"
+    "static/js/main.783f29f3.js"
   ]
 }
