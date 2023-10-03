@@ -8,7 +8,7 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import RepairProcess from "./homePageComponents/RepairProcess";
-import useWindowDimensions from "./useWindowDimensions";
+// import useWindowDimensions from "./useWindowDimensions";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 
 const style = {
@@ -23,7 +23,7 @@ const style = {
 };
 
 export default function Home() {
-  const { width } = useWindowDimensions();
+  // const { width } = useWindowDimensions();
   const [accidentModalOpen, setAccidentModalOpen] = useState(false);
   const [repairModalOpen, setRepairModalOpen] = useState(false);
   const handleAccidentModalOpen = () => setAccidentModalOpen(true);
