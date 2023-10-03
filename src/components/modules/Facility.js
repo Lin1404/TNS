@@ -7,17 +7,25 @@ import facility4 from "../../assets/facility4.jpg";
 import facility5 from "../../assets/facility5.jpg";
 import { Grid } from "@mui/material";
 
-const facilities = [facility3, facility1, facility2, facility5];
+const facilities = [facility3, facility2, facility1, facility5];
 
 export default function Facility() {
   return (
-    <div>
+    <div className="paddingBot">
       <Header />
       <h2 className="sectionTitle">Facility:</h2>
-      <img src={officeImg} alt="Office Img" style={{ width: "80%" }} />
-      <img src={facility4} alt="Facility Img" style={{ width: "80%" }} />
+      <img
+        src={officeImg}
+        alt="Office Img"
+        style={{ width: "80%", paddingBottom: "1%" }}
+      />
+      <img
+        src={facility4}
+        alt="Office Img"
+        style={{ width: "80%", paddingBottom: "1%" }}
+      />
 
-      <Grid container sx={{ padding: "0 3%" }}>
+      <Grid container sx={{ padding: "0 8%" }}>
         {facilities.map((item) => (
           <Grid xs={6}>
             <img
