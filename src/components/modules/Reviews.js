@@ -19,10 +19,10 @@ const reviews = [
   {
     review: (
       <p>
-        TNS Auto Collision did phenomenal work after a truck hit my front right
+        "TNS Auto Collision did phenomenal work after a truck hit my front right
         quarter panel, dinged my hood and broke the front right headlight. Look
         at my before & after pics, like new! Highly recommend this body shop if
-        you want your vehicle looking like the day you drove it off the lot.
+        you want your vehicle looking like the day you drove it off the lot."
       </p>
     ),
     customer: "Matt JC - NYC",
@@ -30,11 +30,11 @@ const reviews = [
   {
     review: (
       <p>
-        Excellent customer service, quick turnaround. I used TNS because it was
+        "Excellent customer service, quick turnaround. I used TNS because it was
         covered by my insurance and I had to get it repaired after a minor
         collision. Anson kept me informed throughout the whole process , the car
         was ready ahead of time, and the repairs were perfect. I would
-        definitely use TNS again.
+        definitely use TNS again."
       </p>
     ),
     customer: "Mara Nerenberg",
@@ -42,10 +42,10 @@ const reviews = [
   {
     review: (
       <p>
-        I am very satisfied with the service that they provided me, all the
+        "I am very satisfied with the service that they provided me, all the
         people were very kind, the car was left as if nothing had happened and
         they delivered it to me in a week, I am very grateful that that week I
-        was going on a trip and the car was delivered just on time.
+        was going on a trip and the car was delivered just on time."
       </p>
     ),
     customer: "Carlos Osorno",
