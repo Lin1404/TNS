@@ -96,7 +96,7 @@ export default function Modules({ isButton = false }) {
                   </MenuItem>
                   <MenuItem onClick={handleMenuClose}>
                     <Link
-                      to={"/tnsauto/comingsoon"}
+                      to={"/tnsauto/facility"}
                       style={{ textDecoration: "none", color: "black" }}
                     >
                       <Typography>Facility</Typography>
