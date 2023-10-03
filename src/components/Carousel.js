@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Container } from "@mui/material";
 
 export default function Carousel({ content, imgs, settingProps }) {
   const settings = {
@@ -17,8 +18,8 @@ export default function Carousel({ content, imgs, settingProps }) {
   };
 
   return (
-    <div className="sliderContainer">
-      <Slider {...settings} className="carousel paddingBot">
+    <Container>
+      <Slider {...settings}>
         {content &&
           content.map((item) => (
             <div key={item.customer} className="reviews">
@@ -28,7 +29,7 @@ export default function Carousel({ content, imgs, settingProps }) {
           ))}
         {imgs &&
           imgs.map((item) => (
-            <div key={item} className="carouselImg">
+            <div key={item}>
               <img
                 src={item}
                 alt="Carouse Images"
@@ -39,6 +40,6 @@ export default function Carousel({ content, imgs, settingProps }) {
             </div>
           ))}
       </Slider>
-    </div>
+    </Container>
   );
 }

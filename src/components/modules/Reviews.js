@@ -27,6 +27,29 @@ const reviews = [
     ),
     customer: "Matt JC - NYC",
   },
+  {
+    review: (
+      <p>
+        Excellent customer service, quick turnaround. I used TNS because it was
+        covered by my insurance and I had to get it repaired after a minor
+        collision. Anson kept me informed throughout the whole process , the car
+        was ready ahead of time, and the repairs were perfect. I would
+        definitely use TNS again.
+      </p>
+    ),
+    customer: "Mara Nerenberg",
+  },
+  {
+    review: (
+      <p>
+        I am very satisfied with the service that they provided me, all the
+        people were very kind, the car was left as if nothing had happened and
+        they delivered it to me in a week, I am very grateful that that week I
+        was going on a trip and the car was delivered just on time.
+      </p>
+    ),
+    customer: "Carlos Osorno",
+  },
 ];
 
 export default function Reviews() {

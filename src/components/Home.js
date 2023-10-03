@@ -50,16 +50,6 @@ export default function Home() {
           </video>
         </div>
         <Container className="homePageModalContainer">
-          {/* <Grid container>
-            <Grid item xs={2}>
-              <Typography variant="h3">Choose</Typography>
-            </Grid>
-            <Grid item xs={2}>
-              <Typography variant="h3" sx={{ color: "navy" }}>
-                TNS
-              </Typography>
-            </Grid>
-          </Grid> */}
           <Typography variant="h3" sx={{ color: "navy" }}>
             Choose TNS
           </Typography>
@@ -76,18 +66,21 @@ export default function Home() {
           </Box>
           <Grid container>
             <Grid item xs={6}>
-              <Button className="moduelButton" onClick={handleRepairModalOpen}>
-                <Typography variant="body2">3 STEP FIX YOUR CAR →</Typography>
+              <Button
+                className="moduelButton"
+                variant="contained"
+                onClick={handleRepairModalOpen}
+              >
+                3 STEP FIX YOUR CAR →
               </Button>
             </Grid>
             <Grid item xs={6}>
               <Button
                 className="moduelButton"
                 onClick={handleAccidentModalOpen}
+                variant="contained"
               >
-                <Typography variant="body2">
-                  HANDLE ACCIDENT PROFESSIONALLY →
-                </Typography>
+                HANDLE ACCIDENT PROFESSIONALLY →
               </Button>
             </Grid>
           </Grid>
