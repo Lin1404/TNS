@@ -35,6 +35,7 @@ export default function Carousel({ content, imgs, settingProps }) {
                 alt="Carouse Images"
                 style={{
                   width: "100%",
+                  padding: "5% 0",
                 }}
               />
             </div>
