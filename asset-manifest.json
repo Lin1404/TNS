@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/tnsauto/static/css/main.d283acd9.css",
-    "main.js": "/tnsauto/static/js/main.dec63d89.js",
+    "main.js": "/tnsauto/static/js/main.98383ccb.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.d625af84dc8492020ef5.mp4",
+    "static/media/facility1.jpg": "/tnsauto/static/media/facility1.1af0713a3e951c52e65a.jpg",
+    "static/media/facility3.jpg": "/tnsauto/static/media/facility3.09b1457586367c33f569.jpg",
+    "static/media/facility2.jpg": "/tnsauto/static/media/facility2.9d4cd38b0590ec8451d4.jpg",
+    "static/media/facility4.jpg": "/tnsauto/static/media/facility4.1a36342cd45cafd3b9c6.jpg",
     "static/media/rain.jpg": "/tnsauto/static/media/rain.667579c862c04e63357b.jpg",
     "static/media/compare1.png": "/tnsauto/static/media/compare1.d3468c187a75268028d2.png",
     "static/media/satisfaction1.jpg": "/tnsauto/static/media/satisfaction1.371f7a2dcf6055767b13.jpg",
@@ -22,6 +26,7 @@
     "static/media/DRP.png": "/tnsauto/static/media/DRP.785e6ccfb95e8724c810.png",
     "static/media/tns.svg": "/tnsauto/static/media/tns.8c23c543c0ef8a21473f45982a069c15.svg",
     "static/media/callPolice.jpeg": "/tnsauto/static/media/callPolice.94497a4292b271171dc2.jpeg",
+    "static/media/Office.jpeg": "/tnsauto/static/media/Office.a4a78ebc53905730587e.jpeg",
     "static/media/takeEveident.jpeg": "/tnsauto/static/media/takeEveident.7180d12bbfe997d39c83.jpeg",
     "static/media/notAdmit.jpeg": "/tnsauto/static/media/notAdmit.d6b8666cd859c43102fa.jpeg",
     "static/media/exchangeInfo1.jpeg": "/tnsauto/static/media/exchangeInfo1.4de817bdc4e410050071.jpeg",
@@ -37,11 +42,11 @@
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
     "main.d283acd9.css.map": "/tnsauto/static/css/main.d283acd9.css.map",
-    "main.dec63d89.js.map": "/tnsauto/static/js/main.dec63d89.js.map",
+    "main.98383ccb.js.map": "/tnsauto/static/js/main.98383ccb.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d283acd9.css",
-    "static/js/main.dec63d89.js"
+    "static/js/main.98383ccb.js"
   ]
 }
