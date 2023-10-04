@@ -92,7 +92,7 @@ export default function Modules({ isButton = false }) {
                 >
                   <MenuItem onClick={handleMenuClose}>
                     <Link
-                      to={"/tnsauto/gallery"}
+                      to={"/tnsauto/before&after"}
                       style={{ textDecoration: "none", color: "black" }}
                     >
                       <Typography>Before & After</Typography>

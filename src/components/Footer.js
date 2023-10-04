@@ -22,7 +22,7 @@ export default function Footer() {
           </h3>
           <a href="/tnsauto/aboutus">About Us</a>
           <a href="/tnsauto/services">Services</a>
-          <a href="/tnsauto/gallery">Befor & After</a>
+          <a href="/tnsauto/before&after">Befor & After</a>
           <a href="/tnsauto/career">Career</a>
           <a href="https://www.tnsautoinc.com/">TNS Staten Island</a>
         </Stack>
