@@ -43,7 +43,7 @@ export default function Gallery() {
     <div>
       <Header />
       <div className="backgroundColorWhite" />
-      <h2 className="sectionTitle">Before & After Photos:</h2>
+      <h2 className="sectionTitle">Before & After Photos</h2>
       <div className="galleryContainer">
         {imgsToCompare.map((item, idx) => (
           <div key={item}>
@@ -92,7 +92,6 @@ export default function Gallery() {
               settingProps={{
                 initialSlide: selectedImgIdx,
                 autoplay: false,
-                // centerMode: true,
                 centerPadding: "40px",
               }}
             />

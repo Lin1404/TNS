@@ -14,7 +14,7 @@ export default function Satisfaction() {
     <div>
       <Header />
       <Container sx={{ paddingBottom: "3%" }}>
-        <h2 className="sectionTitle">Customer Satisfaction:</h2>
+        <h2 className="sectionTitle">Customer Satisfaction</h2>
         <img src={satisfaction1} alt="illustration" style={{ width: "100%" }} />
         <img
           src={satisfaction3}

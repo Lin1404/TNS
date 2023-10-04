@@ -13,7 +13,7 @@ export default function Facility() {
   return (
     <div className="paddingBot">
       <Header />
-      <h2 className="sectionTitle">Facility:</h2>
+      <h2 className="sectionTitle">Facility</h2>
       <img
         src={officeImg}
         alt="Office Img"

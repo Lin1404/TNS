@@ -14,7 +14,7 @@ export default function AboutUs() {
       <Header />
       <div>
         <div className="backgroundColorWhite" />
-        <h2 className="sectionTitle">About Us:</h2>
+        <h2 className="sectionTitle">About Us</h2>
         <img
           src={tnsShop}
           alt="shop"
