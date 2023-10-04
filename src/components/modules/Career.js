@@ -98,7 +98,7 @@ export default function Career() {
     <>
       <Header />
       <h2 className="sectionTitle">Online Job Application</h2>
-      <Container className="careerIntroduction paddingBot">
+      <Container className="careerIntroduction">
         <Typography>
           TNS Auto Collision is hiring career-focused professionals, including
           General Service Technicians, Automotive Technicians, Service Advisors,
@@ -115,7 +115,7 @@ export default function Career() {
         </Typography>
         <Typography
           variant="h3"
-          sx={{ color: "#828fd8", padding: "2%", fontFamily: "cursive" }}
+          sx={{ color: "#828fd8", padding: "5%", fontFamily: "cursive" }}
         >
           JOIN US TODAY !
         </Typography>
