@@ -19,7 +19,7 @@ export default function Satisfaction() {
         <img
           src={satisfaction3}
           alt="illustration"
-          style={{ width: "100%", paddingTop: "3%" }}
+          style={{ width: "100%", paddingTop: "4%" }}
         />
       </Container>
       <Reviews />

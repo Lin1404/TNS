@@ -19,8 +19,8 @@ export default function AboutUs() {
           src={tnsShop}
           alt="shop"
           style={{
-            width: "70%",
-            paddingBottom: "5%",
+            width: "80%",
+            paddingBottom: "2%",
           }}
         />
       </div>
