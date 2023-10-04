@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ErrorPage from "./components/ErrorPage";
-import Gallery from "./components/modules/Gallery";
+import BeforeAndAfter from "./components/modules/BeforeAndAfter";
 import Certifications from "./components/modules/Certifications";
 import DRP from "./components/modules/DRP";
 import RepairProcess from "./components/homePageComponents/RepairProcess";
@@ -14,6 +14,7 @@ import Satisfaction from "./components/modules/Satisfaction";
 import Career from "./components/modules/Career";
 import Facility from "./components/modules/Facility";
 import Portfolio from "./components/modules/Portfolio";
+import ComingSoon from "./components/ComingSoon";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +23,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/gallery",
-    element: <Gallery />,
+    path: "/tnsauto/before&after",
+    element: <BeforeAndAfter />,
     errorElement: <ErrorPage />,
   },
   {
@@ -74,6 +75,11 @@ const router = createBrowserRouter([
   {
     path: "/tnsauto/tns1011portfolio",
     element: <Portfolio />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/comingsoon",
+    element: <ComingSoon />,
     errorElement: <ErrorPage />,
   },
 ]);

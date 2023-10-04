@@ -30,7 +30,7 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-export default function Gallery() {
+export default function BeforeAndAfter() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImgIdx, setSelectImgIdx] = useState(-1);
   const handleClose = () => setIsOpen(false);
