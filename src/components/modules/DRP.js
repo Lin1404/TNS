@@ -11,7 +11,7 @@ export default function DRP() {
       <Header />
       <div className="moduleContainer">
         <h2 className="sectionTitle">DRP Partner With</h2>
-        <div className="certificationsLogo">
+        <div className="certificationsLogo paddingBot">
           <img src={drp} alt="DRP" />
         </div>
       </div>

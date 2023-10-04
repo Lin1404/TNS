@@ -98,7 +98,7 @@ export default function Career() {
     <>
       <Header />
       <h2 className="sectionTitle">Online Job Application</h2>
-      <Container className="careerIntroduction">
+      <Container className="careerIntroduction paddingBot">
         <Typography>
           TNS Auto Collision is hiring career-focused professionals, including
           General Service Technicians, Automotive Technicians, Service Advisors,
