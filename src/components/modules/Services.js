@@ -14,7 +14,7 @@ export default function Services() {
       <Header />
       <div>
         <div>
-          <h2 className="sectionTitle">Our Quality Services:</h2>
+          <h2 className="sectionTitle">Our Quality Services</h2>
           <div className="serviceContextGrid">
             <img src={serviceIcon1} alt="illustration" />
             <div className="serviceContextContainer">

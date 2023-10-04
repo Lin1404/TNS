@@ -12,8 +12,8 @@ import Services from "./components/modules/Services";
 import Contact from "./components/modules/Contact";
 import Satisfaction from "./components/modules/Satisfaction";
 import Career from "./components/modules/Career";
-import ComingSoon from "./components/ComingSoon";
 import Facility from "./components/modules/Facility";
+import Portfolio from "./components/modules/Portfolio";
 
 const router = createBrowserRouter([
   {
@@ -72,8 +72,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/comingsoon",
-    element: <ComingSoon />,
+    path: "/tnsauto/tns1011portfolio",
+    element: <Portfolio />,
     errorElement: <ErrorPage />,
   },
 ]);

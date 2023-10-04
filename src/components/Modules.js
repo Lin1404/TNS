@@ -26,7 +26,7 @@ const modulesRouting = [
   { path: "/tnsauto/drp", label: "DRP" },
   { path: "/tnsauto/certifications", label: "Certifications" },
   { path: "/tnsauto/gallery", label: "Gallery" },
-  { path: "/tnsauto/comingsoon", label: "Portfolio" },
+  { path: "/tnsauto/tns1011portfolio", label: "Portfolio" },
   { path: "/tnsauto/contact", label: "Contact" },
   { path: "/tnsauto/career", label: "Career" },
 ];
@@ -35,12 +35,23 @@ export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
   const [anchorEl, setAnchorEl] = useState(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [partnerCode, setPartnerCode] = useState("");
+  const [isPartnerCodeOnsubmit, setIsPartnerCodeOnsubmit] = useState();
+
   const openMenu = Boolean(anchorEl);
   const handleMouseEnter = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleMenuClose = () => {
     setAnchorEl(null);
+  };
+  const handleDialogOnsubmit = () => {
+    setIsPartnerCodeOnsubmit(true);
+    partnerCode === "TNS1011" ? (
+      (window.location = "/tnsauto/tns1011portfolio")
+    ) : (
+      <></>
+    );
   };
   return !isButton ? (
     <div className="modulesContainer">
@@ -118,10 +129,15 @@ export default function Modules({ isButton = false }) {
                 className="moduleButton"
                 onMouseEnter={() => setmouseOnModule(idx)}
                 onMouseLeave={() => setmouseOnModule(-1)}
+                disabled={window.location.pathname === item.path}
                 style={{
                   fontFamily: "inherit",
                   fontSize: "smaller",
-                  color: mouseOnModule === idx ? "#e3d515" : "white",
+                  color:
+                    mouseOnModule === idx ||
+                    window.location.pathname === item.path
+                      ? "#e3d515"
+                      : "white",
                 }}
                 onClick={() => setIsDialogOpen(true)}
               >
@@ -133,6 +149,7 @@ export default function Modules({ isButton = false }) {
                   onMouseEnter={() => setmouseOnModule(idx)}
                   onMouseLeave={() => setmouseOnModule(-1)}
                   className="moduleButton"
+                  disabled={window.location.pathname === item.path}
                   style={{
                     fontFamily: "inherit",
                     fontSize: "smaller",
@@ -149,7 +166,13 @@ export default function Modules({ isButton = false }) {
             )}
           </div>
         ))}
-        <Dialog open={isDialogOpen} onClose={() => setIsDialogOpen(false)}>
+        <Dialog
+          open={isDialogOpen}
+          onClose={() => {
+            setIsPartnerCodeOnsubmit(false);
+            setIsDialogOpen(false);
+          }}
+        >
           <DialogTitle>Please Enter Partner Code:</DialogTitle>
           <DialogContent>
             <DialogContentText>
@@ -163,10 +186,20 @@ export default function Modules({ isButton = false }) {
               type="coode"
               fullWidth
               variant="standard"
+              onChange={(e) => setPartnerCode(e.target.value)}
+              error={isPartnerCodeOnsubmit && partnerCode !== "TNS1011"}
+              helperText="Please Enter valid Partner Code."
             />
             <DialogActions>
-              <Button onClick={() => setIsDialogOpen(false)}>Cancel</Button>
-              <Button onClick={() => setIsDialogOpen(false)}>Submit</Button>
+              <Button
+                onClick={() => {
+                  setIsPartnerCodeOnsubmit(false);
+                  setIsDialogOpen(false);
+                }}
+              >
+                Cancel
+              </Button>
+              <Button onClick={() => handleDialogOnsubmit()}>Submit</Button>
             </DialogActions>
           </DialogContent>
         </Dialog>
