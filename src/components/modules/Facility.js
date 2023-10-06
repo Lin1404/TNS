@@ -6,9 +6,19 @@ import facility3 from "../../assets/facility3.jpg";
 import facility4 from "../../assets/facility4.jpg";
 import facility5 from "../../assets/facility5.jpg";
 import facility6 from "../../assets/facility6.jpg";
+import facility7 from "../../assets/facility7.jpg";
+import facility8 from "../../assets/facility8.jpg";
 import { Grid } from "@mui/material";
 
-const facilities = [facility3, facility2, facility1, facility6, facility5];
+const facilities = [
+  facility3,
+  facility2,
+  facility8,
+  facility1,
+  facility6,
+  facility5,
+  facility7,
+];
 
 export default function Facility() {
   return (
