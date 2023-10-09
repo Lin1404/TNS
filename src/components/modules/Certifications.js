@@ -12,6 +12,9 @@ export default function Certifications() {
       <div className="backgroundColorWhite" />
       <div className="moduleContainer">
         <h2 className="sectionTitle">Certifications</h2>
+        <div className="certificationsLogo">
+          <img src={certifications} alt="certifications" />
+        </div>
         <p>
           TNS Auto Collision is your state of the art collision repair facility.
         </p>
@@ -21,9 +24,6 @@ export default function Certifications() {
           and certified repair technicians. This assures that your vehicle is
           repaired to factory specs and pre-accident condition.
         </p>
-        <div className="certificationsLogo">
-          <img src={certifications} alt="certifications" />
-        </div>
         <div className="certificationsExpand">
           <h2>
             I-CAR :<div>Inter-Industry Conference on Auto Collision Repair</div>
