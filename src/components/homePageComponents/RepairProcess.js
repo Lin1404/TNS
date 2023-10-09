@@ -8,7 +8,7 @@ const stepImgs = [step1, step2, step3];
 export default function RepairProcess() {
   return (
     <div>
-      <h2 className="sectionTitle">Do you know the Repair Process?</h2>
+      <h2 className="sectionTitle">3 Steps Fix Your Car Easily:</h2>
       <Carousel imgs={stepImgs} />
     </div>
   );

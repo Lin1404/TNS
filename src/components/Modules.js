@@ -38,11 +38,11 @@ export default function Modules({ isButton = false }) {
   const [partnerCode, setPartnerCode] = useState("");
   const [isPartnerCodeOnsubmit, setIsPartnerCodeOnsubmit] = useState();
 
-  const openMenu = Boolean(anchorEl);
-  const handleMouseEnter = (event) => {
+  const openGalleryMenu = Boolean(anchorEl);
+  const handleMouseEnterGallery = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleMenuClose = () => {
+  const handleGalleryMenuClose = () => {
     setAnchorEl(null);
   };
   const handleDialogOnsubmit = () => {
@@ -59,18 +59,15 @@ export default function Modules({ isButton = false }) {
         {modulesRouting.map((item, idx) => (
           <div className="moduleButtonContainer" key={item.label}>
             {item.label === "Gallery" ? (
-              <div id="moduleManu">
+              <div id="galleryModuleManu">
                 <Button
                   className="moduleButton"
-                  onClick={handleMouseEnter}
+                  onMouseOver={handleMouseEnterGallery}
                   style={{
                     fontFamily: "inherit",
                     fontSize: "smaller",
-                    color: openMenu ? "#e3d515" : "white",
+                    color: openGalleryMenu ? "#e3d515" : "white",
                   }}
-                  aria-controls={openMenu ? "modulesMenu" : undefined}
-                  aria-haspopup="true"
-                  aria-expanded={openMenu ? "true" : undefined}
                 >
                   Gallery
                 </Button>
@@ -78,9 +75,9 @@ export default function Modules({ isButton = false }) {
                 <Menu
                   id="modulesMenu"
                   anchorEl={anchorEl}
-                  open={openMenu}
-                  onClose={handleMenuClose}
-                  MenuListProps={{ onMouseLeave: handleMenuClose }}
+                  open={openGalleryMenu}
+                  onClose={handleGalleryMenuClose}
+                  MenuListProps={{ onMouseLeave: handleGalleryMenuClose }}
                   anchorOrigin={{
                     vertical: "bottom",
                     horizontal: "left",
@@ -90,7 +87,7 @@ export default function Modules({ isButton = false }) {
                     horizontal: "left",
                   }}
                 >
-                  <MenuItem onClick={handleMenuClose}>
+                  <MenuItem onClick={handleGalleryMenuClose}>
                     <Link
                       to={"/tnsauto/before&after"}
                       style={{ textDecoration: "none", color: "black" }}
@@ -98,7 +95,7 @@ export default function Modules({ isButton = false }) {
                       <Typography>Before & After</Typography>
                     </Link>
                   </MenuItem>
-                  <MenuItem onClick={handleMenuClose}>
+                  <MenuItem onClick={handleGalleryMenuClose}>
                     <Link
                       to={"/tnsauto/satisfaction"}
                       style={{ textDecoration: "none", color: "black" }}
@@ -106,7 +103,7 @@ export default function Modules({ isButton = false }) {
                       <Typography>Customer Satisfaction</Typography>
                     </Link>
                   </MenuItem>
-                  <MenuItem onClick={handleMenuClose}>
+                  <MenuItem onClick={handleGalleryMenuClose}>
                     <Link
                       to={"/tnsauto/facility"}
                       style={{ textDecoration: "none", color: "black" }}
@@ -114,7 +111,7 @@ export default function Modules({ isButton = false }) {
                       <Typography>Facility</Typography>
                     </Link>
                   </MenuItem>
-                  <MenuItem onClick={handleMenuClose}>
+                  <MenuItem onClick={handleGalleryMenuClose}>
                     <Link
                       to={"/tnsauto/comingsoon"}
                       style={{ textDecoration: "none", color: "black" }}
@@ -232,10 +229,10 @@ export default function Modules({ isButton = false }) {
     <div>
       <Button
         className="modulesbutton"
-        aria-controls={openMenu ? "modulesMenu" : undefined}
+        aria-controls={openGalleryMenu ? "modulesMenu" : undefined}
         aria-haspopup="true"
-        aria-expanded={openMenu ? "true" : undefined}
-        onClick={handleMouseEnter}
+        aria-expanded={openGalleryMenu ? "true" : undefined}
+        onClick={handleMouseEnterGallery}
       >
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
@@ -244,8 +241,8 @@ export default function Modules({ isButton = false }) {
       <Menu
         id="modulesMenu"
         anchorEl={anchorEl}
-        open={openMenu}
-        onClose={handleMenuClose}
+        open={openGalleryMenu}
+        onClose={handleGalleryMenuClose}
         anchorOrigin={{
           vertical: "top",
           horizontal: "left",
@@ -257,7 +254,7 @@ export default function Modules({ isButton = false }) {
       >
         {modulesRouting.map((item, idx) => (
           <Link to={`${item.path}`} style={{ textDecoration: "none" }}>
-            <MenuItem onClick={handleMenuClose}>{item.label}</MenuItem>
+            <MenuItem onClick={handleGalleryMenuClose}>{item.label}</MenuItem>
           </Link>
         ))}
       </Menu>
