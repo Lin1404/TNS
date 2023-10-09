@@ -42,7 +42,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <Container sx={{ paddingBottom: "5%" }}>
+        {/* <Container sx={{ paddingBottom: "5%" }}>
           <Link to={"/tnsauto/satisfaction"}>
             <Button
               className="moduleButton"
@@ -56,7 +56,7 @@ export default function Services() {
               Customer Satisfaction →
             </Button>
           </Link>
-        </Container>
+        </Container> */}
         <h2 className="sectionTitle">Our Best Color Result:</h2>
         <div className="ppgAnnouncementContainer">
           <img src={ecoFriendly} alt="illustration" style={{ width: "25%" }} />
