@@ -85,38 +85,9 @@ export default function Home() {
             </Grid>
           </Grid>
         </Container>
-        {/* <Grid containter padding={2} sx={{ alignSelf: "center" }}>
-          <Grid paddingBottom={5} xs={width < 900 ? 5 : 12}>
-            <Stack>
-              <Typography variant="h5">
-                Do you know what to do after accident happpen?
-              </Typography>
-              <Button
-                className="moduelButton"
-                onClick={handleAccidentModalOpen}
-              >
-                <Typography variant="body2">
-                  HOW TO HANDLE ACCIDENT PROFESSIONALLY →
-                </Typography>
-              </Button>
-            </Stack>
-          </Grid>
-          <Grid>
-            <Stack>
-              <Typography variant="h5">
-                Do you know our repair process?
-              </Typography>
-              <Button className="moduelButton" onClick={handleRepairModalOpen}>
-                <Typography variant="body2">
-                  LEARN MORE ABOUT OUR REPAIR PROCESS →
-                </Typography>
-              </Button>
-            </Stack>
-          </Grid>
-        </Grid> */}
       </div>
 
-      <Grid container xs={12} columnGap={15} className="highlight">
+      {/* <Grid container xs={12} columnGap={15} className="highlight">
         <Box>
           <Stack>
             <Typography variant="h4" padding={1}>
@@ -183,8 +154,8 @@ export default function Home() {
             included
           </Typography>
         </Stack>
-      </Grid>
-      <Reviews />
+      </Grid> */}
+      {/* <Reviews /> */}
 
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
         <Box sx={style}>

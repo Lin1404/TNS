@@ -62,7 +62,7 @@ export default function Modules({ isButton = false }) {
               <div id="moduleManu">
                 <Button
                   className="moduleButton"
-                  onMouseOver={handleMouseEnter}
+                  onClick={handleMouseEnter}
                   style={{
                     fontFamily: "inherit",
                     fontSize: "smaller",
