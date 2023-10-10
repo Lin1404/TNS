@@ -31,6 +31,19 @@ const modulesRouting = [
   { path: "/tnsauto/career", label: "Career" },
 ];
 
+const servicesDropDown = [
+  { path: "/tnsauto/services", label: "Aluminum Certified" },
+  { path: "/tnsauto/services", label: "Car Rentals" },
+  { path: "/tnsauto/services", label: "Expert Estimating" },
+  { path: "/tnsauto/services", label: "Expert Paint Work" },
+  { path: "/tnsauto/services", label: "Insurance Claims" },
+  { path: "/tnsauto/services", label: "Life Time Warranty" },
+  { path: "/tnsauto/services", label: "Quality Collision Repair" },
+  { path: "/tnsauto/services", label: "Services" },
+  { path: "/tnsauto/services", label: "Towing Services" },
+  { path: "/tnsauto/services", label: "Vehicle Detailing" },
+];
+
 export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
   const [anchorElGallery, setAnchorElGallery] = useState(null);
@@ -62,7 +75,7 @@ export default function Modules({ isButton = false }) {
       <></>
     );
   };
-  console.log(anchorElGallery);
+
   return !isButton ? (
     <div className="modulesContainer">
       <div className="modulesSection">
@@ -98,35 +111,35 @@ export default function Modules({ isButton = false }) {
                     horizontal: "left",
                   }}
                 >
-                  <MenuItem onClick={handleGalleryMenuClose}>
-                    <Link
-                      to={"/tnsauto/before&after"}
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
+                  <MenuItem
+                    onClick={handleGalleryMenuClose}
+                    className="dropDownMenu"
+                  >
+                    <Link to={"/tnsauto/before&after"}>
                       <Typography>Before & After</Typography>
                     </Link>
                   </MenuItem>
-                  <MenuItem onClick={handleGalleryMenuClose}>
-                    <Link
-                      to={"/tnsauto/satisfaction"}
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
+                  <MenuItem
+                    onClick={handleGalleryMenuClose}
+                    className="dropDownMenu"
+                  >
+                    <Link to={"/tnsauto/satisfaction"}>
                       <Typography>Customer Satisfaction</Typography>
                     </Link>
                   </MenuItem>
-                  <MenuItem onClick={handleGalleryMenuClose}>
-                    <Link
-                      to={"/tnsauto/facility"}
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
+                  <MenuItem
+                    onClick={handleGalleryMenuClose}
+                    className="dropDownMenu"
+                  >
+                    <Link to={"/tnsauto/facility"}>
                       <Typography>Facility</Typography>
                     </Link>
                   </MenuItem>
-                  <MenuItem onClick={handleGalleryMenuClose}>
-                    <Link
-                      to={"/tnsauto/comingsoon"}
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
+                  <MenuItem
+                    onClick={handleGalleryMenuClose}
+                    className="dropDownMenu"
+                  >
+                    <Link to={"/tnsauto/comingsoon"}>
                       <Typography>Shows/Activity Events</Typography>
                     </Link>
                   </MenuItem>
@@ -162,38 +175,16 @@ export default function Modules({ isButton = false }) {
                     horizontal: "left",
                   }}
                 >
-                  <MenuItem onClick={handleServicesMenuClose}>
-                    <Link
-                      to={"/tnsauto/services"}
-                      style={{ textDecoration: "none", color: "black" }}
+                  {servicesDropDown.map((item) => (
+                    <MenuItem
+                      onClick={handleServicesMenuClose}
+                      className="dropDownMenu"
                     >
-                      <Typography>services</Typography>
-                    </Link>
-                  </MenuItem>
-                  <MenuItem onClick={handleServicesMenuClose}>
-                    <Link
-                      to={"/tnsauto/satisfaction"}
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
-                      <Typography>Customer Satisfaction</Typography>
-                    </Link>
-                  </MenuItem>
-                  <MenuItem onClick={handleServicesMenuClose}>
-                    <Link
-                      to={"/tnsauto/facility"}
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
-                      <Typography>Facility</Typography>
-                    </Link>
-                  </MenuItem>
-                  <MenuItem onClick={handleServicesMenuClose}>
-                    <Link
-                      to={"/tnsauto/comingsoon"}
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
-                      <Typography>Shows/Activity Events</Typography>
-                    </Link>
-                  </MenuItem>
+                      <Link to={item.path}>
+                        <Typography>{item.label}</Typography>
+                      </Link>
+                    </MenuItem>
+                  ))}
                 </Menu>
               </div>
             ) : item.label === "Portfolio" ? (

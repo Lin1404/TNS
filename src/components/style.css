@@ -87,6 +87,11 @@
     text-align: center;
 }
 
+.dropDownMenu > a {
+    text-decoration: none;
+    color: navy;
+}
+
 .reviewModulepaddingTop {
     padding: 6% 0;
 }
