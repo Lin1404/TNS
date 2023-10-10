@@ -41,7 +41,7 @@ export default function AluminumCertified() {
           <img
             src={aluminumCertified}
             alt="Aluminum Certified"
-            style={{ width: "100%" }}
+            style={{ width: "90%" }}
           />
         </Grid>
       </Grid>

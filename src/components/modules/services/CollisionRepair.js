@@ -35,11 +35,7 @@ export default function CollisionRepair() {
           </Stack>
         </Grid>
         <Grid item xs={5}>
-          <img
-            src={repair}
-            alt="Aluminum Certified"
-            style={{ width: "100%" }}
-          />
+          <img src={repair} alt="Aluminum Certified" style={{ width: "90%" }} />
         </Grid>
       </Grid>
     </>

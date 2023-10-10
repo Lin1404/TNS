@@ -6,7 +6,7 @@ export default function Paint() {
   return (
     <>
       <Header />
-      <h2 className="sectionTitle">Our Best Color Result:</h2>
+      <h2 className="sectionTitle">Our Best Color Result</h2>
       <div className="ppgAnnouncementContainer">
         <img src={ecoFriendly} alt="illustration" style={{ width: "25%" }} />
         <div className="ppgAnnouncement">
