@@ -22,10 +22,10 @@ import { useState } from "react";
 const modulesRouting = [
   { path: "/tnsauto", label: "Home" },
   { path: "/tnsauto/aboutus", label: "About Us" },
-  { path: "/tnsauto/services", label: "Services" },
+  { path: "/tnsauto/services", label: "Services ▼" },
   { path: "/tnsauto/drp", label: "DRP" },
   { path: "/tnsauto/certifications", label: "Certifications" },
-  { path: "/tnsauto/gallery", label: "Gallery" },
+  { path: "/tnsauto/gallery", label: "Gallery ▼" },
   { path: "/tnsauto/tns1011portfolio", label: "Portfolio" },
   { path: "/tnsauto/contact", label: "Contact" },
   { path: "/tnsauto/career", label: "Career" },
@@ -55,16 +55,20 @@ export default function Modules({ isButton = false }) {
   const openGalleryMenu = Boolean(anchorElGallery);
   const openServicesMenu = Boolean(anchorElServices);
   const handleMouseEnterGallery = (event) => {
+    setmouseOnModule(5);
     setAnchorElGallery(event.currentTarget);
   };
   const handleGalleryMenuClose = () => {
+    setmouseOnModule(-1);
     setAnchorElGallery(null);
   };
 
   const handleMouseEnterServices = (event) => {
+    setmouseOnModule(2);
     setAnchorElServices(event.currentTarget);
   };
   const handleServicesMenuClose = () => {
+    setmouseOnModule(-1);
     setAnchorElServices(null);
   };
   const handleDialogOnsubmit = () => {
@@ -81,7 +85,7 @@ export default function Modules({ isButton = false }) {
       <div className="modulesSection">
         {modulesRouting.map((item, idx) => (
           <div className="moduleButtonContainer" key={item.label}>
-            {item.label === "Gallery" ? (
+            {item.label === modulesRouting[5].label ? (
               <div id="galleryModuleManu">
                 <Button
                   className="moduleButton"
@@ -90,10 +94,13 @@ export default function Modules({ isButton = false }) {
                   style={{
                     fontFamily: "inherit",
                     fontSize: "smaller",
-                    color: openGalleryMenu ? "#e3d515" : "white",
+                    color:
+                      mouseOnModule === idx || openGalleryMenu
+                        ? "#e3d515"
+                        : "white",
                   }}
                 >
-                  Gallery
+                  {modulesRouting[5].label}
                 </Button>
 
                 <Menu
@@ -145,7 +152,7 @@ export default function Modules({ isButton = false }) {
                   </MenuItem>
                 </Menu>
               </div>
-            ) : item.label === "Services" ? (
+            ) : item.label === modulesRouting[2].label ? (
               <div id="servicesModuleManu">
                 <Button
                   className="servicesModuleButton"
@@ -154,10 +161,13 @@ export default function Modules({ isButton = false }) {
                   style={{
                     fontFamily: "inherit",
                     fontSize: "smaller",
-                    color: openServicesMenu ? "#e3d515" : "white",
+                    color:
+                      mouseOnModule === idx || openServicesMenu
+                        ? "#e3d515"
+                        : "white",
                   }}
                 >
-                  Services
+                  {modulesRouting[2].label}
                 </Button>
 
                 <Menu
