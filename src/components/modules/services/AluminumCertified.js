@@ -1,6 +1,5 @@
 import Header from "../Header";
-import { Button, Container, Divider, Grid, Stack } from "@mui/material";
-import Box from "@mui/material/Box";
+import { Divider, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import aluminumCertifiedCover from "../../../assets/aluminum-certified-cover.jpg";
 import aluminumCertified from "../../../assets/aluminum-certified.jpg";
@@ -9,7 +8,11 @@ export default function AluminumCertified() {
   return (
     <>
       <Header />
-      <img src={aluminumCertifiedCover} alt="test" style={{ width: "100%" }} />
+      <img
+        src={aluminumCertifiedCover}
+        alt="Aluminum Certified Cover"
+        style={{ width: "100%" }}
+      />
       <Grid container xs={12} columnGap={15} className="highlight">
         <Grid item xs={5}>
           <Stack>
@@ -35,7 +38,11 @@ export default function AluminumCertified() {
           </Stack>
         </Grid>
         <Grid item xs={5}>
-          <img src={aluminumCertified} alt="test" style={{ width: "100%" }} />
+          <img
+            src={aluminumCertified}
+            alt="Aluminum Certified"
+            style={{ width: "100%" }}
+          />
         </Grid>
       </Grid>
     </>
