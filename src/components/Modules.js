@@ -33,17 +33,26 @@ const modulesRouting = [
 
 export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorElGallery, setAnchorElGallery] = useState(null);
+  const [anchorElServices, setAnchorElServices] = useState(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [partnerCode, setPartnerCode] = useState("");
   const [isPartnerCodeOnsubmit, setIsPartnerCodeOnsubmit] = useState();
 
-  const openGalleryMenu = Boolean(anchorEl);
+  const openGalleryMenu = Boolean(anchorElGallery);
+  const openServicesMenu = Boolean(anchorElServices);
   const handleMouseEnterGallery = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchorElGallery(event.currentTarget);
   };
   const handleGalleryMenuClose = () => {
-    setAnchorEl(null);
+    setAnchorElGallery(null);
+  };
+
+  const handleMouseEnterServices = (event) => {
+    setAnchorElServices(event.currentTarget);
+  };
+  const handleServicesMenuClose = () => {
+    setAnchorElServices(null);
   };
   const handleDialogOnsubmit = () => {
     setIsPartnerCodeOnsubmit(true);
@@ -53,6 +62,7 @@ export default function Modules({ isButton = false }) {
       <></>
     );
   };
+  console.log(anchorElGallery);
   return !isButton ? (
     <div className="modulesContainer">
       <div className="modulesSection">
@@ -62,7 +72,8 @@ export default function Modules({ isButton = false }) {
               <div id="galleryModuleManu">
                 <Button
                   className="moduleButton"
-                  onMouseOver={handleMouseEnterGallery}
+                  // onMouseOver={handleMouseEnterGallery}
+                  onClick={handleMouseEnterGallery}
                   style={{
                     fontFamily: "inherit",
                     fontSize: "smaller",
@@ -73,8 +84,8 @@ export default function Modules({ isButton = false }) {
                 </Button>
 
                 <Menu
-                  id="modulesMenu"
-                  anchorEl={anchorEl}
+                  id="galleryModulesMenu"
+                  anchorEl={anchorElGallery}
                   open={openGalleryMenu}
                   onClose={handleGalleryMenuClose}
                   MenuListProps={{ onMouseLeave: handleGalleryMenuClose }}
@@ -112,6 +123,70 @@ export default function Modules({ isButton = false }) {
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={handleGalleryMenuClose}>
+                    <Link
+                      to={"/tnsauto/comingsoon"}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>Shows/Activity Events</Typography>
+                    </Link>
+                  </MenuItem>
+                </Menu>
+              </div>
+            ) : item.label === "Services" ? (
+              <div id="servicesModuleManu">
+                <Button
+                  className="servicesModuleButton"
+                  // onMouseOver={handleMouseEnterGallery}
+                  onClick={handleMouseEnterServices}
+                  style={{
+                    fontFamily: "inherit",
+                    fontSize: "smaller",
+                    color: openServicesMenu ? "#e3d515" : "white",
+                  }}
+                >
+                  Services
+                </Button>
+
+                <Menu
+                  id="servicesModulesMenu"
+                  anchorEl={anchorElServices}
+                  open={openServicesMenu}
+                  onClose={handleServicesMenuClose}
+                  MenuListProps={{ onMouseLeave: handleServicesMenuClose }}
+                  anchorOrigin={{
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }}
+                  transformOrigin={{
+                    vertical: "buttom",
+                    horizontal: "left",
+                  }}
+                >
+                  <MenuItem onClick={handleServicesMenuClose}>
+                    <Link
+                      to={"/tnsauto/services"}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>services</Typography>
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleServicesMenuClose}>
+                    <Link
+                      to={"/tnsauto/satisfaction"}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>Customer Satisfaction</Typography>
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleServicesMenuClose}>
+                    <Link
+                      to={"/tnsauto/facility"}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography>Facility</Typography>
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleServicesMenuClose}>
                     <Link
                       to={"/tnsauto/comingsoon"}
                       style={{ textDecoration: "none", color: "black" }}
@@ -240,7 +315,7 @@ export default function Modules({ isButton = false }) {
       </Button>
       <Menu
         id="modulesMenu"
-        anchorEl={anchorEl}
+        anchorElGallery={anchorElGallery}
         open={openGalleryMenu}
         onClose={handleGalleryMenuClose}
         anchorOrigin={{
