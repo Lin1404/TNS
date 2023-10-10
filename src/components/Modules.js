@@ -32,16 +32,16 @@ const modulesRouting = [
 ];
 
 const servicesDropDown = [
-  { path: "/tnsauto/services", label: "Aluminum Certified" },
-  { path: "/tnsauto/services", label: "Car Rentals" },
-  { path: "/tnsauto/services", label: "Expert Estimating" },
-  { path: "/tnsauto/services", label: "Expert Paint Work" },
-  { path: "/tnsauto/services", label: "Insurance Claims" },
-  { path: "/tnsauto/services", label: "Life Time Warranty" },
-  { path: "/tnsauto/services", label: "Quality Collision Repair" },
+  { path: "/tnsauto/aluminum-certified", label: "Aluminum Certified" },
+  { path: "/tnsauto/car-rentals", label: "Car Rentals" },
+  { path: "/tnsauto/estimating", label: "Expert Estimating" },
+  { path: "/tnsauto/paint", label: "Expert Paint Work" },
+  { path: "/tnsauto/insurance-claim", label: "Insurance Claims" },
+  { path: "/tnsauto/warranty", label: "Life Time Warranty" },
+  { path: "/tnsauto/collision-repair", label: "Quality Collision Repair" },
   { path: "/tnsauto/services", label: "Services" },
-  { path: "/tnsauto/services", label: "Towing Services" },
-  { path: "/tnsauto/services", label: "Vehicle Detailing" },
+  { path: "/tnsauto/towing", label: "Towing Services" },
+  { path: "/tnsauto/detailing", label: "Vehicle Detailing" },
 ];
 
 export default function Modules({ isButton = false }) {
