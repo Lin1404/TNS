@@ -1,5 +1,6 @@
 import Header from "./Header";
 import officeImg from "../../assets/Office.jpeg";
+import office2 from "../../assets/Office2.png";
 import facility1 from "../../assets/facility1.jpg";
 import facility2 from "../../assets/facility2.jpg";
 import facility3 from "../../assets/facility3.jpg";
@@ -27,6 +28,11 @@ export default function Facility() {
       <h2 className="sectionTitle">Facility</h2>
       <img
         src={officeImg}
+        alt="Office Img"
+        style={{ width: "80%", paddingBottom: "1%" }}
+      />
+      <img
+        src={office2}
         alt="Office Img"
         style={{ width: "80%", paddingBottom: "1%" }}
       />
