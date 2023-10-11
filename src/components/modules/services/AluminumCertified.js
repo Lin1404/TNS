@@ -6,17 +6,17 @@ import aluminumCertified from "../../../assets/aluminum-certified.jpg";
 
 export default function AluminumCertified() {
   return (
-    <>
+    <div className="serviceBackgroundColor">
       <Header />
       <img
         src={aluminumCertifiedCover}
         alt="Aluminum Certified Cover"
-        style={{ width: "100%" }}
+        className="ImgFill"
       />
-      <Grid container xs={12} columnGap={15} className="highlight">
+      <Grid container xs={12} className="highlight">
         <Grid item xs={5}>
-          <Stack>
-            <Typography variant="h4" padding={1}>
+          <Stack className="serviceContext">
+            <Typography variant="h3" padding={1}>
               ALUMINUM CERTIFIED
             </Typography>
             <Divider variant="middle" />
@@ -45,6 +45,6 @@ export default function AluminumCertified() {
           />
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 }

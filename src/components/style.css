@@ -124,6 +124,18 @@
     width: 100%;
 }
 
+.serviceBackgroundColor {
+    background-color: #709099;
+}
+
+.ImgFill {
+    width: 100%;
+}
+
+.serviceContext > h6 {
+    text-align: left;
+}
+
 .highlight {
     justify-content: center;
     background-color: #709099;

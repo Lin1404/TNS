@@ -6,13 +6,13 @@ import Typography from "@mui/material/Typography";
 
 export default function CollisionRepair() {
   return (
-    <>
+    <div className="serviceBackgroundColor">
       <Header />
-      <img src={repairCover} alt="repair Img" />
-      <Grid container xs={12} columnGap={15} className="highlight">
+      <img src={repairCover} alt="repair Img" className="ImgFill" />
+      <Grid container xs={12} className="highlight">
         <Grid item xs={5}>
-          <Stack>
-            <Typography variant="h4" padding={1}>
+          <Stack className="serviceContext">
+            <Typography variant="h3" padding={1}>
               QUALITY COLLISION REPAIR
             </Typography>
             <Divider variant="middle" />
@@ -38,6 +38,6 @@ export default function CollisionRepair() {
           <img src={repair} alt="Aluminum Certified" style={{ width: "90%" }} />
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 }
