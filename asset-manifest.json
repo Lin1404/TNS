@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tnsauto/static/css/main.d283acd9.css",
-    "main.js": "/tnsauto/static/js/main.e7945c4a.js",
+    "main.css": "/tnsauto/static/css/main.5100e05a.css",
+    "main.js": "/tnsauto/static/js/main.24d170e1.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.d625af84dc8492020ef5.mp4",
     "static/media/tnsShop.png": "/tnsauto/static/media/tnsShop.5785ae594401aec29b70.png",
@@ -14,7 +14,9 @@
     "static/media/facility2.jpg": "/tnsauto/static/media/facility2.9d4cd38b0590ec8451d4.jpg",
     "static/media/facility4.jpg": "/tnsauto/static/media/facility4.1a36342cd45cafd3b9c6.jpg",
     "static/media/step3.png": "/tnsauto/static/media/step3.95b84b4afcc38a79a7d0.png",
+    "static/media/Office2.png": "/tnsauto/static/media/Office2.cc9fe31e7916ce71deaf.png",
     "static/media/step2.png": "/tnsauto/static/media/step2.6a7f848ea8427f7b6f26.png",
+    "static/media/aluminum-certified-cover.jpg": "/tnsauto/static/media/aluminum-certified-cover.70162385a16967dffe96.jpg",
     "static/media/compare1.png": "/tnsauto/static/media/compare1.d3468c187a75268028d2.png",
     "static/media/satisfaction1.jpg": "/tnsauto/static/media/satisfaction1.371f7a2dcf6055767b13.jpg",
     "static/media/compare2.png": "/tnsauto/static/media/compare2.9ac960ab091c4155f2ef.png",
@@ -23,9 +25,13 @@
     "static/media/compare3.png": "/tnsauto/static/media/compare3.668303efa5c924bd5ea3.png",
     "static/media/compare7.png": "/tnsauto/static/media/compare7.10c8ca1baa24fa0beea7.png",
     "static/media/satisfaction3.png": "/tnsauto/static/media/satisfaction3.58832633450b063a6223.png",
+    "static/media/estimateCover.jpg": "/tnsauto/static/media/estimateCover.44c2a24a6cd404178a64.jpg",
+    "static/media/insurance-claim.jpg": "/tnsauto/static/media/insurance-claim.11a1819df5dbf3240b6b.jpg",
     "static/media/step1.png": "/tnsauto/static/media/step1.1bc86fa41d14a6b600f0.png",
     "static/media/ecoFriendly.png": "/tnsauto/static/media/ecoFriendly.96305dac288f17b4dbc2.png",
     "static/media/team.png": "/tnsauto/static/media/team.0aa1644d3a695d439d7d.png",
+    "static/media/detailingCover.jpg": "/tnsauto/static/media/detailingCover.0f3359811a4f8f085289.jpg",
+    "static/media/repairCover.jpg": "/tnsauto/static/media/repairCover.99981b5c8df6e6833f39.jpg",
     "static/media/certifications.png": "/tnsauto/static/media/certifications.ee6f09fabce4de8aed85.png",
     "static/media/tns.svg": "/tnsauto/static/media/tns.8c23c543c0ef8a21473f45982a069c15.svg",
     "static/media/callPolice.jpeg": "/tnsauto/static/media/callPolice.94497a4292b271171dc2.jpeg",
@@ -33,9 +39,16 @@
     "static/media/Office.jpeg": "/tnsauto/static/media/Office.73eeeebac440a3981bf4.jpeg",
     "static/media/takeEveident.jpeg": "/tnsauto/static/media/takeEveident.7180d12bbfe997d39c83.jpeg",
     "static/media/notAdmit.jpeg": "/tnsauto/static/media/notAdmit.d6b8666cd859c43102fa.jpeg",
+    "static/media/paintCover.jpg": "/tnsauto/static/media/paintCover.57ecaa32fad83f53c281.jpg",
+    "static/media/estimate.jpg": "/tnsauto/static/media/estimate.9134261d36a86ebb87a7.jpg",
+    "static/media/insurance.jpg": "/tnsauto/static/media/insurance.99fbdf9ae52b92fa393d.jpg",
     "static/media/exchangeInfo1.jpeg": "/tnsauto/static/media/exchangeInfo1.4de817bdc4e410050071.jpeg",
     "static/media/yelpIcon.png": "/tnsauto/static/media/yelpIcon.645e847a099b88af6d95.png",
+    "static/media/aluminum-certified.jpg": "/tnsauto/static/media/aluminum-certified.f893e6864c30c52f58cb.jpg",
+    "static/media/detailing.jpg": "/tnsauto/static/media/detailing.31275128e317199acd6e.jpg",
     "static/media/checkSafety.jpeg": "/tnsauto/static/media/checkSafety.3406bfe9db74fc7450c0.jpeg",
+    "static/media/repair.jpg": "/tnsauto/static/media/repair.5ac26a2969d36d078b80.jpg",
+    "static/media/paint.jpg": "/tnsauto/static/media/paint.a19811d3d12c5ff8e8b6.jpg",
     "static/media/youtubeLogo.png": "/tnsauto/static/media/youtubeLogo.13784e6e7010b8f439f4.png",
     "static/media/instagramLogo.svg": "/tnsauto/static/media/instagramLogo.a0a9a83448ddb5827d70493a84d37806.svg",
     "static/media/slick.svg": "/tnsauto/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -45,12 +58,12 @@
     "static/media/facebookLogo.svg": "/tnsauto/static/media/facebookLogo.1d8e0397525aadb52a029adc60908a02.svg",
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
-    "main.d283acd9.css.map": "/tnsauto/static/css/main.d283acd9.css.map",
-    "main.e7945c4a.js.map": "/tnsauto/static/js/main.e7945c4a.js.map",
+    "main.5100e05a.css.map": "/tnsauto/static/css/main.5100e05a.css.map",
+    "main.24d170e1.js.map": "/tnsauto/static/js/main.24d170e1.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d283acd9.css",
-    "static/js/main.e7945c4a.js"
+    "static/css/main.5100e05a.css",
+    "static/js/main.24d170e1.js"
   ]
 }
