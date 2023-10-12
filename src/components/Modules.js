@@ -39,7 +39,7 @@ const servicesDropDown = [
   { path: "/tnsauto/insurance-claim", label: "Insurance Claims" },
   { path: "/tnsauto/warranty", label: "Life Time Warranty" },
   { path: "/tnsauto/collision-repair", label: "Quality Collision Repair" },
-  { path: "/tnsauto/services", label: "Services" },
+  // { path: "/tnsauto/services", label: "Services" },
   { path: "/tnsauto/towing", label: "Towing Services" },
   { path: "/tnsauto/detailing", label: "Vehicle Detailing" },
 ];
