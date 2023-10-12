@@ -87,6 +87,11 @@
     text-align: center;
 }
 
+.dropDownMenu > a {
+    text-decoration: none;
+    color: navy;
+}
+
 .reviewModulepaddingTop {
     padding: 6% 0;
 }
@@ -119,10 +124,21 @@
     width: 100%;
 }
 
+.serviceBackgroundColor {
+    background-color: #709099;
+}
+
+.ImgFill {
+    width: 100%;
+}
+
+.serviceContext > h6 {
+    text-align: left;
+}
+
 .highlight {
     justify-content: center;
     background-color: #709099;
-    opacity: 0.8;
     color: cornsilk;
     padding: 8% 0;
 }

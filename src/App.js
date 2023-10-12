@@ -15,6 +15,15 @@ import Career from "./components/modules/Career";
 import Facility from "./components/modules/Facility";
 import Portfolio from "./components/modules/Portfolio";
 import ComingSoon from "./components/ComingSoon";
+import AluminumCertified from "./components/modules/services/AluminumCertified";
+import CarRentals from "./components/modules/services/CarRentals";
+import CollisionRepair from "./components/modules/services/CollisionRepair";
+import Detailing from "./components/modules/services/Detailing";
+import Estimating from "./components/modules/services/Estimating";
+import InsuranceClaim from "./components/modules/services/InsuranceClaim";
+import Paint from "./components/modules/services/Paint";
+import Towing from "./components/modules/services/Towing";
+import Warranty from "./components/modules/services/Warranty";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +89,51 @@ const router = createBrowserRouter([
   {
     path: "/tnsauto/comingsoon",
     element: <ComingSoon />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/aluminum-certified",
+    element: <AluminumCertified />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/car-rentals",
+    element: <CarRentals />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/collision-repair",
+    element: <CollisionRepair />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/detailing",
+    element: <Detailing />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/estimating",
+    element: <Estimating />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/insurance-claim",
+    element: <InsuranceClaim />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/paint",
+    element: <Paint />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/towing",
+    element: <Towing />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/tnsauto/warranty",
+    element: <Warranty />,
     errorElement: <ErrorPage />,
   },
 ]);
