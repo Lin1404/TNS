@@ -1,9 +1,8 @@
 import Header from "../Header";
 import { Divider, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import rentalCar from "../../../assets/rentalCar.jpg";
 import towingCover from "../../../assets/towingCover.jpg";
-import towing4 from "../../../assets/towing4.jpg";
+import towing from "../../../assets/towing.jpg";
 
 export default function Towing() {
   return (
@@ -17,15 +16,6 @@ export default function Towing() {
               Towing Services
             </Typography>
             <Divider variant="middle" />
-            {/* <Typography variant="subtitle1" padding={2}>
-              Require a rental vehicle while your car is under repair? We offer
-              on-site rental vehicles in partnership with our local Enterprise
-              Rental Car branch, ensuring a seamless experience. At TNS Auto
-              Collision, we provide a convenient one-stop solution: drop off
-              your vehicle, pick up your rental, and upon completion of repairs,
-              return your rental to us. For any inquiries, please feel free to
-              contact us. Your satisfaction is our priority.
-            </Typography> */}
             <Typography variant="subtitle1" padding={2}>
               Require towing to our repair facility? Rest assured, we offer
               professional towing services to transport your vehicle to TNS Auto
@@ -39,11 +29,7 @@ export default function Towing() {
           </Stack>
         </Grid>
         <Grid item xs={5}>
-          <img
-            src={towing4}
-            alt="Aluminum Certified"
-            style={{ width: "90%" }}
-          />
+          <img src={towing} alt="Aluminum Certified" style={{ width: "90%" }} />
         </Grid>
       </Grid>
     </div>
