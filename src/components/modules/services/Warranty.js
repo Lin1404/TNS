@@ -3,7 +3,7 @@ import { Divider, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import warrantyCover from "../../../assets/warrantyCover.png";
 import warranty2 from "../../../assets/warranty2.jpg";
-import warranty3 from "../../../assets/warranty3.jpg";
+import warranty from "../../../assets/warranty.jpg";
 
 export default function Warranty() {
   return (
@@ -27,7 +27,7 @@ export default function Warranty() {
               included
             </Typography>
             <img
-              src={warranty3}
+              src={warranty}
               alt="warranty logos"
               style={{ width: "100%", paddingTop: "5%" }}
             />
