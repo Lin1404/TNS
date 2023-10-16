@@ -2,7 +2,8 @@ import Header from "../Header";
 import { Divider, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import warrantyCover from "../../../assets/warrantyCover.png";
-import warranty from "../../../assets/warranty.png";
+import warranty2 from "../../../assets/warranty2.jpg";
+import warranty3 from "../../../assets/warranty3.jpg";
 
 export default function Warranty() {
   return (
@@ -25,14 +26,15 @@ export default function Warranty() {
               * Make sure keep the invoice for Lifetime Warranty, labor not
               included
             </Typography>
+            <img
+              src={warranty3}
+              alt="warranty logos"
+              style={{ width: "100%", paddingTop: "5%" }}
+            />
           </Stack>
         </Grid>
         <Grid item xs={5}>
-          <img
-            src={warranty}
-            alt="Aluminum Certified"
-            style={{ width: "90%" }}
-          />
+          <img src={warranty2} alt="warranty logo" style={{ width: "90%" }} />
         </Grid>
       </Grid>
     </div>
