@@ -61,7 +61,7 @@ export default function Home() {
             <Typography>
               - 24 Hours Towing Service{" "}
               <LocalPhoneOutlinedIcon sx={{ verticalAlign: "text-bottom" }} />
-              (917) 535 - 6353
+              (718) 747 - 4749
             </Typography>
           </Box>
           <Grid container>

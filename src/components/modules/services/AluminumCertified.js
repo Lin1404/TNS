@@ -1,7 +1,7 @@
 import Header from "../Header";
 import { Divider, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import aluminumCertifiedCover from "../../../assets/aluminum-certified-cover.jpg";
+import aluminumCover from "../../../assets/aluminumCover.jpg";
 import aluminumCertified from "../../../assets/aluminum-certified.jpg";
 
 export default function AluminumCertified() {
@@ -9,7 +9,7 @@ export default function AluminumCertified() {
     <div className="serviceBackgroundColor">
       <Header />
       <img
-        src={aluminumCertifiedCover}
+        src={aluminumCover}
         alt="Aluminum Certified Cover"
         className="ImgFill"
       />
