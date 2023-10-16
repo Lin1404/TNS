@@ -13,7 +13,7 @@ export default function Detailing() {
         <Grid item xs={5}>
           <Stack className="serviceContext">
             <Typography variant="h3" padding={1}>
-              QUALITY COLLISION REPAIR
+              Vehicle Detailing
             </Typography>
             <Divider variant="middle" />
             <Typography variant="subtitle1" padding={2}>
