@@ -39,7 +39,6 @@ const servicesDropDown = [
   { path: "/insurance-claim", label: "Insurance Claims" },
   { path: "/warranty", label: "Life Time Warranty" },
   { path: "/collision-repair", label: "Quality Collision Repair" },
-  // { path: "/services", label: "Services" },
   { path: "/towing", label: "Towing Services" },
   { path: "/detailing", label: "Vehicle Detailing" },
 ];
@@ -73,7 +72,11 @@ export default function Modules({ isButton = false }) {
   };
   const handleDialogOnsubmit = () => {
     setIsPartnerCodeOnsubmit(true);
-    partnerCode === "TNS1011" ? (window.location = "/tns1011portfolio") : <></>;
+    partnerCode === "TNS1011" ? (
+      (window.location = "/#/tns1011portfolio")
+    ) : (
+      <></>
+    );
   };
 
   return !isButton ? (
@@ -85,7 +88,6 @@ export default function Modules({ isButton = false }) {
               <div id="galleryModuleManu">
                 <Button
                   className="moduleButton"
-                  // onMouseOver={handleMouseEnterGallery}
                   onClick={handleMouseEnterGallery}
                   style={{
                     fontFamily: "inherit",
@@ -152,7 +154,6 @@ export default function Modules({ isButton = false }) {
               <div id="servicesModuleManu">
                 <Button
                   className="servicesModuleButton"
-                  // onMouseOver={handleMouseEnterGallery}
                   onClick={handleMouseEnterServices}
                   style={{
                     fontFamily: "inherit",
@@ -198,13 +199,13 @@ export default function Modules({ isButton = false }) {
                 className="moduleButton"
                 onMouseEnter={() => setmouseOnModule(idx)}
                 onMouseLeave={() => setmouseOnModule(-1)}
-                disabled={window.location.pathname === item.path}
+                disabled={window.location.hash === "#" + item.path}
                 style={{
                   fontFamily: "inherit",
                   fontSize: "smaller",
                   color:
                     mouseOnModule === idx ||
-                    window.location.pathname === item.path
+                    window.location.hash === "#" + item.path
                       ? "#e3d515"
                       : "white",
                 }}
@@ -218,13 +219,13 @@ export default function Modules({ isButton = false }) {
                   onMouseEnter={() => setmouseOnModule(idx)}
                   onMouseLeave={() => setmouseOnModule(-1)}
                   className="moduleButton"
-                  disabled={window.location.pathname === item.path}
+                  disabled={window.location.hash === "#" + item.path}
                   style={{
                     fontFamily: "inherit",
                     fontSize: "smaller",
                     color:
                       mouseOnModule === idx ||
-                      window.location.pathname === item.path
+                      window.location.hash === "#" + item.path
                         ? "#e3d515"
                         : "white",
                   }}
