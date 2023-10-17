@@ -6,7 +6,7 @@ export default function ComingSoon() {
     <>
       <div className="moduleContainer">
         <h2 style={{ fontFamily: "cursive" }}>Coming Soon...</h2>
-        <Link to={""}>
+        <Link to={"/"}>
           <Button>
             <Typography>Click here back to Home page.</Typography>
           </Button>

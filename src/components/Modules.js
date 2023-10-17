@@ -20,7 +20,7 @@ import google from "../assets/googleIcon.png";
 import { useState } from "react";
 
 const modulesRouting = [
-  { path: "", label: "Home" },
+  { path: "/", label: "Home" },
   { path: "/aboutus", label: "About Us" },
   { path: "/services", label: "Services ▼" },
   { path: "/drp", label: "DRP" },

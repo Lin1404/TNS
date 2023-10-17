@@ -12,7 +12,7 @@ export default function Header() {
       {width > 950 ? (
         <div className="header backgroundColor">
           <div className="headerGroup">
-            <Link to={""}>
+            <Link to={"/"}>
               <img
                 src={tnsLogo}
                 alt="TNS logo"
@@ -36,7 +36,7 @@ export default function Header() {
       ) : (
         <div className="header backgroundColor">
           <div className="headerGroup">
-            <Link to={""}>
+            <Link to={"/"}>
               <img
                 src={tnsLogo}
                 alt="TNS logo"
@@ -66,7 +66,7 @@ export default function Header() {
 
   //   <div className="header backgroundColor">
   //     <div className="headerGroup">
-  //       <Link to={""}>
+  //       <Link to={"/"}>
   //         <img
   //           src={tnsLogo}
   //           alt="TNS logo"
@@ -89,7 +89,7 @@ export default function Header() {
   // ) : (
   //   <div className="header backgroundColor">
   //     <div className="headerGroup">
-  //       <Link to={""}>
+  //       <Link to={"/"}>
   //         <img
   //           src={tnsLogo}
   //           alt="TNS logo"
