@@ -20,28 +20,28 @@ import google from "../assets/googleIcon.png";
 import { useState } from "react";
 
 const modulesRouting = [
-  { path: "/tnsauto", label: "Home" },
-  { path: "/tnsauto/aboutus", label: "About Us" },
-  { path: "/tnsauto/services", label: "Services ▼" },
-  { path: "/tnsauto/drp", label: "DRP" },
-  { path: "/tnsauto/certifications", label: "Certifications" },
-  { path: "/tnsauto/gallery", label: "Gallery ▼" },
-  { path: "/tnsauto/tns1011portfolio", label: "Portfolio" },
-  { path: "/tnsauto/contact", label: "Contact" },
-  { path: "/tnsauto/career", label: "Career" },
+  { path: "", label: "Home" },
+  { path: "/aboutus", label: "About Us" },
+  { path: "/services", label: "Services ▼" },
+  { path: "/drp", label: "DRP" },
+  { path: "/certifications", label: "Certifications" },
+  { path: "/gallery", label: "Gallery ▼" },
+  { path: "/tns1011portfolio", label: "Portfolio" },
+  { path: "/contact", label: "Contact" },
+  { path: "/career", label: "Career" },
 ];
 
 const servicesDropDown = [
-  { path: "/tnsauto/aluminum-certified", label: "Aluminum Certified" },
-  { path: "/tnsauto/car-rentals", label: "Car Rentals" },
-  { path: "/tnsauto/estimating", label: "Expert Estimating" },
-  { path: "/tnsauto/paint", label: "Expert Paint Work" },
-  { path: "/tnsauto/insurance-claim", label: "Insurance Claims" },
-  { path: "/tnsauto/warranty", label: "Life Time Warranty" },
-  { path: "/tnsauto/collision-repair", label: "Quality Collision Repair" },
-  // { path: "/tnsauto/services", label: "Services" },
-  { path: "/tnsauto/towing", label: "Towing Services" },
-  { path: "/tnsauto/detailing", label: "Vehicle Detailing" },
+  { path: "/aluminum-certified", label: "Aluminum Certified" },
+  { path: "/car-rentals", label: "Car Rentals" },
+  { path: "/estimating", label: "Expert Estimating" },
+  { path: "/paint", label: "Expert Paint Work" },
+  { path: "/insurance-claim", label: "Insurance Claims" },
+  { path: "/warranty", label: "Life Time Warranty" },
+  { path: "/collision-repair", label: "Quality Collision Repair" },
+  // { path: "/services", label: "Services" },
+  { path: "/towing", label: "Towing Services" },
+  { path: "/detailing", label: "Vehicle Detailing" },
 ];
 
 export default function Modules({ isButton = false }) {
@@ -73,11 +73,7 @@ export default function Modules({ isButton = false }) {
   };
   const handleDialogOnsubmit = () => {
     setIsPartnerCodeOnsubmit(true);
-    partnerCode === "TNS1011" ? (
-      (window.location = "/tnsauto/tns1011portfolio")
-    ) : (
-      <></>
-    );
+    partnerCode === "TNS1011" ? (window.location = "/tns1011portfolio") : <></>;
   };
 
   return !isButton ? (
@@ -122,7 +118,7 @@ export default function Modules({ isButton = false }) {
                     onClick={handleGalleryMenuClose}
                     className="dropDownMenu"
                   >
-                    <Link to={"/tnsauto/before&after"}>
+                    <Link to={"/before&after"}>
                       <Typography>Before & After</Typography>
                     </Link>
                   </MenuItem>
@@ -130,7 +126,7 @@ export default function Modules({ isButton = false }) {
                     onClick={handleGalleryMenuClose}
                     className="dropDownMenu"
                   >
-                    <Link to={"/tnsauto/satisfaction"}>
+                    <Link to={"/satisfaction"}>
                       <Typography>Customer Satisfaction</Typography>
                     </Link>
                   </MenuItem>
@@ -138,7 +134,7 @@ export default function Modules({ isButton = false }) {
                     onClick={handleGalleryMenuClose}
                     className="dropDownMenu"
                   >
-                    <Link to={"/tnsauto/facility"}>
+                    <Link to={"/facility"}>
                       <Typography>Facility</Typography>
                     </Link>
                   </MenuItem>
@@ -146,7 +142,7 @@ export default function Modules({ isButton = false }) {
                     onClick={handleGalleryMenuClose}
                     className="dropDownMenu"
                   >
-                    <Link to={"/tnsauto/comingsoon"}>
+                    <Link to={"/comingsoon"}>
                       <Typography>Shows/Activity Events</Typography>
                     </Link>
                   </MenuItem>

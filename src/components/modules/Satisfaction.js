@@ -24,7 +24,7 @@ export default function Satisfaction() {
       </Container>
       <Reviews />
       <Container sx={{ paddingBottom: "5%" }}>
-        <Link to={"/tnsauto/contact"}>
+        <Link to={"/contact"}>
           <Button variant="contained">We love to hear your feedback →</Button>
         </Link>
       </Container>

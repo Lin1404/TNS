@@ -43,7 +43,7 @@ export default function Services() {
           </div>
         </div>
         {/* <Container sx={{ paddingBottom: "5%" }}>
-          <Link to={"/tnsauto/satisfaction"}>
+          <Link to={"/satisfaction"}>
             <Button
               className="moduleButton"
               variant="contained"
