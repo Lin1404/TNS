@@ -1,7 +1,7 @@
 {
   "name": "tnsauto",
   "version": "1.1.0",
-  "homepage": "https://lin1404.github.io/",
+  "homepage": "https://lin1404.github.io/tnsauto/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
