@@ -1,4 +1,3 @@
-import Reviews from "./modules/Reviews";
 import AccidentProcess from "./homePageComponents/AccidentProcess";
 import tnsAnime from "../assets/tnsAnime.mp4";
 import Header from "./modules/Header";
@@ -10,17 +9,7 @@ import Typography from "@mui/material/Typography";
 import RepairProcess from "./homePageComponents/RepairProcess";
 // import useWindowDimensions from "./useWindowDimensions";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
-
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "60%",
-  bgcolor: "background.paper",
-  boxShadow: 24,
-  p: 4,
-};
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function Home() {
   // const { width } = useWindowDimensions();
@@ -80,7 +69,7 @@ export default function Home() {
                 onClick={handleAccidentModalOpen}
                 variant="contained"
               >
-                HANDLE ACCIDENT PROFESSIONALLY →
+                HANDLE ACCIDENT SITUATION →
               </Button>
             </Grid>
           </Grid>
@@ -158,14 +147,25 @@ export default function Home() {
       {/* <Reviews /> */}
 
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
-        <Box sx={style}>
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "40%",
+            bgcolor: "background.paper",
+            boxShadow: 24,
+            p: 4,
+          }}
+        >
           <div className="homeModalButtonContainer">
             <button
               type="button"
               size="small"
               onClick={handleAccidentModalClose}
             >
-              X
+              <CloseIcon />
             </button>
           </div>
           <div>
@@ -189,10 +189,21 @@ export default function Home() {
               X
             </button>
           </div>
-          <Box sx={style}>
+          <Box
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "40%",
+              bgcolor: "background.paper",
+              boxShadow: 24,
+              p: 4,
+            }}
+          >
             <div className="homeModalButtonContainer">
               <button size="small" onClick={handleRepairModalClose}>
-                X
+                <CloseIcon />
               </button>
             </div>
             <div>
@@ -204,4 +215,3 @@ export default function Home() {
     </div>
   );
 }
-

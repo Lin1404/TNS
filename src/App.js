@@ -1,5 +1,5 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ErrorPage from "./components/ErrorPage";
@@ -25,114 +25,114 @@ import Paint from "./components/modules/services/Paint";
 import Towing from "./components/modules/services/Towing";
 import Warranty from "./components/modules/services/Warranty";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/tnsauto",
+    path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/before&after",
+    path: "/before&after",
     element: <BeforeAndAfter />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/certifications",
+    path: "/certifications",
     element: <Certifications />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/drp",
+    path: "/drp",
     element: <DRP />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/repairprocess",
+    path: "/repairprocess",
     element: <RepairProcess />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/aboutus",
+    path: "/aboutus",
     element: <AboutUs />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/services",
+    path: "/services",
     element: <Services />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/contact",
+    path: "/contact",
     element: <Contact />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/satisfaction",
+    path: "/satisfaction",
     element: <Satisfaction />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/facility",
+    path: "/facility",
     element: <Facility />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/career",
+    path: "/career",
     element: <Career />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/tns1011portfolio",
+    path: "/tns1011portfolio",
     element: <Portfolio />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/comingsoon",
+    path: "/comingsoon",
     element: <ComingSoon />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/aluminum-certified",
+    path: "/aluminum-certified",
     element: <AluminumCertified />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/car-rentals",
+    path: "/car-rentals",
     element: <CarRentals />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/collision-repair",
+    path: "/collision-repair",
     element: <CollisionRepair />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/detailing",
+    path: "/detailing",
     element: <Detailing />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/estimating",
+    path: "/estimating",
     element: <Estimating />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/insurance-claim",
+    path: "/insurance-claim",
     element: <InsuranceClaim />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/paint",
+    path: "/paint",
     element: <Paint />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/towing",
+    path: "/towing",
     element: <Towing />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tnsauto/warranty",
+    path: "/warranty",
     element: <Warranty />,
     errorElement: <ErrorPage />,
   },
