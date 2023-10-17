@@ -1,9 +1,5 @@
 import "./App.css";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  createHashRouter,
-} from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ErrorPage from "./components/ErrorPage";
