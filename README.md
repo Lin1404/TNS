@@ -1,4 +1,4 @@
-https://lin1404.github.io/tnsauto/
+https://lin1404.github.io/
 
 # Getting Started with Create React App
 
