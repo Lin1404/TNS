@@ -87,6 +87,10 @@
     text-align: center;
 }
 
+.homeTabs {
+    padding: 5%;
+}
+
 .dropDownMenu > a {
     text-decoration: none;
     color: navy;
@@ -139,8 +143,8 @@
 .highlight {
     justify-content: center;
     background-color: #709099;
-    color: cornsilk;
-    padding: 8% 0;
+    color: lemonchiffon;
+    padding: 8% 0 !important;
 }
 
 .socialMediaIcons {
