@@ -1,7 +1,7 @@
 import AccidentProcess from "./homePageComponents/AccidentProcess";
 import tnsAnime from "../assets/tnsAnime.mp4";
 import Header from "./modules/Header";
-import { Button, Container, Divider, Grid, Stack } from "@mui/material";
+import { Button, Container, Grid, Stack } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
 import Box from "@mui/material/Box";
@@ -10,6 +10,7 @@ import RepairProcess from "./homePageComponents/RepairProcess";
 // import useWindowDimensions from "./useWindowDimensions";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import CloseIcon from "@mui/icons-material/Close";
+import TabsModules from "./modules/TabsModules";
 
 export default function Home() {
   // const { width } = useWindowDimensions();
@@ -122,29 +123,39 @@ export default function Home() {
             </Typography>
           </Stack>
         </Box>
-      </Grid>
+      </Grid> */}
       <Grid xs={12} className="highlight" paddingTop={0}>
         <Stack>
           <Typography variant="h3" color={"darkslategray"}>
-            Lifetime Warranty
+            Welcome to TNS
           </Typography>
           <Typography
-            variant="body1"
+            variant="h6"
             paddingTop={5}
             paddingLeft={25}
             paddingRight={25}
           >
-            Your repair is guaranteed for as long as you own your car. Our
-            warranty covers the mechanics, paint, parts and collision work
-            associated with your claim. Other warranties may apply.
+            At TNS Auto Collision, we believe in more than just repairing
+            vehicles; we restore peace of mind. With a legacy of unparalleled
+            craftsmanship spanning decades, we stand as a beacon of excellence
+            in the automotive repair industry.
           </Typography>
-          <Typography variant="caption" paddingTop={2}>
-            * Make sure keep the invoice for Lifetime Warranty, labor not
-            included
+          <Container className="homeTabs">
+            <TabsModules />
+          </Container>
+          <Typography
+            variant="h6"
+            paddingTop={5}
+            paddingLeft={25}
+            paddingRight={25}
+          >
+            Thank you for considering TNS Auto Collision for your automotive
+            needs. Explore our website to discover our services in detail, and
+            feel free to contact us with any inquiries. We look forward to
+            serving you and restoring your vehicle to its former glory.
           </Typography>
         </Stack>
-      </Grid> */}
-      {/* <Reviews /> */}
+      </Grid>
 
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
         <Box
