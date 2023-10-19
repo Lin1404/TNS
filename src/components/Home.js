@@ -197,7 +197,7 @@ export default function Home() {
               onClick={handleRepairModalClose}
               className="galleryModalButton"
             >
-              X
+              <CloseIcon />
             </button>
           </div>
           <Box
