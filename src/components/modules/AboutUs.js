@@ -36,7 +36,7 @@ export default function AboutUs() {
         <div className="aboutUsText">
           <Typography>
             With{" "}
-            <span style={{ fontSize: "xx-large", color: "#1b73bc" }}>25+</span>{" "}
+            <span style={{ fontSize: "xx-large", color: "#1b73bc" }}>25+</span>
             years of automotive collision experience, we are your one-stop
             repair expert. We prioritize quality and safety, partnering with
             major insurance companies and holding Geico Auto Repair Express
