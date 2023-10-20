@@ -26,6 +26,7 @@ const modulesRouting = [
   { path: "/drp", label: "DRP" },
   { path: "/certifications", label: "Certifications" },
   { path: "/gallery", label: "Gallery ▼" },
+  { path: "/community", label: "Communiy" },
   { path: "/tns1011portfolio", label: "Portfolio" },
   { path: "/contact", label: "Contact" },
   { path: "/career", label: "Career" },
