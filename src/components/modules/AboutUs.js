@@ -12,16 +12,14 @@ export default function AboutUs() {
   return (
     <div>
       <Header />
-      <div>
-        <img
-          src={tnsShop}
-          alt="shop"
-          style={{
-            width: "100%",
-            paddingBottom: "2%",
-          }}
-        />
-      </div>
+      <img
+        src={tnsShop}
+        alt="shop"
+        style={{
+          width: "100%",
+          paddingBottom: "2%",
+        }}
+      />
       <h2 className="sectionTitle">About Us</h2>
       <div className="aboutUsContainer">
         <img
