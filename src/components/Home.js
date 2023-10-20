@@ -8,9 +8,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import RepairProcess from "./homePageComponents/RepairProcess";
 // import useWindowDimensions from "./useWindowDimensions";
-import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
+// import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import TabsModules from "./modules/TabsModules";
+import homePageCar from "../assets/homepagecar.png";
 
 export default function Home() {
   // const { width } = useWindowDimensions();
@@ -24,7 +25,19 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="videoAndModalsContainer">
+      <video
+        className="VideoTag"
+        autoPlay
+        loop
+        muted
+        style={{
+          width: "94%",
+          padding: "3%",
+        }}
+      >
+        <source src={tnsAnime} type="video/mp4" />
+      </video>
+      {/* <div className="videoAndModalsContainer">
         <div>
           <video
             className="VideoTag"
@@ -75,7 +88,7 @@ export default function Home() {
             </Grid>
           </Grid>
         </Container>
-      </div>
+      </div> */}
 
       {/* <Grid container xs={12} columnGap={15} className="highlight">
         <Box>
@@ -124,17 +137,47 @@ export default function Home() {
           </Stack>
         </Box>
       </Grid> */}
+      <Typography
+        variant="h3"
+        color={"navy"}
+        fontSize={"50px"}
+        fontWeight={"600"}
+      >
+        Welcome to TNS
+      </Typography>
+      <Typography
+        variant="h3"
+        color={"navy"}
+        fontSize={"40px"}
+        fontWeight={"500"}
+        padding={"5%"}
+      >
+        We are recognized by all major insurance companies
+      </Typography>
+      <img src={homePageCar} alt="car img" />
+      <Grid container style={{ padding: "3%" }}>
+        <Grid item xs={6}>
+          <Button
+            className="moduelButton"
+            variant="contained"
+            onClick={handleRepairModalOpen}
+          >
+            3 STEP FIX YOUR CAR →
+          </Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button
+            className="moduelButton"
+            onClick={handleAccidentModalOpen}
+            variant="contained"
+          >
+            HANDLE ACCIDENT SITUATION →
+          </Button>
+        </Grid>
+      </Grid>
       <Grid xs={12} className="highlight" paddingTop={0}>
         <Stack>
-          <Typography variant="h3" color={"darkslategray"}>
-            Welcome to TNS
-          </Typography>
-          <Typography
-            variant="h6"
-            paddingTop={5}
-            paddingLeft={25}
-            paddingRight={25}
-          >
+          <Typography variant="h6" paddingLeft={25} paddingRight={25}>
             At TNS Auto Collision, we believe in more than just repairing
             vehicles; we restore peace of mind. With a legacy of unparalleled
             craftsmanship spanning decades, we stand as a beacon of excellence
@@ -143,12 +186,7 @@ export default function Home() {
           <Container className="homeTabs">
             <TabsModules />
           </Container>
-          <Typography
-            variant="h6"
-            paddingTop={5}
-            paddingLeft={25}
-            paddingRight={25}
-          >
+          <Typography variant="h6" paddingLeft={25} paddingRight={25}>
             Thank you for considering TNS Auto Collision for your automotive
             needs. Explore our website to discover our services in detail, and
             feel free to contact us with any inquiries. We look forward to
