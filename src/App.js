@@ -24,6 +24,7 @@ import InsuranceClaim from "./components/modules/services/InsuranceClaim";
 import Paint from "./components/modules/services/Paint";
 import Towing from "./components/modules/services/Towing";
 import Warranty from "./components/modules/services/Warranty";
+import Community from "./components/modules/Community";
 
 const router = createHashRouter([
   {
@@ -134,6 +135,11 @@ const router = createHashRouter([
   {
     path: "/warranty",
     element: <Warranty />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/community",
+    element: <Community />,
     errorElement: <ErrorPage />,
   },
 ]);
