@@ -12,6 +12,8 @@ import compare8 from "../../assets/compare8.png";
 import compare9 from "../../assets/compare9.png";
 import compare10 from "../../assets/compare10.png";
 import compare11 from "../../assets/compare11.png";
+import compare12 from "../../assets/compare12.png";
+import compare13 from "../../assets/compare13.png";
 import { Button, Modal } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -27,6 +29,8 @@ const imgsToCompare = [
   compare9,
   compare10,
   compare11,
+  compare12,
+  compare13,
 ];
 
 const style = {
