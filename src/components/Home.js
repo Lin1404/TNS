@@ -31,8 +31,8 @@ export default function Home() {
         loop
         muted
         style={{
-          width: "94%",
-          padding: "3%",
+          width: "80%",
+          padding: "3% 10%",
         }}
       >
         <source src={tnsAnime} type="video/mp4" />
@@ -90,69 +90,30 @@ export default function Home() {
         </Container>
       </div> */}
 
-      {/* <Grid container xs={12} columnGap={15} className="highlight">
-        <Box>
-          <Stack>
-            <Typography variant="h4" padding={1}>
-              25+
-            </Typography>
-            <Divider variant="middle" />
-            <Typography variant="body1" padding={1}>
-              Years of Experience
-            </Typography>
-          </Stack>
-        </Box>
-        <Box>
-          <Stack>
-            <Typography variant="h4" padding={1}>
-              130+
-            </Typography>
-            <Divider variant="middle" />
-            <Typography variant="body1" padding={1}>
-              Fully Trained Staffs
-            </Typography>
-          </Stack>
-        </Box>
-        <Box>
-          <Stack>
-            <Typography variant="h4" padding={1}>
-              14
-            </Typography>
-            <Divider variant="middle" />
-            <Typography variant="body1" paddingTop={1}>
-              Parner With
-            </Typography>
-            <Typography variant="body1">Major Insurance</Typography>
-          </Stack>
-        </Box>
-        <Box>
-          <Stack>
-            <Typography variant="h4" padding={1}>
-              Top 10
-            </Typography>
-            <Divider variant="middle" />
-            <Typography variant="body1" padding={1}>
-              Rank in East Coast
-            </Typography>
-          </Stack>
-        </Box>
-      </Grid> */}
-      <Typography
+      {/* <Typography
         variant="h3"
         color={"navy"}
         fontSize={"50px"}
         fontWeight={"600"}
       >
         Welcome to TNS
+      </Typography> */}
+      <Typography
+        variant="h3"
+        color={"navy"}
+        fontSize={"50px"}
+        fontWeight={"600"}
+      >
+        We are recognized by all major insurance companies
       </Typography>
       <Typography
         variant="h3"
         color={"navy"}
-        fontSize={"40px"}
-        fontWeight={"500"}
-        padding={"5%"}
+        fontSize={"50px"}
+        fontWeight={"600"}
+        padding={"3%"}
       >
-        We are recognized by all major insurance companies
+        No Appointment, Walkin Anytime!
       </Typography>
       <img src={homePageCar} alt="car img" />
       <Grid container style={{ padding: "3%" }}>

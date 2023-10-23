@@ -6,6 +6,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import team from "../../assets/team.png";
 
 export default function AboutUs() {
+  const date = new Date();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -34,13 +35,17 @@ export default function AboutUs() {
         <div className="aboutUsText">
           <Typography>
             With{" "}
-            <span style={{ fontSize: "xx-large", color: "#1b73bc" }}>25+</span>
+            <span style={{ fontSize: "xx-large", color: "#1b73bc" }}>
+              {date.getFullYear() - 1995}{" "}
+            </span>
             years of automotive collision experience, we are your one-stop
             repair expert. We prioritize quality and safety, partnering with
             major insurance companies and holding Geico Auto Repair Express
             certification. Trust our platinum I-CAR & ASE certified technicians
             for your vehicle's insurance claims and repairs.
-            {/* We emphasize collaboration, respect and empathy throughout our interactions, and pride ourselves on our responsiveness and flexibility。 */}
+            {/* We emphasize
+            collaboration, respect and empathy throughout our interactions, and
+            pride ourselves on our responsiveness and flexibility。 */}
           </Typography>
           <Typography
             variant="h4"
