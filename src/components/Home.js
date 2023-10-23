@@ -113,7 +113,7 @@ export default function Home() {
         fontWeight={"600"}
         padding={"3%"}
       >
-        No Appointment, Walkin Anytime!
+        No Appointment, Walk-in Anytime!
       </Typography>
       <img src={homePageCar} alt="car img" />
       <Grid container style={{ padding: "3%" }}>
