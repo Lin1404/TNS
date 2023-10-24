@@ -17,10 +17,10 @@ import { Grid } from "@mui/material";
 
 const facilities = [
   office3,
+  office7,
   office4,
   office5,
   office6,
-  office7,
   shop1,
   shop2,
   shop3,
@@ -36,17 +36,12 @@ export default function Facility() {
       <Header />
       <h2 className="sectionTitle">Facility</h2>
       <img
-        src={officeImg}
-        alt="Office Img"
-        style={{ width: "80%", paddingBottom: "1%" }}
-      />
-      <img
         src={office2}
         alt="Office Img"
         style={{ width: "80%", paddingBottom: "1%" }}
       />
       <img
-        src={office3}
+        src={officeImg}
         alt="Office Img"
         style={{ width: "80%", paddingBottom: "1%" }}
       />
