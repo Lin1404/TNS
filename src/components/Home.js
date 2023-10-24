@@ -98,14 +98,7 @@ export default function Home() {
       >
         Welcome to TNS
       </Typography> */}
-      <Typography
-        variant="h3"
-        color={"navy"}
-        fontSize={"50px"}
-        fontWeight={"600"}
-      >
-        We are recognized by all major insurance companies
-      </Typography>
+
       <Typography
         variant="h3"
         color={"navy"}
@@ -155,6 +148,15 @@ export default function Home() {
           </Typography>
         </Stack>
       </Grid>
+      <Typography
+        variant="h3"
+        color={"navy"}
+        fontSize={"50px"}
+        fontWeight={"600"}
+        padding={"3%"}
+      >
+        We are recognized by all major insurance companies
+      </Typography>
 
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
         <Box
