@@ -27,7 +27,7 @@ import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../utils/emailjs";
 
 const positionsArr = [
   "Service Advisor",
-  "Receivetion",
+  "Receptionist",
   "Accounting Specialist",
   "Human Resources Manager",
   "Marketing Specialist",
