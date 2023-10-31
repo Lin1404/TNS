@@ -54,6 +54,7 @@ export default function Modules({ isButton = false }) {
 
   const openGalleryMenu = Boolean(anchorElGallery);
   const openServicesMenu = Boolean(anchorElServices);
+
   const handleMouseEnterGallery = (event) => {
     setmouseOnModule(5);
     setAnchorElGallery(event.currentTarget);
