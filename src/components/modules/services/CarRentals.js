@@ -26,6 +26,9 @@ export default function CarRentals() {
               return your rental to us. For any inquiries, please feel free to
               contact us. Your satisfaction is our priority.
             </Typography>
+            <Typography variant="h4" padding={2}>
+              Enterprise On Site
+            </Typography>
             <img
               src={enterprise}
               alt="Enterprise Logo"
