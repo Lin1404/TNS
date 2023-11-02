@@ -16,7 +16,6 @@ export default function Carousel({ content, imgs, settingProps }) {
     arrows: true,
     ...settingProps,
   };
-
   return (
     <Container>
       <Slider {...settings}>
@@ -34,7 +33,7 @@ export default function Carousel({ content, imgs, settingProps }) {
                 src={item}
                 alt="Carouse Images"
                 style={{
-                  width: "100%",
+                  width: settingProps?.imgsWidth || "100%",
                   padding: "5% 0",
                 }}
               />

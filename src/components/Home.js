@@ -12,6 +12,8 @@ import RepairProcess from "./homePageComponents/RepairProcess";
 import CloseIcon from "@mui/icons-material/Close";
 import TabsModules from "./modules/TabsModules";
 import homePageCar from "../assets/homepagecar.png";
+import Carousel from "./Carousel";
+import { imgsToCompare } from "./modules/BeforeAndAfter";
 
 export default function Home() {
   // const { width } = useWindowDimensions();
@@ -31,7 +33,7 @@ export default function Home() {
         loop
         muted
         style={{
-          width: "80%",
+          width: "75%",
           padding: "3% 10%",
         }}
       >
@@ -90,26 +92,7 @@ export default function Home() {
         </Container>
       </div> */}
 
-      {/* <Typography
-        variant="h3"
-        color={"navy"}
-        fontSize={"50px"}
-        fontWeight={"600"}
-      >
-        Welcome to TNS
-      </Typography> */}
-
-      <Typography
-        variant="h3"
-        color={"navy"}
-        fontSize={"50px"}
-        fontWeight={"600"}
-        padding={"3%"}
-      >
-        No Appointment, Walk-in Anytime!
-      </Typography>
-      <img src={homePageCar} alt="car img" />
-      <Grid container style={{ padding: "3%" }}>
+      <Grid container style={{ padding: "2%" }}>
         <Grid item xs={6}>
           <Button
             className="moduelButton"
@@ -129,6 +112,35 @@ export default function Home() {
           </Button>
         </Grid>
       </Grid>
+      <Typography
+        variant="h3"
+        color={"navy"}
+        fontSize={"50px"}
+        fontWeight={"600"}
+        paddingTop={"3%"}
+      >
+        No Appointment, Walk-in Anytime
+      </Typography>
+      <Typography
+        variant="h3"
+        color={"navy"}
+        fontSize={"50px"}
+        fontWeight={"600"}
+        paddingBottom={"3%"}
+      >
+        Repair Your Vehicle In One-Stop
+      </Typography>
+      <Container>
+        <Carousel
+          imgs={imgsToCompare}
+          settingProps={{
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            imgsWidth: "95%",
+          }}
+        />
+      </Container>
+
       <Grid xs={12} className="highlight" paddingTop={0}>
         <Stack>
           <Typography variant="h6" paddingLeft={25} paddingRight={25}>
@@ -148,7 +160,7 @@ export default function Home() {
           </Typography>
         </Stack>
       </Grid>
-      <Typography
+      {/* <Typography
         variant="h3"
         color={"navy"}
         fontSize={"50px"}
@@ -156,7 +168,7 @@ export default function Home() {
         padding={"3%"}
       >
         We are recognized by all major insurance companies
-      </Typography>
+      </Typography> */}
 
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
         <Box
