@@ -9,7 +9,7 @@ export default function Header() {
   const { width } = useWindowDimensions();
   const result = useMemo(
     () =>
-      width > 1160 ? (
+      width > 1175 ? (
         <div className="header backgroundColor">
           <div className="headerGroup">
             <Link to={"/"}>

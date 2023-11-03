@@ -299,10 +299,7 @@ export default function Modules({ isButton = false }) {
   ) : (
     <div style={{ justifySelf: "center" }}>
       {isDrawerExpanded ? (
-        <Button
-          // className="modulesbutton"
-          onClick={() => setIsDrawerExpanded(false)}
-        >
+        <Button onClick={() => setIsDrawerExpanded(false)}>
           <CloseIcon />
         </Button>
       ) : (
@@ -324,7 +321,6 @@ export default function Modules({ isButton = false }) {
           <Box
             sx={{ width: 150 }}
             role="presentation"
-            // onClick={() => setIsDrawerExpanded(false)}
             onKeyDown={() => setIsDrawerExpanded(false)}
           >
             <List>
