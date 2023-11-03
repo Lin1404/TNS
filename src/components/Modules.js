@@ -1,13 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {
+  Box,
   Button,
   Dialog,
   DialogActions,
   DialogContent,
   DialogContentText,
   DialogTitle,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
   Menu,
   MenuItem,
+  Stack,
   TextField,
   Typography,
 } from "@mui/material";
@@ -18,6 +25,7 @@ import instegramLogo from "../assets/instagramLogo.svg";
 import youtubeLogo from "../assets/youtubeLogo.png";
 import google from "../assets/googleIcon.png";
 import { useState } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 const modulesRouting = [
   { path: "/", label: "Home" },
@@ -44,6 +52,13 @@ const servicesDropDown = [
   { path: "/detailing", label: "Vehicle Detailing" },
 ];
 
+const galleryDropDown = [
+  { path: "/before&after", label: "Before & After" },
+  { path: "/satisfaction", label: "Customer Satisfaction" },
+  { path: "/facility", label: "Facility" },
+  { path: "/comingsoon", label: "Shows/Activity Events" },
+];
+
 export default function Modules({ isButton = false }) {
   const [mouseOnModule, setmouseOnModule] = useState(-1);
   const [anchorElGallery, setAnchorElGallery] = useState(null);
@@ -51,6 +66,11 @@ export default function Modules({ isButton = false }) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [partnerCode, setPartnerCode] = useState("");
   const [isPartnerCodeOnsubmit, setIsPartnerCodeOnsubmit] = useState();
+  const [isDrawerExpanded, setIsDrawerExpanded] = useState(false);
+  const [isGalleryInDrawerExpanded, setIsGalleryInDrawerExpanded] =
+    useState(false);
+  const [isServicesInDrawerExpanded, setIsServicesInDrawerExpanded] =
+    useState(false);
 
   const openGalleryMenu = Boolean(anchorElGallery);
   const openServicesMenu = Boolean(anchorElServices);
@@ -118,38 +138,16 @@ export default function Modules({ isButton = false }) {
                     horizontal: "left",
                   }}
                 >
-                  <MenuItem
-                    onClick={handleGalleryMenuClose}
-                    className="dropDownMenu"
-                  >
-                    <Link to={"/before&after"}>
-                      <Typography>Before & After</Typography>
-                    </Link>
-                  </MenuItem>
-                  <MenuItem
-                    onClick={handleGalleryMenuClose}
-                    className="dropDownMenu"
-                  >
-                    <Link to={"/satisfaction"}>
-                      <Typography>Customer Satisfaction</Typography>
-                    </Link>
-                  </MenuItem>
-                  <MenuItem
-                    onClick={handleGalleryMenuClose}
-                    className="dropDownMenu"
-                  >
-                    <Link to={"/facility"}>
-                      <Typography>Facility</Typography>
-                    </Link>
-                  </MenuItem>
-                  <MenuItem
-                    onClick={handleGalleryMenuClose}
-                    className="dropDownMenu"
-                  >
-                    <Link to={"/comingsoon"}>
-                      <Typography>Shows/Activity Events</Typography>
-                    </Link>
-                  </MenuItem>
+                  {galleryDropDown.map((item) => (
+                    <MenuItem
+                      onClick={handleGalleryMenuClose}
+                      className="dropDownMenu"
+                    >
+                      <Link to={item.path}>
+                        <Typography>{item.label}</Typography>
+                      </Link>
+                    </MenuItem>
+                  ))}
                 </Menu>
               </div>
             ) : item.label === modulesRouting[2].label ? (
@@ -301,38 +299,133 @@ export default function Modules({ isButton = false }) {
       </div>
     </div>
   ) : (
-    <div>
-      <Button
-        className="modulesbutton"
-        aria-controls={openGalleryMenu ? "modulesMenu" : undefined}
-        aria-haspopup="true"
-        aria-expanded={openGalleryMenu ? "true" : undefined}
-        onClick={handleMouseEnterGallery}
-      >
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
-      </Button>
-      <Menu
-        id="modulesMenu"
-        anchorElGallery={anchorElGallery}
-        open={openGalleryMenu}
-        onClose={handleGalleryMenuClose}
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "left",
-        }}
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "left",
-        }}
-      >
-        {modulesRouting.map((item, idx) => (
-          <Link to={`${item.path}`} style={{ textDecoration: "none" }}>
-            <MenuItem onClick={handleGalleryMenuClose}>{item.label}</MenuItem>
-          </Link>
-        ))}
-      </Menu>
+    <div style={{ justifySelf: "center" }}>
+      {isDrawerExpanded ? (
+        <Button
+          // className="modulesbutton"
+          onClick={() => setIsDrawerExpanded(false)}
+        >
+          <CloseIcon />
+        </Button>
+      ) : (
+        <Button
+          className="modulesbutton"
+          onClick={() => setIsDrawerExpanded(true)}
+        >
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </Button>
+      )}
+      {isDrawerExpanded && (
+        <Drawer
+          anchor={"right"}
+          open={isDrawerExpanded}
+          onClose={() => setIsDrawerExpanded(false)}
+        >
+          <Box
+            sx={{ width: 150 }}
+            role="presentation"
+            // onClick={() => setIsDrawerExpanded(false)}
+            onKeyDown={() => setIsDrawerExpanded(false)}
+          >
+            <List>
+              <ListItem key="close" disablePadding className="dropDownMenu">
+                <ListItemButton onClick={() => setIsDrawerExpanded(false)}>
+                  <CloseIcon />
+                </ListItemButton>
+              </ListItem>
+              {modulesRouting.map((item) =>
+                item.path === "/services" ? (
+                  <>
+                    <ListItem
+                      key={item.label}
+                      disablePadding
+                      className="dropDownMenu"
+                    >
+                      <ListItemButton
+                        onClick={() =>
+                          setIsServicesInDrawerExpanded(
+                            !isServicesInDrawerExpanded
+                          )
+                        }
+                      >
+                        <Typography style={{ color: "navy" }}>
+                          {item.label}
+                        </Typography>
+                      </ListItemButton>
+                    </ListItem>
+                    {isServicesInDrawerExpanded &&
+                      servicesDropDown.map((ser) => (
+                        <ListItem
+                          key={ser.label}
+                          disablePadding
+                          className="dropDownMenu"
+                        >
+                          <Link to={`${ser.path}`}>
+                            <ListItemButton>
+                              <Typography style={{ marginLeft: "2rem" }}>
+                                {ser.label}
+                              </Typography>
+                            </ListItemButton>
+                          </Link>
+                        </ListItem>
+                      ))}
+                  </>
+                ) : item.path === "/gallery" ? (
+                  <>
+                    <ListItem
+                      key={item.label}
+                      disablePadding
+                      className="dropDownMenu"
+                    >
+                      <ListItemButton
+                        onClick={() =>
+                          setIsGalleryInDrawerExpanded(
+                            !isGalleryInDrawerExpanded
+                          )
+                        }
+                      >
+                        <Typography style={{ color: "navy" }}>
+                          {item.label}
+                        </Typography>
+                      </ListItemButton>
+                    </ListItem>
+                    {isGalleryInDrawerExpanded &&
+                      galleryDropDown.map((gallery) => (
+                        <ListItem
+                          key={gallery.label}
+                          disablePadding
+                          className="dropDownMenu"
+                        >
+                          <Link to={`${gallery.path}`}>
+                            <ListItemButton>
+                              <Typography style={{ marginLeft: "2rem" }}>
+                                {gallery.label}
+                              </Typography>
+                            </ListItemButton>
+                          </Link>
+                        </ListItem>
+                      ))}
+                  </>
+                ) : (
+                  <ListItem
+                    key={item.label}
+                    disablePadding
+                    className="dropDownMenu"
+                  >
+                    <Link to={`${item.path}`}>
+                      <ListItemButton>
+                        <Typography>{item.label}</Typography>
+                      </ListItemButton>
+                    </Link>
+                  </ListItem>
+                )
+              )}
+            </List>
+          </Box>
+        </Drawer>
+      )}
     </div>
   );
 }
