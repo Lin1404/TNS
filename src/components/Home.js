@@ -89,7 +89,7 @@ export default function Home() {
       </Container>
 
       <Grid xs={12} className="highlight" paddingTop={0}>
-        <Stack>
+        <Stack style={{ width: "90%" }}>
           <Typography variant="h6" padding={"0 5%"}>
             At TNS Auto Collision, we believe in more than just repairing
             vehicles; we restore peace of mind. With a legacy of unparalleled

@@ -97,7 +97,7 @@
 }
 
 .reviewModulepaddingTop {
-    padding: 6% 0;
+    padding: 6%;
 }
 
 .proposalButton {
@@ -145,6 +145,17 @@
     background-color: #709099;
     color: lemonchiffon;
     padding: 8% 0 !important;
+}
+
+@media (max-width: 900px) {
+    .highlight {
+    display: grid !important;
+    justify-items: center;
+    }
+
+    .highlight > div {
+        max-width: 90% !important;
+    }
 }
 
 .socialMediaIcons {
