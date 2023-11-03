@@ -7,7 +7,7 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import RepairProcess from "./homePageComponents/RepairProcess";
-// import useWindowDimensions from "./useWindowDimensions";
+import useWindowDimensions from "./useWindowDimensions";
 // import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import TabsModules from "./modules/TabsModules";
@@ -16,7 +16,7 @@ import Carousel from "./Carousel";
 import { imgsToCompare } from "./modules/BeforeAndAfter";
 
 export default function Home() {
-  // const { width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const [accidentModalOpen, setAccidentModalOpen] = useState(false);
   const [repairModalOpen, setRepairModalOpen] = useState(false);
   const handleAccidentModalOpen = () => setAccidentModalOpen(true);
@@ -63,7 +63,7 @@ export default function Home() {
       <Typography
         variant="h3"
         color={"navy"}
-        fontSize={"50px"}
+        fontSize={"2rem"}
         fontWeight={"600"}
         paddingTop={"3%"}
       >
@@ -72,7 +72,7 @@ export default function Home() {
       <Typography
         variant="h3"
         color={"navy"}
-        fontSize={"50px"}
+        fontSize={"2rem"}
         fontWeight={"600"}
         paddingBottom={"3%"}
       >
@@ -91,7 +91,7 @@ export default function Home() {
 
       <Grid xs={12} className="highlight" paddingTop={0}>
         <Stack>
-          <Typography variant="h6" paddingLeft={25} paddingRight={25}>
+          <Typography variant="h6" padding={"0 5%"}>
             At TNS Auto Collision, we believe in more than just repairing
             vehicles; we restore peace of mind. With a legacy of unparalleled
             craftsmanship spanning decades, we stand as a beacon of excellence
@@ -100,7 +100,7 @@ export default function Home() {
           <Container className="homeTabs">
             <TabsModules />
           </Container>
-          <Typography variant="h6" paddingLeft={25} paddingRight={25}>
+          <Typography variant="h6" padding={"0 5%"}>
             Thank you for considering TNS Auto Collision for your automotive
             needs. Explore our website to discover our services in detail, and
             feel free to contact us with any inquiries. We look forward to
