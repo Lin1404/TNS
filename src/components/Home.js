@@ -39,58 +39,6 @@ export default function Home() {
       >
         <source src={tnsAnime} type="video/mp4" />
       </video>
-      {/* <div className="videoAndModalsContainer">
-        <div>
-          <video
-            className="VideoTag"
-            autoPlay
-            loop
-            muted
-            style={{
-              width: "94%",
-              padding: "3%",
-            }}
-          >
-            <source src={tnsAnime} type="video/mp4" />
-          </video>
-        </div>
-        <Container className="homePageModalContainer">
-          <Typography variant="h3" sx={{ color: "navy" }}>
-            Choose TNS
-          </Typography>
-          <Typography variant="h4">Choose High Quality Service</Typography>
-          <Box className="modalText">
-            <Typography>- Accept All Major Insurance Carries</Typography>
-            <Typography>- No Appointment, Walk-In Any Time</Typography>
-            <Typography>- Free Professional Estimate</Typography>
-            <Typography>
-              - 24 Hours Towing Service{" "}
-              <LocalPhoneOutlinedIcon sx={{ verticalAlign: "text-bottom" }} />
-              (718) 747 - 4749
-            </Typography>
-          </Box>
-          <Grid container>
-            <Grid item xs={6}>
-              <Button
-                className="moduelButton"
-                variant="contained"
-                onClick={handleRepairModalOpen}
-              >
-                3 STEP FIX YOUR CAR →
-              </Button>
-            </Grid>
-            <Grid item xs={6}>
-              <Button
-                className="moduelButton"
-                onClick={handleAccidentModalOpen}
-                variant="contained"
-              >
-                HANDLE ACCIDENT SITUATION →
-              </Button>
-            </Grid>
-          </Grid>
-        </Container>
-      </div> */}
 
       <Grid container style={{ padding: "2%" }}>
         <Grid item xs={6}>
@@ -160,15 +108,6 @@ export default function Home() {
           </Typography>
         </Stack>
       </Grid>
-      {/* <Typography
-        variant="h3"
-        color={"navy"}
-        fontSize={"50px"}
-        fontWeight={"600"}
-        padding={"3%"}
-      >
-        We are recognized by all major insurance companies
-      </Typography> */}
 
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
         <Box
