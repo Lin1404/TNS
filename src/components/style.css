@@ -197,6 +197,14 @@
     grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 900px) {
+    .aboutUsContainer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
 .aboutUsText {
     display: grid;
     padding: 3%;
