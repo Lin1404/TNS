@@ -7,16 +7,15 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import RepairProcess from "./homePageComponents/RepairProcess";
-import useWindowDimensions from "./useWindowDimensions";
+// import useWindowDimensions from "./useWindowDimensions";
 // import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import TabsModules from "./modules/TabsModules";
-import homePageCar from "../assets/homepagecar.png";
 import Carousel from "./Carousel";
 import { imgsToCompare } from "./modules/BeforeAndAfter";
 
 export default function Home() {
-  const { width } = useWindowDimensions();
+  // const { width } = useWindowDimensions();
   const [accidentModalOpen, setAccidentModalOpen] = useState(false);
   const [repairModalOpen, setRepairModalOpen] = useState(false);
   const handleAccidentModalOpen = () => setAccidentModalOpen(true);
