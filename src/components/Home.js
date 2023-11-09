@@ -11,8 +11,8 @@ import RepairProcess from "./homePageComponents/RepairProcess";
 // import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import TabsModules from "./modules/TabsModules";
-import Carousel from "./Carousel";
-import { imgsToCompare } from "./modules/BeforeAndAfter";
+// import Carousel from "./Carousel";
+// import { imgsToCompare } from "./modules/BeforeAndAfter";
 
 export default function Home() {
   // const { width } = useWindowDimensions();
@@ -77,7 +77,7 @@ export default function Home() {
       >
         Repair Your Vehicle In One-Stop
       </Typography>
-      <Container>
+      {/* <Container>
         <Carousel
           imgs={imgsToCompare}
           settingProps={{
@@ -86,7 +86,7 @@ export default function Home() {
             imgsWidth: "95%",
           }}
         />
-      </Container>
+      </Container> */}
 
       <Grid xs={12} className="highlight" paddingTop={0}>
         <Stack style={{ width: "90%" }}>
