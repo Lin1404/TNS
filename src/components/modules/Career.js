@@ -120,7 +120,7 @@ export default function Career() {
           JOIN US TODAY !
         </Typography>
       </Container>
-      <Container>
+      {/* <Container>
         <Typography
           variant="h4"
           sx={{
@@ -142,7 +142,7 @@ export default function Career() {
           <Typography>- Health Savings Account</Typography>
           <Typography>- Opportunity for Advancement</Typography>
         </Container>
-      </Container>
+      </Container> */}
 
       <Container sx={{ paddingBottom: "2%" }}>
         <Typography variant="h4" sx={{ textAlign: "left", paddingTop: "3%" }}>
