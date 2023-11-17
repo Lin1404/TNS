@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tnsauto/static/css/main.86ed1a40.css",
-    "main.js": "/tnsauto/static/js/main.ce545be2.js",
+    "main.js": "/tnsauto/static/js/main.3b64e623.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.d625af84dc8492020ef5.mp4",
     "static/media/office2.png": "/tnsauto/static/media/office2.e81864665d8c0b41ccf3.png",
@@ -43,7 +43,11 @@
     "static/media/rentalCover.jpg": "/tnsauto/static/media/rentalCover.5567fcabfb0654ecaf57.jpg",
     "static/media/step1.png": "/tnsauto/static/media/step1.4fd4d3c3ef1ed54b1550.png",
     "static/media/insurance.jpg": "/tnsauto/static/media/insurance.20eb1679c545eb0976cf.jpg",
+    "static/media/compare16.png": "/tnsauto/static/media/compare16.7e9b2cc560cf3d0f290c.png",
+    "static/media/compare17.png": "/tnsauto/static/media/compare17.661d0b0596e2ebeab1af.png",
     "static/media/certifications.png": "/tnsauto/static/media/certifications.ee6f09fabce4de8aed85.png",
+    "static/media/compare14.png": "/tnsauto/static/media/compare14.70fabbd067a0a23e52fa.png",
+    "static/media/compare15.png": "/tnsauto/static/media/compare15.adad9e6d2a129d38c19d.png",
     "static/media/community.png": "/tnsauto/static/media/community.fbd4f7e57dddca231be4.png",
     "static/media/tns.svg": "/tnsauto/static/media/tns.8c23c543c0ef8a21473f45982a069c15.svg",
     "static/media/callPolice.jpeg": "/tnsauto/static/media/callPolice.94497a4292b271171dc2.jpeg",
@@ -79,11 +83,11 @@
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
     "main.86ed1a40.css.map": "/tnsauto/static/css/main.86ed1a40.css.map",
-    "main.ce545be2.js.map": "/tnsauto/static/js/main.ce545be2.js.map",
+    "main.3b64e623.js.map": "/tnsauto/static/js/main.3b64e623.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86ed1a40.css",
-    "static/js/main.ce545be2.js"
+    "static/js/main.3b64e623.js"
   ]
 }
