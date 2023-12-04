@@ -26,20 +26,53 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <video
-        className="VideoTag"
-        autoPlay
-        loop
-        muted
-        style={{
-          width: "75%",
-          padding: "3% 10%",
-        }}
-      >
-        <source src={tnsAnime} type="video/mp4" />
-      </video>
-
       <Grid container style={{ padding: "2%" }}>
+        <Grid item xs={6}>
+          <video
+            className="VideoTag"
+            autoPlay
+            loop
+            muted
+            style={{
+              width: "100%",
+              padding: "3%",
+            }}
+          >
+            <source src={tnsAnime} type="video/mp4" />
+          </video>
+        </Grid>
+        <Grid item xs={6} sx={{ alignSelf: "center" }}>
+          <Typography
+            variant="h3"
+            color={"navy"}
+            fontSize={"2rem"}
+            fontWeight={"600"}
+            paddingTop={"3%"}
+          >
+            No Appointment, Walk-in Anytime
+          </Typography>
+          <Typography
+            variant="h3"
+            color={"navy"}
+            fontSize={"2rem"}
+            fontWeight={"600"}
+            paddingBottom={"3%"}
+          >
+            Repair Your Vehicle In One-Stop
+          </Typography>
+          <Typography
+            variant="h3"
+            color={"red"}
+            fontSize={"2rem"}
+            fontWeight={"600"}
+            paddingBottom={"3%"}
+          >
+            7/24 Towing Call: 718-747-4749
+          </Typography>
+        </Grid>
+      </Grid>
+
+      <Grid container style={{ padding: "5%" }}>
         <Grid item xs={6}>
           <Button
             className="moduelButton"
@@ -59,7 +92,7 @@ export default function Home() {
           </Button>
         </Grid>
       </Grid>
-      <Typography
+      {/* <Typography
         variant="h3"
         color={"navy"}
         fontSize={"2rem"}
@@ -76,7 +109,7 @@ export default function Home() {
         paddingBottom={"3%"}
       >
         Repair Your Vehicle In One-Stop
-      </Typography>
+      </Typography> */}
       {/* <Container>
         <Carousel
           imgs={imgsToCompare}
@@ -88,7 +121,7 @@ export default function Home() {
         />
       </Container> */}
 
-      <Grid xs={12} className="highlight" paddingTop={0}>
+      {/* <Grid xs={12} className="highlight" paddingTop={0}>
         <Stack style={{ width: "90%" }}>
           <Typography variant="h6" padding={"0 5%"}>
             At TNS Auto Collision, we believe in more than just repairing
@@ -106,7 +139,7 @@ export default function Home() {
             serving you and restoring your vehicle to its former glory.
           </Typography>
         </Stack>
-      </Grid>
+      </Grid> */}
 
       <Modal open={accidentModalOpen} onClose={handleAccidentModalClose}>
         <Box
