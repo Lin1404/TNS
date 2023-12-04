@@ -1,7 +1,7 @@
 import Header from "../Header";
 import { Divider, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import warrantyCover from "../../../assets/warrantyCover.png";
+import warrantyCover from "../../../assets/warrantyCover3.png";
 import warranty2 from "../../../assets/warranty2.jpg";
 import warranty from "../../../assets/warranty.jpg";
 

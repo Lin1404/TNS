@@ -1,8 +1,8 @@
 import Header from "../Header";
 import { Divider, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import insuranceCover from "../../../assets/insurance-claim.jpg";
-import insurance from "../../../assets/insurance.jpg";
+import insuranceCover from "../../../assets/insurance-claim2.jpg";
+import insurance from "../../../assets/insurance2.jpg";
 
 export default function InsuranceClaim() {
   return (
