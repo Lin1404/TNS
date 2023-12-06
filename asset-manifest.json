@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tnsauto/static/css/main.86ed1a40.css",
-    "main.js": "/tnsauto/static/js/main.89f5378c.js",
+    "main.js": "/tnsauto/static/js/main.3c2eff24.js",
     "static/js/787.efb155f4.chunk.js": "/tnsauto/static/js/787.efb155f4.chunk.js",
     "static/media/tnsAnime.mp4": "/tnsauto/static/media/tnsAnime.d625af84dc8492020ef5.mp4",
     "static/media/office2.png": "/tnsauto/static/media/office2.e81864665d8c0b41ccf3.png",
@@ -11,6 +11,7 @@
     "static/media/shop6.jpg": "/tnsauto/static/media/shop6.7ac460f037f44889e00e.jpg",
     "static/media/shop7.jpg": "/tnsauto/static/media/shop7.f74a836c3ef36563e3b7.jpg",
     "static/media/shop4.jpg": "/tnsauto/static/media/shop4.a71f3159a92c3c68cb92.jpg",
+    "static/media/repair2.jpg": "/tnsauto/static/media/repair2.b384ec8558a136273fce.jpg",
     "static/media/shop3.jpg": "/tnsauto/static/media/shop3.d77824e4927244da20f4.jpg",
     "static/media/shop1.jpg": "/tnsauto/static/media/shop1.09b1457586367c33f569.jpg",
     "static/media/shop2.jpg": "/tnsauto/static/media/shop2.9d4cd38b0590ec8451d4.jpg",
@@ -69,7 +70,6 @@
     "static/media/aluminum-certified.jpg": "/tnsauto/static/media/aluminum-certified.f893e6864c30c52f58cb.jpg",
     "static/media/detailing.jpg": "/tnsauto/static/media/detailing.31275128e317199acd6e.jpg",
     "static/media/towing.jpg": "/tnsauto/static/media/towing.4f65720ee114a7888208.jpg",
-    "static/media/repair.jpg": "/tnsauto/static/media/repair.5ac26a2969d36d078b80.jpg",
     "static/media/paint.jpg": "/tnsauto/static/media/paint.a19811d3d12c5ff8e8b6.jpg",
     "static/media/warranty.jpg": "/tnsauto/static/media/warranty.835acd7bf72fd2728deb.jpg",
     "static/media/enterprise.jpg": "/tnsauto/static/media/enterprise.71164de8b08ebed16839.jpg",
@@ -83,11 +83,11 @@
     "static/media/slick.woff": "/tnsauto/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tnsauto/index.html",
     "main.86ed1a40.css.map": "/tnsauto/static/css/main.86ed1a40.css.map",
-    "main.89f5378c.js.map": "/tnsauto/static/js/main.89f5378c.js.map",
+    "main.3c2eff24.js.map": "/tnsauto/static/js/main.3c2eff24.js.map",
     "787.efb155f4.chunk.js.map": "/tnsauto/static/js/787.efb155f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86ed1a40.css",
-    "static/js/main.89f5378c.js"
+    "static/js/main.3c2eff24.js"
   ]
 }
