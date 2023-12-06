@@ -26,50 +26,47 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Grid container style={{ padding: "2%" }}>
-        <Grid item xs={6}>
-          <video
-            className="VideoTag"
-            autoPlay
-            loop
-            muted
-            style={{
-              width: "100%",
-              padding: "3%",
-            }}
-          >
-            <source src={tnsAnime} type="video/mp4" />
-          </video>
-        </Grid>
-        <Grid item xs={6} sx={{ alignSelf: "center" }}>
-          <Typography
-            variant="h3"
-            color={"navy"}
-            fontSize={"2rem"}
-            fontWeight={"600"}
-            paddingTop={"3%"}
-          >
-            No Appointment, Walk-in Anytime
-          </Typography>
-          <Typography
-            variant="h3"
-            color={"navy"}
-            fontSize={"2rem"}
-            fontWeight={"600"}
-            paddingBottom={"3%"}
-          >
-            Repair Your Vehicle In One-Stop
-          </Typography>
-          <Typography
-            variant="h3"
-            color={"red"}
-            fontSize={"2rem"}
-            fontWeight={"600"}
-            paddingBottom={"3%"}
-          >
-            7/24 Towing Call: 718-747-4749
-          </Typography>
-        </Grid>
+      <Grid item xs={12}>
+        <video
+          className="VideoTag"
+          autoPlay
+          loop
+          muted
+          style={{
+            width: "70%",
+            padding: "3%",
+          }}
+        >
+          <source src={tnsAnime} type="video/mp4" />
+        </video>
+      </Grid>
+      <Grid item xs={12} sx={{ alignSelf: "center" }}>
+        <Typography
+          variant="h3"
+          color={"navy"}
+          fontSize={"2rem"}
+          fontWeight={"600"}
+          paddingTop={"3%"}
+        >
+          No Appointment, Walk-in Anytime
+        </Typography>
+        <Typography
+          variant="h3"
+          color={"navy"}
+          fontSize={"2rem"}
+          fontWeight={"600"}
+          paddingBottom={"3%"}
+        >
+          Repair Your Vehicle In One-Stop
+        </Typography>
+        <Typography
+          variant="h3"
+          color={"red"}
+          fontSize={"2rem"}
+          fontWeight={"600"}
+        >
+          Call Us: (718) 259-0075
+        </Typography>
       </Grid>
 
       <Grid container style={{ padding: "5%" }}>
