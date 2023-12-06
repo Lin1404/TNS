@@ -1,6 +1,6 @@
 import Header from "../Header";
 import repairCover from "../../../assets/repairCover.jpg";
-import repair from "../../../assets/repair.jpg";
+import repair from "../../../assets/repair2.jpg";
 import { Divider, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
